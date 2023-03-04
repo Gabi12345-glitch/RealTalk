@@ -1,0 +1,3145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1"
+    />
+    <link type="image/png" rel="icon" href="img/favicon.ico" />
+    <title>Real Talk</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+    <!--[if (lt IE 9)&(!IEMobile 7)
+      ]><script src="js/html5support.js"></script
+    ><![endif]-->
+  </head>
+
+  <body>
+    <video
+      src="img/media/video_bg.webm"
+      class="main-screen-video"
+      muted
+      loop
+      autoplay
+    ></video>
+    <header class="header">
+      <div class="header__inner">
+        <a href="#top" class="header__logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="196"
+            viewBox="0 0 750 101"
+            fill="none"
+          >
+            <path
+              d="M144.571 91.2245C146.752 91.2245 148.521 89.438 148.521 87.2343C148.521 85.0306 146.752 83.2441 144.571 83.2441C142.389 83.2441 140.621 85.0306 140.621 87.2343C140.621 89.438 142.389 91.2245 144.571 91.2245Z"
+              fill="#FFCA18"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M53.8567 98.0046H7.44617C3.33541 98.0046 0 94.6361 0 90.4869V51.1562C3.37199 68.606 8.03133 79.8681 13.9853 84.957C19.9393 90.0459 33.2298 94.3903 53.8567 98.0046Z"
+              fill="black"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M102.564 3.72949H148.975C153.086 3.72949 156.421 7.09801 156.421 11.2472V50.5778C153.049 33.1281 148.39 21.866 142.436 16.7771C136.482 11.6954 123.191 7.34378 102.564 3.72949Z"
+              fill="black"
+            />
+            <path
+              d="M194.755 4.0332H233.024C243.279 4.0332 251.954 6.36803 259.035 11.0305C266.115 15.7001 269.655 23.1889 269.655 33.5041C269.655 41.3977 267.498 47.6142 263.189 52.1466C258.874 56.6789 253.271 59.751 246.366 61.363L276.875 98.2431H258.354L229.616 62.9822H210.415V98.2431H194.755V4.0332ZM233.705 49.3925C239.512 49.3925 244.325 48.1781 248.143 45.7565C251.954 43.3349 253.863 39.3448 253.863 33.7788C253.863 28.22 251.962 24.2009 248.143 21.736C244.333 19.271 239.512 18.0349 233.705 18.0349H210.415V49.3925H233.705Z"
+              fill="black"
+            />
+            <path
+              d="M300.852 96.1614C295.219 93.6025 290.75 89.7496 287.437 84.5884C284.123 79.4272 282.463 73.2179 282.463 65.946C282.463 58.5873 284.094 52.3346 287.364 47.1734C290.633 42.0122 294.81 38.181 299.893 35.6655C304.977 33.1572 310.199 31.8994 315.554 31.8994C322.546 31.8994 328.427 33.309 333.189 36.1426C337.958 38.969 341.498 42.6917 343.81 47.3107C346.128 51.9298 347.284 56.9825 347.284 62.4546C347.284 65.599 346.962 68.5555 346.333 71.3385H297.033C297.853 76.8105 300.617 80.9163 305.343 83.656C310.061 86.3956 315.693 87.7618 322.232 87.7618C329.678 87.7618 336.576 86.2366 342.932 83.1861V95.5686C339.933 97.0071 336.393 98.1059 332.311 98.8649C328.222 99.6239 323.958 100.007 319.511 100.007C312.694 99.9997 306.476 98.7203 300.852 96.1614ZM333.262 60.5679C333.35 60.2137 333.401 59.6716 333.401 58.9559C333.401 56.7151 332.831 54.4236 331.697 52.0888C330.563 49.754 328.698 47.8023 326.116 46.2337C323.527 44.6651 320.191 43.8772 316.102 43.8772C311.019 43.8772 306.637 45.359 302.958 48.3227C299.279 51.2864 297.304 55.3706 297.033 60.5679H333.262Z"
+              fill="black"
+            />
+            <path
+              d="M365.673 94.8169C361.226 91.3616 359.002 86.4968 359.002 80.2152C359.002 72.6758 361.862 67.1821 367.582 63.7268C373.302 60.2715 380.155 58.5439 388.15 58.5439C393.504 58.5439 399.137 59.1728 405.039 60.4306V58.1391C405.039 54.0116 403.54 50.6937 400.548 48.1781C397.549 45.6698 393.329 44.4121 387.88 44.4121C379.892 44.4121 372.08 46.0746 364.451 49.3925V36.2076C372.987 33.3379 381.34 31.8994 389.511 31.8994C399.042 31.8994 406.444 34.2342 411.71 38.8967C416.977 43.5591 419.61 50.6503 419.61 60.1631V83.3162C419.61 86.4606 421.241 88.0292 424.511 88.0292C425.601 88.0292 427.049 87.7618 428.87 87.2196V97.5854C426.149 98.6625 423.055 99.1974 419.61 99.1974C413.341 99.1974 409.033 96.8192 406.671 92.0628L406.532 91.658C399.722 97.224 391.5 99.9997 381.882 99.9997C375.525 99.9997 370.12 98.2721 365.673 94.8169ZM377.522 86.3378C379.885 88.0003 382.789 88.8244 386.241 88.8244C389.781 88.8244 393.19 88.1738 396.452 86.8727C399.722 85.5715 402.582 83.7066 405.032 81.285V70.2542C399.949 69.1771 395.267 68.6422 391.003 68.6422C386.19 68.6422 382.152 69.4952 378.883 71.2011C375.613 72.9071 373.982 75.5961 373.982 79.2754C373.982 82.3259 375.16 84.6824 377.522 86.3378Z"
+              fill="black"
+            />
+            <path d="M441.941 0H456.512V98.2507H441.941V0Z" fill="black" />
+            <path
+              d="M525.912 18.1723H494.452V4.0332H573.032V18.1651H541.572V98.2431H525.912V18.1723Z"
+              fill="black"
+            />
+            <path
+              d="M574.261 94.8169C569.813 91.3616 567.59 86.4968 567.59 80.2152C567.59 72.6758 570.45 67.1821 576.17 63.7268C581.89 60.2715 588.743 58.5439 596.731 58.5439C602.085 58.5439 607.717 59.1728 613.62 60.4306V58.1391C613.62 54.0116 612.121 50.6937 609.129 48.1781C606.13 45.6698 601.909 44.4121 596.46 44.4121C588.473 44.4121 580.661 46.0746 573.032 49.3925V36.2076C581.568 33.3379 589.921 31.8994 598.091 31.8994C607.622 31.8994 615.024 34.2342 620.291 38.8967C625.557 43.5591 628.19 50.6503 628.19 60.1631V83.3162C628.19 86.4606 629.822 88.0292 633.091 88.0292C634.181 88.0292 635.629 87.7618 637.451 87.2196V97.5854C634.722 98.6625 631.636 99.1974 628.19 99.1974C621.922 99.1974 617.614 96.8192 615.251 92.0628L615.112 91.658C608.302 97.224 600.088 99.9997 590.462 99.9997C584.113 99.9997 578.708 98.2721 574.261 94.8169ZM586.11 86.3378C588.473 88.0003 591.377 88.8244 594.829 88.8244C598.369 88.8244 601.778 88.1738 605.04 86.8727C608.31 85.5715 611.17 83.7066 613.62 81.285V70.2542C608.536 69.1771 603.862 68.6422 599.591 68.6422C594.778 68.6422 590.74 69.4952 587.471 71.2011C584.201 72.9071 582.57 75.5961 582.57 79.2754C582.57 82.3259 583.748 84.6824 586.11 86.3378Z"
+              fill="black"
+            />
+            <path d="M650.529 0H665.1V98.2507H650.529V0Z" fill="black" />
+            <path
+              d="M686.348 4.0332H700.918V59.4908H708.818L730.469 33.6486H747.087L721.077 65.2809L749.677 98.2576H732.926L708.547 71.3384H700.918V98.2576H686.348V4.0332Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <div class="header__nav">
+          <ul class="header-lang">
+            <li class="header-lang__item">
+              <a href="#" class="header-lang__link header-lang__link--active"
+                >EN</a
+              >
+            </li>
+            <li class="header-lang__item">
+              <a href="/de" class="header-lang__link">DE</a>
+            </li>
+          </ul>
+          <div class="header-btn-wrap">
+            <a href="#work" class="btn-nav-link">How it works</a>
+            <a href="#mission" class="btn-nav-link">About us</a>
+            <a href="#apply" class="btn-nav-link">Apply to participate</a>
+            <a href="login.html" class="btn-nav-link login">Login</a>
+            <a href="#create" class="btn-solid create_btn">Create school profile</a>
+          </div>
+
+
+          
+          <button id="burgerBtn" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- modal -->
+    <div class="modal_overlay">
+      
+    </div>
+    <div class="modal">
+      <div class="modal-close">
+        
+      </div>
+      <div class="modal-container sd-1">
+        <div class="modal-col ">
+          <p class="modal-text">
+            School information
+          </p>
+          <input type="text" class="modal_input" placeholder="School name">
+          <input type="text" class="modal_input" placeholder="Number of students">
+          <input type="text" class="modal_input" placeholder="Students’ age">
+          <input type="text" class="modal_input" placeholder="Specialty">
+          <input type="text" class="modal_input" placeholder="Founded in">
+        </div>
+        <div class="modal-col ml">
+          <p class="modal-text">
+            School logo
+          </p>
+          <div class="modal-upload">
+
+          </div>
+          <a href="" class="btn-border btn_upload">Upload</a>
+        </div>
+      </div>
+      <!-- model-container-2 -->
+      <div class="modal-container adrress">
+        <div class="modal-col ">
+          <p class="modal-text">
+            Adrress
+          </p>
+          <input type="text" class="modal_input" placeholder="Address">
+          <input type="text" class="modal_input" placeholder="City">
+          <input type="text" class="modal_input" placeholder="Zipcode">
+          <input type="text" class="modal_input" placeholder="Country">
+        </div>
+        <div class="modal-col ml">
+          <p class="modal-text">
+            Contact details
+          </p>
+          <input type="text" class="modal_input" placeholder="Phone number">
+          <input type="text" class="modal_input" placeholder="Phone number 2 (optional)">
+          <input type="text" class="modal_input" placeholder="Email address">
+          <input type="text" class="modal_input" placeholder="Website">
+          
+        </div>
+      </div>
+      <!-- model-container-2 -->
+
+
+
+      <!-- model-container-3 -->
+
+      <div class="modal-container">
+        <div class="modal-col description">
+          <p class="modal-text">
+            School description
+          </p>
+          <textarea  class="description" name="" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+        </div>
+      </div>
+      <!-- model-container-3 -->
+
+
+
+      <!-- model-container-4 -->
+      <div class="modal-container school-images">
+        <div class="modal-col modal-col_images">
+          <p class="modal-text">
+            School images
+          </p>
+          <div class="modal-upload images">
+
+          </div>
+          <a href="" class="btn-border btn_upload images">Upload</a>
+        </div>
+        <div class="modal-col ml images">
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+          <span class="images">
+            Up to 10 images
+          </span>
+        </div>
+      </div>
+
+
+      <!-- model-container-4 -->
+
+
+      <!-- model-container-5 -->
+      <div class="modal-container video">
+        <div class="modal-col video">
+          <p class="modal-text">
+            Video introduction
+          </p>
+          <div class="modal-upload video">
+
+          </div>
+        </div>
+          <div class="modal-row video">
+            <span>
+              File size may not exceed 500 MB
+              For the best result, the video aspect
+              ratio should be 16:9.
+            </span>
+            <a href="" class="btn-border btn_upload video">Upload</a>
+          </div>
+        
+      </div>
+
+
+      <!-- model-container-5 -->
+
+
+
+      <!-- model-container-6 -->
+      <div class="modal-container admin">
+        <div class="modal-col admin">
+          <p class="modal-text">
+            School profile admin
+          </p>
+          <div class="modal-col_admin-input">
+            <input type="text" class="modal_input" placeholder="Name">
+            <input type="text" class="modal_input" placeholder="Email address">
+          </div>
+          <div class="modal-col_admin-input">
+            <input type="text" class="modal_input" placeholder="Password">
+            <input type="text" class="modal_input" placeholder="Confirm password">
+          </div>
+          <div class="wrapper-btn_admin">
+            <a href="" class="btn-solid btn_upload admin">Create our school profile</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- model-container-6 -->
+
+
+    </div>
+    <!-- modal -->
+    
+    <div id="top" class="main-screen">
+      <div class="main-screen__inner">
+        <div class="real-talk-block">
+          <h1 class="real-talk-block__title">
+            <strong>A whole new world</strong> <br />in your classroom
+          </h1>
+          <p class="real-talk-block__paragraph">
+            Real Talk is a FREE remote exchange program that provides<br />
+            young students from the US, Germany, Austria, Switzerland,<br />
+            and Liechtenstein with opportunities to practice one another’s<br />
+            languages, build relationships, and engage in meaningful,<br />
+            intercultural exchange.
+          </p>
+        </div>
+        <a href="#guten_tag" class="mouse-scroll">
+          <span class="mouse-scroll__disc"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform eight-transform mobile">
+      <div class="media-information__inner">
+        <div class="real-talk-block">
+          <h1 class="real-talk-block__title">
+            <strong>A whole new world</strong> <br />in your classroom
+          </h1>
+        </div>
+        <div class="media-information-wrap-it">
+          <div class="media-information-image">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img14.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img15.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="real-talk-block">
+          <p class="real-talk-block__paragraph">
+            Real Talk is a FREE remote exchange<br class="m-br" />
+            program that provides<br />
+            young students<br class="m-br" />
+            from the US, Germany, Austria,<br class="m-br" />
+            Switzerland,<br />
+            and Liechtenstein<br class="m-br" />
+            with opportunities to practice<br class="m-br" />
+            one another’s<br />
+            languages, build<br class="m-br" />
+            relationships, and engage in meaningful,<br /><br class="m-br" />
+            intercultural exchange.
+          </p>
+          <a href="#apply" class="btn-solid btn-participate"
+            >Apply to participate</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="guten_tag"
+      class="media-information animation-transform one-transform"
+    >
+      <div class="media-information__inner">
+        <div class="media-information__title-s33">
+          Guten Tag, Y'all!
+          <div class="title-smyle"><img src="img/ezgif.gif" alt="" /></div>
+        </div>
+        <div class="media-information-wrap-it">
+          <div class="media-information-image plane-left">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img01.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img02.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-text__title">Peer to Peer</div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img01.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Through cultural immersion<br class="m-br" />
+              and diffusion, Real Talk<br />
+              enables young<br class="m-br" />
+              people separated by the vast ocean<br /><br class="m-br" />
+              to meet each other, teach each other,<br class="m-br" />
+              exchange their<br />
+              views with each other,<br class="m-br" />
+              and better understand each other.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform two-transform">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">Why Real Talk?</div>
+            <div class="media-information-image__alone mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img03.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              First of all, it’s <strong>free</strong>. So, it doesn’t get<br
+                class="m-br"
+              />
+              better than that.
+              <span class="title-smyle-paragraph"
+                ><img src="img/winking-emoji.webp" alt="" /></span
+              ><br />
+              <span class="free-mobile mobile">
+                <span class="free-block__title">- Like, free free?</span>
+                <span class="free-block__title">
+                  - Yes, absolutely<br />
+                  and <strong>FOREVER FREE</strong>.
+                </span>
+              </span>
+              <span class="p-separat"></span>
+              Second, we give German-speaking<br class="m-br" />
+              students<br />
+              the opportunity to actively<br class="m-br" />
+              practice spoken English<br />
+              with native<br class="m-br" />
+              English speakers.<br />
+              <span class="p-separat"></span>
+              Third, it’s a chance for American<br class="m-br" />
+              students to learn more<br />
+              about Europe<br class="m-br" />
+              and the German language,<br class="m-br" />
+              which opens up<br />
+              a world of opportunities<br class="m-br" />
+              for them.<br />
+              <span class="p-separat"></span>
+              And most importantly, it enables<br class="m-br" />
+              students to broaden<br />
+              their horizons<br class="m-br" />
+              and gain intercultural competence.
+            </p>
+          </div>
+          <div class="media-information-image">
+            <div class="media-information-image__alone">
+              <div class="media-information-image__img">
+                <img src="img/content-img03.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="free-block">
+      <div class="free-block__inner">
+        <div class="free-block__logo">
+          <img src="img/free.svg" alt="100% free!" />
+        </div>
+        <div class="free-block__title">And all of this for free!</div>
+        <div class="free-block__title">- Like, free free?</div>
+        <div class="free-block__title">
+          - Yes, absolutely and <strong>FOREVER FREE</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-one">
+      <div class="slider-full-one__wrap">
+        <div class="slider-full-one__item panel">
+          <div class="slider-full-one__img">
+            <div class="slider-full-one__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img01.jpg) no-repeat center;
+                "
+                class="slider-full-one__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-three">
+      <div class="slider-full-three__wrap">
+        <div class="slider-full-three__item panel">
+          <div class="slider-full-three__img">
+            <div class="slider-full-three__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img02.jpg) no-repeat center;
+                "
+                class="slider-full-three__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-four">
+      <div class="slider-full-four__wrap">
+        <div class="slider-full-four__item panel">
+          <div class="slider-full-four__img">
+            <div class="slider-full-four__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img04.jpg) no-repeat center;
+                "
+                class="slider-full-four__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="media-information animation-transform three-transform pt-dis mobile-a"
+    >
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">
+              Bringing abroad home
+            </div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img04.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              This cultural and linguistic exchange<br class="m-br" />
+              bridges the gap<br />
+              between young people<br class="m-br" />
+              and enriches their minds<br />
+              beyond<br class="m-br" />
+              something their parents
+              <span class="h-mobile">and grandparents</span><br />
+              were able<br class="m-br" />
+              to experience.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img05.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              The program serves as a bridge<br class="m-br" />
+              across the ocean,<br />
+              especially to those<br class="m-br" />
+              who cannot afford to travel<br />
+              by plane<br class="m-br" />
+              and don’t have the opportunity<br class="m-br" />
+              to socialize<br />
+              with a person<br class="m-br" />
+              from another continent.<br />
+              <span class="p-separat"></span>
+              Now,
+              <span class="decoration-line">thanks to Real Talk, they do.</span>
+            </p>
+            <br />
+            <div class="media-information-text__btn">
+              <a href="#apply" class="btn-solid btn-participate mobile"
+                >Apply to participate</a
+              >
+            </div>
+          </div>
+          <div class="media-information-image plane-right">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img05.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img04.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform four-transform">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-it">
+          <div class="media-information-image plane-left">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img06.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img07.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-text__title">
+              Paving the way today
+            </div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img07.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Many colleges have foreign language<br class="m-br" />
+              admission<br />
+              requirements,<br class="m-br" />
+              so understanding German and English<br /><br class="m-br" />
+              can increase the chances<br class="m-br" />
+              of being accepted.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img06.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Besides, mastery of one or more foreign<br class="m-br" />
+              languages<br />
+              gives students a competitive<br class="m-br" />
+              edge in career choices<br />
+              and prepares them<br class="m-br" />
+              for success in the global economy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform five-transform mobile-a">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">Liebling sibling</div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img09.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              <span class="decoration-line"
+                >English is a Germanic language.</span
+              ><br />
+              <span class="p-separat-m"></span>
+              <span class="p-separat"></span>
+              One study says that about 130,000<br class="m-br" />
+              words in<br />
+              modern English derive from<br class="m-br" />
+              Germanic languages. <br />
+              In fact,<br class="m-br" />
+              about 60% of most commonly used<br /><br class="m-br" />
+              words in English have German roots.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img08.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Thanks to the unique relationship<br class="m-br" />
+              between<br />
+              these two languages, speaking<br class="m-br" />
+              one of them<br />
+              makes it much easier<br class="m-br" />
+              to learn the other one.
+            </p>
+          </div>
+          <div class="media-information-image plane-right">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img09.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img08.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform six-transform pt-add">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-it">
+          <div class="media-information-image plane-left">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img10.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img11.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-text__title">Beyond a textbook</div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img10.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Sure, students can learn a new language<br class="m-br" />
+              from a textbook<br />
+              or an app,<br class="m-br" />
+              but participating in an international<br /><br class="m-br" />
+              exchange program lets young people<br class="m-br" />
+              learn natural and<br />
+              authentic<br class="m-br" />
+              language firsthand.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img11.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              <strong>Real Talk</strong> gives students a <strong>real</strong
+              ><br class="m-br" />
+              opportunity to learn<br />
+              and actively<br class="m-br" />
+              practice both formal and informal<br class="m-br" />
+              language,<br />
+              which helps them converse<br class="m-br" />
+              proficiently in <strong>real</strong>-world<br />
+              situations<br class="m-br" />
+              in <strong>real</strong> time with <strong>real</strong> native
+              speakers.
+            </p>
+            <div class="media-information-text__btn">
+              <a href="#apply" class="btn-solid btn-participate mobile"
+                >Apply to participate</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform seven-transform">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">
+              Practice makes perfect
+            </div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img13.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Numerous studies show that students<br class="m-br" />
+              fail<br />
+              to fully grasp foreign languages<br class="m-br" />
+              when they<br />
+              don’t have anyone<br class="m-br" />
+              to practice them with.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img12.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              And what can be better than<br class="m-br" />
+              the opportunity<br />
+              to improve fluency<br class="m-br" />
+              by engaging in full-on,<br />
+              dynamic<br class="m-br" />
+              conversations with native speakers<br /><br class="m-br" />
+              of the foreign language students<br class="m-br" />
+              aim to learn?
+            </p>
+          </div>
+          <div class="media-information-image plane-right">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img13.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img12.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform eight-transform pt-add">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-it">
+          <div class="media-information-image">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img14.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img15.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-text__title">Prepped to lead</div>
+            <p class="media-information-text__paragraph">
+              <span class="p-separat"></span>
+              As our world has become more interconnected and<br />
+              interdependent, so has the need to speak a foreign<br />
+              language and to develop core intercultural competence. <br />
+              <span class="p-separat"></span>
+              However, few young people today have the opportunity<br />
+              to practice studied languages with native speakers and<br />
+              to have a meaningful cultural and academic exchange.<br />
+              <span class="p-separat"></span>
+              Real Talk has been developed to help students become<br />
+              global citizens who are both culturally and linguistically<br />
+              prepared to function in this Brave New World.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information pt-add nine-transform animation-transform">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">Diverse & Inclusive</div>
+            <p class="media-information-text__paragraph">
+              Historically, many students have been excluded<br />
+              from reaping the benefits of educational exchange<br />
+              programs due to socio-economic barriers. Many<br />
+              current programs divide classes of students<br />
+              because they are private, exclusive, and elusive.<br />
+              <span class="p-separat"></span>
+              But not us! We want everyone to join in<br />
+              the conversation so they can benefit from rich<br />
+              experiences and engaging cultural exchanges,<br />
+              while building their capacity to deal effectively<br />
+              with diversity and difference.
+            </p>
+          </div>
+          <div class="media-information-image">
+            <div class="media-information-image__animation">
+              <div class="media-information-image__img">
+                <img
+                  src="img/jump_under.webp"
+                  alt=""
+                  class="media-information-image__img--gif"
+                />
+              </div>
+            </div>
+            <div class="media-information-image__alone">
+              <div class="media-information-image__img">
+                <img src="img/content-img16.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-two">
+      <div class="slider-full-two__wrap">
+        <div class="slider-full-two__item panel">
+          <div class="slider-full-two__img">
+            <div class="slider-full-two__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img05.jpg) no-repeat center;
+                "
+                class="slider-full-two__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-five">
+      <div class="slider-full-five__wrap">
+        <div class="slider-full-five__item panel">
+          <div class="slider-full-five__img">
+            <div class="slider-full-five__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img06.jpg) no-repeat center;
+                "
+                class="slider-full-five__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-full-six">
+      <div class="slider-full-six__wrap">
+        <div class="slider-full-six__item panel">
+          <div class="slider-full-six__img">
+            <div class="slider-full-six__img-wrap">
+              <div
+                style="
+                  background: url(img/media/slider-img07.jpg) no-repeat center;
+                "
+                class="slider-full-six__img-wrap--img"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-informations">
+      <div class="more-informations-head">
+        <div class="more-informations-head__title">
+          Need more<br class="m-br" />
+          convincing?
+        </div>
+        <p class="more-informations-head__paragraph show-br">
+          Here are many more reasons why<br class="m-br" />
+          you should participate in Real Talk.<br /><br class="m-br" />
+          Click below if you’re one of those<br class="m-br" />
+          who like to read.
+        </p>
+        <a href="#" class="btn-border btn-border--content" id="read_more"
+          >Read more</a
+        >
+      </div>
+      <div class="more-informations-body" style="display: none">
+        <div class="more-informations-body__title">A whole new world</div>
+        <ul class="more-informations__items">
+          <li class="more-informations__item">
+            Participation in a virtual exchange program<br class="m-br" />
+            offers students<br />
+            an opportunity they might<br class="m-br" />
+            not get otherwise. Unfortunately,<br /><br class="m-br" />
+            despite increasing interdependence,<br class="m-br" />
+            less than 1% of young<br />
+            people participate<br class="m-br" />
+            in international exchange programs.<br /><br class="m-br" />
+            More surprisingly, almost 30%<br class="m-br" />
+            of Americans have never<br />
+            traveled<br class="m-br" />
+            outside of their country.
+          </li>
+          <li class="more-informations__item">
+            Cross-cultural education expands one’s<br class="m-br" />
+            worldview,<br />
+            creates more positive attitudes,<br class="m-br" />
+            eliminates prejudices,<br />
+            and tears down<br class="m-br" />
+            the barriers that exist between people.
+          </li>
+          <li class="more-informations__item">
+            Exposure to diverse intercultural<br class="m-br" />
+            perspectives enables<br />
+            students to gain<br class="m-br" />
+            a more profound understanding<br /><br class="m-br" />
+            of their own culture and its idiosyncrasies.<br class="m-br" />
+            It also allows<br />
+            them to participate<br class="m-br" />
+            more effectively and responsibly<br /><br class="m-br" />
+            in a multicultural world.
+          </li>
+        </ul>
+        <div class="more-informations-body__title">Leaders of tomorrow</div>
+        <ul class="more-informations__items">
+          <li class="more-informations__item">
+            Intercultural exchange encourages students<br class="m-br" />
+            to respect<br />
+            other people as it fosters<br class="m-br" />
+            an understanding of another<br />
+            culture,<br class="m-br" />
+            different social norms,<br class="m-br" />
+            and, most importantly,<br />
+            such concepts<br class="m-br" />
+            as diversity and inclusivity.
+          </li>
+          <li class="more-informations__item">
+            Unlike the students of yesteryear,<br class="m-br" />
+            future generations<br />
+            will have to face<br class="m-br" />
+            and address major global issues together.<br /><br class="m-br" />
+            This requires intercultural competence,<br class="m-br" />
+            collaboration,<br />
+            and communication<br class="m-br" />
+            across cultures.
+          </li>
+          <li class="more-informations__item">
+            Real Talk is one of the best ways to prepare<br class="m-br" />
+            young people<br />
+            for such a world and to build<br class="m-br" />
+            the leaders of tomorrow, today.
+          </li>
+        </ul>
+        <div class="more-informations-body__lang">
+          <a href="#" class="btn-border btn-border--content btn_lang_en"
+            >Benefits of English</a
+          >
+          <a href="#" class="btn-solid btn-solid--content btn_lang_de"
+            >Benefits of German</a
+          >
+        </div>
+        <div
+          class="more-informations-body__lang mobile-lang mobile-lang--first"
+        >
+          <a href="#" class="btn-border btn-border--content btn_lang_en"
+            >Benefits of English</a
+          >
+        </div>
+
+        <div class="more-informations-body--lang_en" style="display: none">
+          <div class="more-informations-body__title">
+            Benefits of<br class="m-br" />
+            the English language
+          </div>
+          <ul class="more-informations__items">
+            <li class="more-informations__item">
+              <strong>The gateway to global success:</strong><br /><br
+                class="m-br"
+              />
+              Approximately 400 million people<br class="m-br" />
+              around the world<br />
+              speak English as their<br class="m-br" />
+              first language. What’s more,<br />
+              English<br class="m-br" />
+              is the “second language” for the rest<br class="m-br" />
+              of the world.<br />
+              One in five people<br class="m-br" />
+              on the planet speaks or understands<br /><br class="m-br" />
+              at least a little bit of English. Not only that,<br
+                class="m-br"
+              />
+              but English<br />
+              is listed as one of the official<br class="m-br" />
+              languages in more than<br />
+              a quarter<br class="m-br" />
+              of the countries in the world. This makes<br class="m-br" />
+              English<br />
+              one of the most useful languages<br class="m-br" />
+              you can learn.
+            </li>
+            <li class="more-informations__item">
+              <strong
+                >The gateway to a world-class higher<br class="m-br" />
+                education:</strong
+              ><br />
+              Many students from<br class="m-br" />
+              around the world desire to earn<br /><br class="m-br" />
+              an advanced degree from one of the 6,000<br class="m-br" />
+              colleges and<br />
+              universities in the US<br class="m-br" />
+              or those from other English-speaking<br /><br class="m-br" />
+              countries. In addition to the vast array<br class="m-br" />
+              of academic and career<br />
+              development<br class="m-br" />
+              opportunities, obtaining an education<br class="m-br" />
+              abroad<br />
+              also allows for personal growth.<br class="m-br" />
+              It gives students the chance<br />
+              to experience<br class="m-br" />
+              a new culture, expand their network,<br class="m-br" />
+              and gain<br />
+              a global perspective.
+            </li>
+            <li class="more-informations__item">
+              <strong>The gateway to a successful career:</strong><br /><br
+                class="m-br"
+              />
+              In today’s society, most employers expect<br class="m-br" />
+              employees to be able<br /><br class="m-br" />
+              to speak fluent English. This may not<br class="m-br" />
+              be fair, but it is the reality.<br />
+              Effective<br class="m-br" />
+              and confident communication in English<br class="m-br" />
+              is greatly<br />
+              appreciated in the international<br class="m-br" />
+              marketplace and may just give you<br /><br class="m-br" />
+              the upper hand to get the job<br class="m-br" />
+              of your dreams.
+            </li>
+            <li class="more-informations__item">
+              <strong>The language of the media:</strong><br />
+              English content<br class="m-br" />
+              dominates the internet, and many of<br class="m-br" />
+              the world’s<br />
+              biggest media outlets,<br class="m-br" />
+              including television, movies, newspapers,<br /><br class="m-br" />
+              magazines, and radio. Thus, knowing<br class="m-br" />
+              English grants you more<br />
+              accessto the world<br class="m-br" />
+              without having to rely on translations,<br /><br class="m-br" />
+              which are rarely spot on.
+            </li>
+          </ul>
+        </div>
+        <div class="more-informations-body__lang mobile-lang">
+          <a href="#" class="btn-solid btn-solid--content btn_lang_de"
+            >Benefits of German</a
+          >
+        </div>
+        <div class="more-informations-body--lang_de" style="display: none">
+          <div class="more-informations-body__title">
+            Benefits of<br class="m-br" />
+            the German language
+          </div>
+          <ul class="more-informations__items">
+            <li class="more-informations__item">
+              <strong
+                >The most widely spoken native language<br class="m-br" />
+                in Europe:</strong
+              ><br />
+              Even though English is<br class="m-br" />
+              the most spoken language in the EU,<br /><br class="m-br" />
+              German is number one on the continent<br class="m-br" />
+              when it comes<br />
+              to languages spoken<br class="m-br" />
+              by native speakers. The German<br />
+              language<br class="m-br" />
+              has also been given official status<br class="m-br" />
+              in a number<br />
+              of countries and even has<br class="m-br" />
+              a minority language status<br />
+              in countries<br class="m-br" />
+              spread far and wide around the world,<br /><br class="m-br" />
+              for instance, in Brazil, Namibia,<br class="m-br" />
+              and Kazakhstan.
+            </li>
+            <li class="more-informations__item">
+              <strong
+                >German is the gateway to a world-class<br class="m-br" />
+                higher education:</strong
+              ><br />
+              Germany has more than<br class="m-br" />
+              380 universities with 17,000<br />
+              study<br class="m-br" />
+              programs that rank among the best<br class="m-br" />
+              in the world.<br />
+              Year after year, Germany ranks<br class="m-br" />
+              as one of the most popular<br />
+              destinations<br class="m-br" />
+              for international students, with more than<br /><br
+                class="m-br"
+              />
+              a quarter million foreign students being<br class="m-br" />
+              enrolled<br />
+              in German schools. What’s more,<br class="m-br" />
+              the German system<br />
+              for higher education<br class="m-br" />
+              boasts a number of universities<br />
+              with very<br class="m-br" />
+              low ($350 per semester) or nonexistent<br /><br class="m-br" />
+              tuition fees. And even the $350<br class="m-br" />
+              per semester that you’re<br />
+              charged is actually<br class="m-br" />
+              for your public transportation pass.<br /><br class="m-br" />
+              So, in essence, you go to college for free.
+            </li>
+            <li class="more-informations__item">
+              <strong>Germany is a go-to destination:</strong><br />
+              Germany<br class="m-br" />
+              is the second most popular destination<br class="m-br" />
+              for expats<br />
+              in the world. In 2019,<br class="m-br" />
+              almost two million people moved<br /><br class="m-br" />
+              to Germany, and around 400,000<br class="m-br" />
+              of these people were students.
+            </li>
+            <li class="more-informations__item">
+              <strong>Germany is an economic powerhouse:</strong><br /><br
+                class="m-br"
+              />
+              Germany is the largest economy in the EU,<br class="m-br" />
+              with a gross<br />
+              domestic product (GDP) of 3.73<br class="m-br" />
+              trillion USD, which is the 4th<br />
+              largest<br class="m-br" />
+              worldwide. The country is always<br class="m-br" />
+              on the front line<br />
+              of new technologies<br class="m-br" />
+              and is home to numerous international<br /><br class="m-br" />
+              corporations, such as BMW, Volkswagen,<br class="m-br" />
+              Adidas, Siemens,<br />
+              Bosch, Daimler, Allianz,<br class="m-br" />
+              and Lufthansa. Communicating<br />
+              effectively<br class="m-br" />
+              in German, along with a college degree,<br class="m-br" />
+              may help<br />
+              you get your foot in the door<br class="m-br" />
+              of one of these big businesses.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-work" id="work">
+      <div class="how-work__inner">
+        <div class="how-work__title">How does it work?</div>
+        <div class="how-work-step">
+          <div class="how-work-step__item">
+            <div class="how-work-step__head">1</div>
+            <p class="how-work-step__paragraph">
+              First, you fill out the form below<br /><br class="m-br" />
+              to reserve a spot so you can partner<br /><br class="m-br" />
+              with other schools across the ocean.<br /><br class="m-br" />
+              We carefully review the submitted<br /><br class="m-br" />
+              information.
+            </p>
+            <div class="how-work-step__icon">
+              <img src="img/i-step-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="how-work-step__item">
+            <div class="how-work-step__head">2</div>
+            <p class="how-work-step__paragraph">
+              Then we match your school or class<br /><br class="m-br" />
+              with a partner school or class from<br /><br class="m-br" />
+              the US or Europe based on grade<br /><br class="m-br" />
+              level, students’ academic interests,<br /><br class="m-br" />
+              and their language proficiency.
+            </p>
+            <div class="how-work-step__icon">
+              <img src="img/i-step-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="how-work-step__item">
+            <div class="how-work-step__head">3</div>
+            <p class="how-work-step__paragraph">
+              Once matched, we send you your<br /><br class="m-br" />
+              partner school’s contact information<br /><br class="m-br" />
+              and further instructions, along with<br /><br class="m-br" />
+              an invitation for your school or class<br /><br class="m-br" />
+              to join Real Talk.
+            </p>
+            <div class="how-work-step__icon">
+              <img src="img/i-step-3.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <p class="more-informations-head__paragraph">
+          And ta-da!<img
+            src="img/i-cornet.svg"
+            alt=""
+            class="content-icon-cornet"
+          />
+          Thanks to structured and<br class="m-br" />
+          active collaboration, students interact<br /><br class="m-br" />
+          through video chats, interactive lessons,<br class="m-br" />
+          webinars, and games using existing digital<br /><br class="m-br" />
+          platforms, such as Zoom, BigBlueButton, or<br class="m-br" />
+          Google Meet.
+          <img src="img/i-mon-p.svg" alt="" class="content-icon-mon" />
+        </p>
+        <div class="media-information-text__btn">
+          <a href="#apply" class="btn-solid btn-participate mobile"
+            >Apply to participate</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-it media-information-wrap-it--long">
+          <div
+            class="media-information-image plane-left animation-transform ten-transform"
+          >
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img18.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img19.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-text__title">
+              Is Real Talk only<br />
+              for language classes?
+            </div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img18.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              Absolutely not.<br class="m-br" />
+              Real Talk is a cross-curricular program<br /><br class="m-br" />
+              that can be used in any class: language,<br class="m-br" />
+              math, social<br />
+              studies, English Language<br class="m-br" />
+              Arts (ELA), and others.
+            </p>
+            <div class="media-information-image__two mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img19.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              “How?” you might ask. It’s simple:<br class="m-br" />
+              Students can practice<br />
+              and learn<br class="m-br" />
+              each other’s languages while also<br class="m-br" />
+              mastering<br />
+              the academic content laid<br class="m-br" />
+              out in their grade<br />
+              level curriculums.
+            </p>
+            <div class="text-drop-down">
+              <a href="#" class="text-drop-down__btn">Case examples</a>
+              <div class="text-drop-down__content" style="display: none">
+                <p class="text-drop-down__paragraph">
+                  <strong>ELA:</strong> If your class is studying Romeo and
+                  Juliet by Shakespeare,<br />
+                  your class can be partnered with an exchange class that is<br />
+                  studying Romeo and Juliet too. Or, if your class is
+                  studying<br />
+                  the etymology of words, German and American students<br />
+                  can work together to understand where the studied words<br />
+                  were derived and how they changed over time.
+                </p>
+                <p class="text-drop-down__paragraph">
+                  <strong>MATH:</strong> If your class is studying the
+                  Pythagorean theorem,<br />
+                  German and American students can work together to find<br />
+                  the relation between the sides of a right-angled triangle.<br />
+                  Then they can use mathematical equations to measure<br />
+                  the angles of the Washington Monument and<br />
+                  the Brandenburg Gate.
+                </p>
+                <p class="text-drop-down__paragraph">
+                  <strong>SOCIAL STUDIES:</strong> If your class is studying the
+                  Holocaust,<br />
+                  German and American students can work together to discuss<br />
+                  certain events that led to this human tragedy.
+                </p>
+                <p class="text-drop-down__paragraph">
+                  <strong>SCIENCE:</strong> If your class is studying Kepler's
+                  laws of planetary<br />
+                  motion, students can work together to talk about<br />
+                  Johannes Kepler.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information animation-transform eleven-transform pt-dis">
+      <div class="media-information__inner">
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">How to be in sync?</div>
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img21.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              We encourage all the teachers<br class="m-br" />
+              who participate<br />
+              in our remote exchange<br class="m-br" />
+              program to work together<br /><br class="m-br" />
+              during the lesson planning process<br class="m-br" />
+              to ensure<br />
+              that each lesson meets<br class="m-br" />
+              targeted goals and that<br />
+              the student<br class="m-br" />
+              materials align with the academic<br /><br class="m-br" />
+              standards required in their<br class="m-br" />
+              independent countries.
+            </p>
+          </div>
+          <div class="media-information-image">
+            <div class="media-information-image__one">
+              <div class="media-information-image__img">
+                <img src="img/content-img21.jpg" alt="" />
+              </div>
+            </div>
+            <div class="media-information-image__two">
+              <div class="media-information-image__img">
+                <img src="img/content-img20.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-personal" id="apply">
+      <div class="form-personal__inner">
+        <div class="form-personal__title">
+          Your first-class ticket<br class="m-br" />
+          abroad is here
+        </div>
+        <div class="form-personal__wrap">
+          <div class="form-personal-tabs">
+            <ul class="form-personal-tabs__items">
+              <li class="form-personal-tabs__item">
+                <span
+                  class="form-personal-tabs__step form-personal-tabs__step--active"
+                  id="form-personal-tabs__step-1"
+                  >School information</span
+                >
+              </li>
+              <li class="form-personal-tabs__item">
+                <span
+                  class="form-personal-tabs__step"
+                  id="form-personal-tabs__step-2"
+                  >Class information</span
+                >
+              </li>
+              <li class="form-personal-tabs__item">
+                <span
+                  class="form-personal-tabs__step"
+                  id="form-personal-tabs__step-3"
+                  >Language proficiency</span
+                >
+              </li>
+              <li class="form-personal-tabs__item">
+                <span
+                  class="form-personal-tabs__step"
+                  id="form-personal-tabs__step-4"
+                  >Availability</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="form-personal-fill">
+            <div class="form-personal-fill__wrap">
+              <div class="form-personal-fill-gif__left">
+                <div class="form-personal-fill-gif">
+                  <img src="img/jZWNgv.webp" alt="" />
+                </div>
+              </div>
+              <div class="form-personal-fill-gif__right">
+                <div class="form-personal-fill-gif">
+                  <img src="img/jZWNgv_1.webp" alt="" />
+                </div>
+              </div>
+              <form
+                id="form-personal-fill__form"
+                class="form-personal-fill__form"
+                action=""
+                method="post"
+              >
+                <input type="hidden" name="codeFirst" value="" />
+                <div
+                  class="form-personal-fill-step-1 form-personal-fill__form--active"
+                  id="form-personal-fill-step-1"
+                >
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="school_name"
+                        name="school_name"
+                        placeholder="School name"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="school_address"
+                        name="school_address"
+                        placeholder="School address"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="City"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="State"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="country"
+                        name="country"
+                        placeholder="Country"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="email_address"
+                        name="email_address"
+                        placeholder="Email address"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        id="administrator_name"
+                        name="administrator_name"
+                        placeholder="Administrator’s name"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__footer">
+                    <a
+                      href="#"
+                      class="btn-border form-personal-fill__btn-next"
+                      id="form-personal-fill-step-1__next"
+                      >Next</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="form-personal-fill-step-2"
+                  id="form-personal-fill-step-2"
+                >
+                  <div class="form-personal-fill__title">
+                    Grade level of students
+                  </div>
+                  <div class="form-personal-fill__col-4">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 6
+                        <input
+                          type="checkbox"
+                          name="grade_6"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 7
+                        <input
+                          type="checkbox"
+                          name="grade_7"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 8
+                        <input
+                          type="checkbox"
+                          name="grade_8"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 9
+                        <input
+                          type="checkbox"
+                          name="grade_9"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 10
+                        <input
+                          type="checkbox"
+                          name="grade_10"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 11
+                        <input
+                          type="checkbox"
+                          name="grade_11"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 12
+                        <input
+                          type="checkbox"
+                          name="grade_12"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Grade 13
+                        <input
+                          type="checkbox"
+                          name="grade_13"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <input
+                        type="text"
+                        name="CourseTitle[]"
+                        value=""
+                        placeholder="Course Title"
+                        id="course-title-input"
+                        class="form-personal-fill__input-text"
+                      />
+                    </label>
+                    <a
+                      href="#"
+                      class="form-personal-fill__add-btn"
+                      id="form-personal-fill__add-courses-btn"
+                      >+ Add course</a
+                    >
+                  </div>
+                  <div class="form-personal-fill__footer">
+                    <a
+                      href="#"
+                      class="btn-border form-personal-fill__btn-next"
+                      id="form-personal-fill-step-2__next"
+                      >Next</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="form-personal-fill-step-3"
+                  id="form-personal-fill-step-3"
+                >
+                  <div class="form-personal-fill__title">
+                    Language proficiency in English
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >A1:</span
+                        >
+                        Beginner
+                        <input
+                          type="checkbox"
+                          name="a1Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >A2:</span
+                        >
+                        Elementary
+                        <input
+                          type="checkbox"
+                          name="a2Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >B1:</span
+                        >
+                        Intermediate
+                        <input
+                          type="checkbox"
+                          name="b1Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >B2:</span
+                        >
+                        Upper int<span class="mobile-dotted">.</span
+                        ><span class="h-mobile">ermediate</span>
+                        <input
+                          type="checkbox"
+                          name="b2Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >C1:</span
+                        >
+                        Advanced
+                        <input
+                          type="checkbox"
+                          name="c1Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >C2:</span
+                        >
+                        Near-native
+                        <input
+                          type="checkbox"
+                          name="c2Eng"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Native speaker
+                        <input
+                          type="checkbox"
+                          name="nativeSpeakerEnglish"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div
+                    class="form-personal-fill__title form-personal-fill__title--pt"
+                  >
+                    Language proficiency in German
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >A1:</span
+                        >
+                        Beginner
+                        <input
+                          type="checkbox"
+                          name="a1Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >A2:</span
+                        >
+                        Elementary
+                        <input
+                          type="checkbox"
+                          name="a2Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >B1:</span
+                        >
+                        Intermediate
+                        <input
+                          type="checkbox"
+                          name="b1Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >B2:</span
+                        >
+                        Upper int<span class="mobile-dotted">.</span
+                        ><span class="h-mobile">ermediate</span>
+                        <input
+                          type="checkbox"
+                          name="b2Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-2">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >C1:</span
+                        >
+                        Advanced
+                        <input
+                          type="checkbox"
+                          name="c1Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        <span class="form-personal-fill__checkbox-level"
+                          >C2:</span
+                        >
+                        Near-native
+                        <input
+                          type="checkbox"
+                          name="c2Ger"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <div class="form-personal-fill__item-checkbox">
+                        Native speaker
+                        <input
+                          type="checkbox"
+                          name="nativeSpeakerGerman"
+                          class="form-personal-fill__input-checkbox"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__footer">
+                    <a
+                      href="#"
+                      class="btn-border form-personal-fill__btn-next"
+                      id="form-personal-fill-step-3__next"
+                      >Next</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="form-personal-fill-step-4"
+                  id="form-personal-fill-step-4"
+                >
+                  <div class="form-personal-fill__title">Course schedule</div>
+                  <div class="form-personal-fill-schedule">
+                    <table class="form-personal-fill-schedule__table">
+                      <tr class="form-personal-fill-schedule__tr">
+                        <th class="form-personal-fill-schedule__th"></th>
+                        <th class="form-personal-fill-schedule__th">Mon</th>
+                        <th class="form-personal-fill-schedule__th">Tue</th>
+                        <th class="form-personal-fill-schedule__th">Wed</th>
+                        <th class="form-personal-fill-schedule__th">Thu</th>
+                        <th class="form-personal-fill-schedule__th">Fri</th>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          08:00 - 09:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="08:00 - 09:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="08:00 - 09:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="08:00 - 09:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="08:00 - 09:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="08:00 - 09:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          09:00 - 10:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="09:00 - 10:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="09:00 - 10:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="09:00 - 10:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="09:00 - 10:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="09:00 - 10:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          10:00 - 11:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="10:00 - 11:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="10:00 - 11:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="10:00 - 11:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="10:00 - 11:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="10:00 - 11:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          11:00 - 12:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="11:00 - 12:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="11:00 - 12:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="11:00 - 12:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="11:00 - 12:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="11:00 - 12:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          12:00 - 13:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="12:00 - 13:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="12:00 - 13:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="12:00 - 13:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="12:00 - 13:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="12:00 - 13:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          13:00 - 14:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="13:00 - 14:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="13:00 - 14:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="13:00 - 14:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="13:00 - 14:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="13:00 - 14:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          14:00 - 15:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="14:00 - 15:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="14:00 - 15:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="14:00 - 15:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="14:00 - 15:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="14:00 - 15:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          15:00 - 16:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="15:00 - 16:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="15:00 - 16:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="15:00 - 16:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="15:00 - 16:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="15:00 - 16:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          16:00 - 17:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="16:00 - 17:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="16:00 - 17:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="16:00 - 17:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="16:00 - 17:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="16:00 - 17:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="form-personal-fill-schedule__tr">
+                        <td class="form-personal-fill-schedule__td">
+                          17:00 - 18:00
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Mon[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="17:00 - 18:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Tue[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="17:00 - 18:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Wed[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="17:00 - 18:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Thu[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="17:00 - 18:00"
+                            />
+                          </label>
+                        </td>
+                        <td class="form-personal-fill-schedule__td">
+                          <label class="form-personal-fill-schedule-checkbox">
+                            <input
+                              type="checkbox"
+                              name="Fri[]"
+                              class="form-personal-fill-schedule__input-checkbox"
+                              value="17:00 - 18:00"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="form-personal-fill__col-1">
+                    <label class="form-personal-fill__item">
+                      <textarea
+                        name="additionalInformation"
+                        class="form-personal-fill__item-textarea"
+                        placeholder="Additional information"
+                      ></textarea>
+                    </label>
+                  </div>
+                  <div class="form-personal-fill__footer">
+                    <input
+                      type="submit"
+                      name="submit1"
+                      value="Send"
+                      class="btn-border form-personal-fill__btn-send"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-information media-information-text-b" id="mission">
+      <div class="media-information__inner">
+        <div class="mobile">
+          <div class="media-information-text__title">On a mission</div>
+          <div class="office-people-b mobile">
+            <div class="office-people-b__wrap">
+              <video
+                src="img/media/office_people.webm"
+                muted=""
+                loop=""
+                autoplay=""
+                class="office-people-b__video"
+              ></video>
+            </div>
+          </div>
+        </div>
+        <div class="media-information-wrap-ti">
+          <div class="media-information-text">
+            <div class="media-information-text__title">On a mission</div>
+            <p class="media-information-text__paragraph">
+              Real Talk is a nonprofit program<br class="m-br" />
+              founded<br />
+              by Denglisch Docs,<br class="m-br" />
+              an American-German startup<br /><br class="m-br" />
+              on a mission to ensure English<br class="m-br" />
+              language authenticity<br />
+              in<br class="m-br" />
+              the D-A-CH-LI region.
+              <a
+                href="https://denglischdocs.com/about-us/"
+                target="_blank"
+                class="content__link"
+                >Learn more.</a
+              >
+            </p>
+          </div>
+          <div class="media-information-text">
+            <div class="media-information-image__one mobile">
+              <div class="media-information-image__img">
+                <img src="img/content-img17.jpg" alt="" />
+              </div>
+            </div>
+            <p class="media-information-text__paragraph">
+              As an innovator in the field<br class="m-br" />
+              of language, translation,<br /><br class="m-br" />
+              and education, we aim to advance<br class="m-br" />
+              active and natural<br />
+              use<br class="m-br" />
+              of the English language in every<br class="m-br" />
+              school, college,<br />
+              and university.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="office-people-b">
+      <div class="office-people-b__wrap">
+        <video
+          src="img/media/office_people.webm"
+          muted=""
+          loop=""
+          autoplay=""
+          class="office-people-b__video"
+        ></video>
+      </div>
+    </div>
+
+    <div class="questions-b animation-transform" id="getInTouch">
+      <div class="questions-b__inner">
+        <div class="questions-b-form">
+          <div class="questions-b-form__title">Got questions?</div>
+          <p class="questions-b-form__paragraph">
+            If you have a general question for us,<br />
+            just leave us a message below.
+            <img
+              src="img/i-questions-b.svg"
+              alt="mail"
+              class="questions-b-form__icon"
+            /><br />
+            <span class="p-separat"></span>
+            If you’re just browsing, enjoy your stay.
+          </p>
+          <div class="questions-b-form__wrap">
+            <form id="questions-b-form__form" method="post" action="">
+              <div class="questions-b-form__col-2">
+                <label
+                  class="questions-b-form__item"
+                  id="questions-b-form__item"
+                >
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="First name"
+                    class="questions-b-form__input-text"
+                  />
+                </label>
+                <label
+                  class="questions-b-form__item"
+                  id="questions-b-form__item"
+                >
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Last name"
+                    class="questions-b-form__input-text"
+                  />
+                </label>
+              </div>
+              <div class="questions-b-form__col-1">
+                <label
+                  class="questions-b-form__item"
+                  id="questions-b-form__item"
+                >
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="questions-b-form__input-text"
+                  />
+                </label>
+              </div>
+              <div class="questions-b-form__col-1">
+                <label
+                  class="questions-b-form__item"
+                  id="questions-b-form__item"
+                >
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="questions-b-form__item-textarea"
+                    placeholder="Message"
+                  ></textarea>
+                </label>
+              </div>
+              <input type="hidden" name="codeSecond" value="" id="codeSecond" />
+              <div class="questions-b-form__footer">
+                <input
+                  class="btn-solid questions-b-form__btn-submit"
+                  type="submit"
+                  name="submit2"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="questions-b-image">
+          <div class="questions-b-image__wrap">
+            <img src="img/content-img17.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="btn-scroll-top" id="back-to-the-top">
+        <span>Back to the top</span>
+      </div>
+      <div class="footer__inner">
+        <div class="footer-left-b">
+          <p class="footer__paragraph">
+            Real talk is proudly brought to you <br class="m-br" />by Denglisch
+            Docs.
+          </p>
+          <span class="footer-separat"></span>
+          <p class="footer__paragraph">Want to know more about our work?</p>
+          <p class="footer__paragraph">
+            Visit
+            <a
+              href="http://www.denglischdocs.com/"
+              target="_blank"
+              class="footer__link footer__link--dark"
+              >www.denglischdocs.com</a
+            >.
+          </p>
+          <span class="footer-separat"></span>
+          <p class="footer__paragraph">
+            Want to know more about Denglisch?<br />
+            Visit
+            <a
+              href="http://www.denglisch.world/"
+              target="_blank"
+              class="footer__link footer__link--dark"
+              >Denglisch World</a
+            >, aka a world<br class="m-br" />
+            of edutainment.
+          </p>
+        </div>
+        <div class="footer-right-b">
+          <nav class="footer-nav">
+            <ul class="footer-nav__items">
+              <li class="footer-nav__item">
+                <span class="footer-nav__name">About us</span>
+              </li>
+              <li class="footer-nav__item">
+                <a
+                  href="https://denglischdocs.com/who-we-are/"
+                  target="_blank"
+                  class="footer-nav__link"
+                  >Who we are</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-nav__items">
+              <li class="footer-nav__item">
+                <span class="footer-nav__name">Legal stuff</span>
+              </li>
+              <li class="footer-nav__item">
+                <a
+                  href="https://denglischdocs.com/"
+                  target="_blank"
+                  class="footer-nav__link"
+                  >Disclaimer</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-nav__items">
+              <li class="footer-nav__item">
+                <span class="footer-nav__name">Contact</span>
+              </li>
+              <li class="footer-nav__item">
+                <a
+                  href="https://denglischdocs.com/get-in-touch/"
+                  target="_blank"
+                  class="footer-nav__link"
+                  >Get in touch</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="social-links">
+            <span class="footer__paragraph social-links__follow"
+              >Follow us on social media</span
+            >
+            <a
+              class="social-link"
+              href="https://www.youtube.com/c/DenglischDocs"
+            >
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.5933 7.20301C21.4794 6.78041 21.2568 6.39501 20.9477 6.08518C20.6386 5.77534 20.2537 5.55187 19.8313 5.43701C18.2653 5.00701 12.0003 5.00001 12.0003 5.00001C12.0003 5.00001 5.73633 4.99301 4.16933 5.40401C3.74725 5.52415 3.36315 5.75078 3.0539 6.06214C2.74464 6.3735 2.52062 6.75913 2.40333 7.18201C1.99033 8.74801 1.98633 11.996 1.98633 11.996C1.98633 11.996 1.98233 15.26 2.39233 16.81C2.62233 17.667 3.29733 18.344 4.15533 18.575C5.73733 19.005 11.9853 19.012 11.9853 19.012C11.9853 19.012 18.2503 19.019 19.8163 18.609C20.2388 18.4943 20.6241 18.2714 20.934 17.9622C21.2439 17.653 21.4677 17.2682 21.5833 16.846C21.9973 15.281 22.0003 12.034 22.0003 12.034C22.0003 12.034 22.0203 8.76901 21.5933 7.20301V7.20301ZM9.99633 15.005L10.0013 9.00501L15.2083 12.01L9.99633 15.005V15.005Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/denglisch_docs/"
+            >
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.999 7.377C10.7726 7.377 9.59651 7.86417 8.72934 8.73134C7.86217 9.59851 7.375 10.7746 7.375 12.001C7.375 13.2274 7.86217 14.4035 8.72934 15.2707C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2707C16.1358 14.4035 16.623 13.2274 16.623 12.001C16.623 10.7746 16.1358 9.59851 15.2687 8.73134C14.4015 7.86417 13.2254 7.377 11.999 7.377ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5608 8.995 12.7967 8.995 12C8.995 11.2033 9.31149 10.4392 9.87485 9.87585C10.4382 9.31249 11.2023 8.996 11.999 8.996C12.7957 8.996 13.5598 9.31249 14.1231 9.87585C14.6865 10.4392 15.003 11.2033 15.003 12C15.003 12.7967 14.6865 13.5608 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M16.8055 8.285C17.4009 8.285 17.8835 7.80236 17.8835 7.207C17.8835 6.61163 17.4009 6.129 16.8055 6.129C16.2102 6.129 15.7275 6.61163 15.7275 7.207C15.7275 7.80236 16.2102 8.285 16.8055 8.285Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M20.533 6.111C20.3015 5.51319 19.9477 4.97029 19.4943 4.51706C19.0409 4.06384 18.4979 3.71028 17.9 3.479C17.2003 3.21636 16.4611 3.07435 15.714 3.059C14.751 3.017 14.446 3.005 12.004 3.005C9.56195 3.005 9.24895 3.005 8.29395 3.059C7.54734 3.07356 6.80871 3.21561 6.10995 3.479C5.51189 3.71001 4.96872 4.06348 4.51529 4.51673C4.06186 4.96999 3.70818 5.51303 3.47695 6.111C3.21426 6.81062 3.07257 7.54984 3.05795 8.297C3.01495 9.259 3.00195 9.564 3.00195 12.007C3.00195 14.449 3.00195 14.76 3.05795 15.717C3.07295 16.465 3.21395 17.203 3.47695 17.904C3.70883 18.5018 4.06285 19.0446 4.51639 19.4978C4.96993 19.951 5.51302 20.3046 6.11095 20.536C6.80839 20.8092 7.54732 20.9614 8.29595 20.986C9.25895 21.028 9.56395 21.041 12.006 21.041C14.448 21.041 14.761 21.041 15.716 20.986C16.4631 20.9708 17.2022 20.8291 17.902 20.567C18.4997 20.3352 19.0426 19.9813 19.4959 19.528C19.9493 19.0746 20.3031 18.5318 20.535 17.934C20.798 17.234 20.939 16.496 20.954 15.748C20.997 14.786 21.01 14.481 21.01 12.038C21.01 9.59501 21.01 9.285 20.954 8.328C20.9423 7.57028 20.7999 6.82025 20.533 6.111ZM19.315 15.643C19.3085 16.2193 19.2033 16.7902 19.004 17.331C18.8538 17.7199 18.6239 18.073 18.329 18.3677C18.0342 18.6624 17.6809 18.8921 17.292 19.042C16.7572 19.2405 16.1923 19.3456 15.622 19.353C14.672 19.397 14.404 19.408 11.968 19.408C9.52995 19.408 9.28095 19.408 8.31295 19.353C7.74288 19.346 7.17828 19.2408 6.64395 19.042C6.25364 18.893 5.89895 18.6637 5.60284 18.369C5.30673 18.0742 5.07579 17.7206 4.92495 17.331C4.7284 16.7961 4.62326 16.2318 4.61395 15.662C4.57095 14.712 4.56095 14.444 4.56095 12.008C4.56095 9.571 4.56095 9.322 4.61395 8.353C4.62042 7.77703 4.72561 7.20642 4.92495 6.666C5.22995 5.877 5.85495 5.256 6.64395 4.954C7.17854 4.75614 7.74298 4.65097 8.31295 4.643C9.26395 4.6 9.53095 4.588 11.968 4.588C14.405 4.588 14.655 4.588 15.622 4.643C16.1924 4.64987 16.7573 4.75508 17.292 4.954C17.6809 5.10428 18.0341 5.33421 18.3289 5.62903C18.6238 5.92386 18.8537 6.27708 19.004 6.666C19.2005 7.20095 19.3056 7.76516 19.315 8.335C19.358 9.28601 19.369 9.553 19.369 11.99C19.369 14.426 19.369 14.688 19.326 15.644H19.315V15.643Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-link"
+              href="https://m.facebook.com/Denglisch-Docs-109699444597323"
+            >
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.397 20.997V12.801H16.162L16.573 9.592H13.397V7.548C13.397 6.622 13.655 5.988 14.984 5.988H16.668V3.127C15.8487 3.03919 15.0251 2.99679 14.201 3C11.757 3 10.079 4.492 10.079 7.231V9.586H7.33203V12.795H10.085V20.997H13.397Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.pinterest.de/Denglisch_Docs/"
+            >
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.013 3C7.03509 3 3 7.02538 3 11.9913C3 15.8001 5.37617 19.052 8.72953 20.3615C8.65002 19.6494 8.57954 18.5598 8.75885 17.7835C8.9235 17.0804 9.81611 13.3154 9.81611 13.3154C9.81611 13.3154 9.54602 12.7732 9.54602 11.9795C9.54602 10.7312 10.2745 9.7969 11.1762 9.7969C11.9459 9.7969 12.3186 10.3712 12.3186 11.0626C12.3186 11.8332 11.828 12.9875 11.5726 14.0568C11.3583 14.9507 12.022 15.6797 12.9061 15.6797C14.507 15.6797 15.7402 13.995 15.7402 11.5632C15.7402 9.41833 14.1895 7.91247 11.9752 7.91247C9.41125 7.91247 7.9074 9.83459 7.9074 11.8118C7.9074 12.5853 8.204 13.4173 8.57728 13.8656C8.65059 13.9562 8.65961 14.0355 8.63874 14.1266C8.57108 14.4079 8.41827 15.0261 8.38895 15.1493C8.34779 15.3163 8.25982 15.3512 8.08671 15.2724C6.9646 14.7538 6.25694 13.1129 6.25694 11.7888C6.25694 8.95594 8.32467 6.3481 12.2131 6.3481C15.3381 6.3481 17.7696 8.57455 17.7696 11.5396C17.7696 14.6424 15.8107 17.1383 13.0855 17.1383C12.172 17.1383 11.3143 16.6664 11.0121 16.1038L10.4482 18.2397C10.2458 19.0222 9.69319 20.0032 9.32047 20.5984C10.1663 20.856 11.0561 21 11.9899 21C16.9593 21 21 16.9774 21 12.0087C21 7.04281 16.9587 3.02025 11.9899 3.02025L12.013 3Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/company/denglisch-docs"
+            >
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.98292 7.197C6.19132 7.197 7.17092 6.2174 7.17092 5.009C7.17092 3.8006 6.19132 2.821 4.98292 2.821C3.77452 2.821 2.79492 3.8006 2.79492 5.009C2.79492 6.2174 3.77452 7.197 4.98292 7.197Z"
+                  fill="black"
+                ></path>
+                <path
+                  d="M9.23673 8.85499V20.994H13.0057V14.991C13.0057 13.407 13.3037 11.873 15.2677 11.873C17.2047 11.873 17.2287 13.684 17.2287 15.091V20.995H20.9997V14.338C20.9997 11.068 20.2957 8.55499 16.4737 8.55499C14.6387 8.55499 13.4087 9.56199 12.9057 10.515H12.8547V8.85499H9.23673ZM3.09473 8.85499H6.86973V20.994H3.09473V8.85499Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+            <a class="social-link" href="https://medium.com/@Denglisch_Docs">
+              <svg
+                class="social-link__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.28513 9.072C4.29666 8.95722 4.28093 8.84133 4.23923 8.73377C4.19753 8.62621 4.13102 8.53001 4.04513 8.453L2.27513 6.32V6H7.77313L12.0231 15.32L15.7591 6H21.0001V6.319L19.4851 7.77C19.4217 7.81938 19.3727 7.88485 19.3432 7.95959C19.3136 8.03433 19.3046 8.11561 19.3171 8.195V18.861C19.3044 18.9404 19.3133 19.0218 19.3429 19.0965C19.3724 19.1713 19.4216 19.2368 19.4851 19.286L20.9641 20.737V21.056H13.5281V20.737L15.0571 19.25C15.2091 19.1 15.2091 19.055 15.2091 18.826V10.204L10.9501 21.021H10.3751L5.41713 10.204V17.453C5.37613 17.758 5.47713 18.065 5.69213 18.286L7.68413 20.703V21.022H2.03613V20.703L4.02813 18.286C4.13293 18.1768 4.21075 18.0446 4.25537 17.9C4.29999 17.7553 4.31018 17.6023 4.28513 17.453V9.072Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="footer-left-b">
+          <p
+            class="footer__paragraph footer__paragraph--s13 footer__paragraph--flex"
+          >
+            <span class="footer__paragraph--flex">
+              <svg
+                class="copy-icon"
+                viewBox="0 0 14 15"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>cl</title>
+                <g
+                  id="web"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="metanoia"
+                    transform="translate(-46.000000, -1039.000000)"
+                    fill="#000000"
+                    fill-rule="nonzero"
+                  >
+                    <path
+                      d="M52.96,1054 C54.3066667,1054 55.5033333,1053.7 56.55,1053.1 C57.5966667,1052.5 58.41,1051.66333 58.99,1050.59 C59.57,1049.51667 59.86,1048.29333 59.86,1046.92 C59.86,1045.54667 59.57,1044.32667 58.99,1043.26 C58.41,1042.19333 57.5966667,1041.36 56.55,1040.76 C55.5033333,1040.16 54.3066667,1039.86 52.96,1039.86 C51.6133333,1039.86 50.4166667,1040.16 49.37,1040.76 C48.3233333,1041.36 47.51,1042.19333 46.93,1043.26 C46.35,1044.32667 46.06,1045.54667 46.06,1046.92 C46.06,1048.29333 46.35,1049.51667 46.93,1050.59 C47.51,1051.66333 48.3233333,1052.5 49.37,1053.1 C50.4166667,1053.7 51.6133333,1054 52.96,1054 Z M52.96,1053.4 C51.6933333,1053.4 50.5866667,1053.12333 49.64,1052.57 C48.6933333,1052.01667 47.9666667,1051.25 47.46,1050.27 C46.9533333,1049.29 46.7,1048.17333 46.7,1046.92 C46.7,1045.68 46.9533333,1044.57 47.46,1043.59 C47.9666667,1042.61 48.6933333,1041.84333 49.64,1041.29 C50.5866667,1040.73667 51.6933333,1040.46 52.96,1040.46 C54.2133333,1040.46 55.3133333,1040.73667 56.26,1041.29 C57.2066667,1041.84333 57.9333333,1042.61 58.44,1043.59 C58.9466667,1044.57 59.2,1045.68 59.2,1046.92 C59.2,1048.17333 58.9466667,1049.29 58.44,1050.27 C57.9333333,1051.25 57.2066667,1052.01667 56.26,1052.57 C55.3133333,1053.12333 54.2133333,1053.4 52.96,1053.4 Z M53.02,1051.6 C54.0066667,1051.6 54.88,1051.31667 55.64,1050.75 C56.4,1050.18333 56.9,1049.39333 57.14,1048.38 L55.9,1048.38 C55.6866667,1049.08667 55.3133333,1049.63 54.78,1050.01 C54.2466667,1050.39 53.6466667,1050.58 52.98,1050.58 C52.42,1050.58 51.9,1050.44 51.42,1050.16 C50.94,1049.88 50.5566667,1049.46667 50.27,1048.92 C49.9833333,1048.37333 49.84,1047.71333 49.84,1046.94 C49.84,1046.15333 49.9833333,1045.48667 50.27,1044.94 C50.5566667,1044.39333 50.94,1043.98 51.42,1043.7 C51.9,1043.42 52.42,1043.28 52.98,1043.28 C53.6466667,1043.28 54.2466667,1043.47 54.78,1043.85 C55.3133333,1044.23 55.6866667,1044.77333 55.9,1045.48 L57.14,1045.48 C56.9,1044.46667 56.4,1043.67667 55.64,1043.11 C54.88,1042.54333 54.0066667,1042.26 53.02,1042.26 C52.22,1042.26 51.49,1042.44333 50.83,1042.81 C50.17,1043.17667 49.6466667,1043.71 49.26,1044.41 C48.8733333,1045.11 48.68,1045.94667 48.68,1046.92 C48.68,1047.90667 48.8733333,1048.75 49.26,1049.45 C49.6466667,1050.15 50.17,1050.68333 50.83,1051.05 C51.49,1051.41667 52.22,1051.6 53.02,1051.6 Z"
+                      id="cl"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              2022 Denglisch Docs GmbH
+            </span>
+            <span class="footer__paragraph--flex">
+              <span
+                class="footer__paragraph-inline footer__paragraph-inline--first"
+                >Made with</span
+              >
+              <img
+                src="img/heart.svg"
+                alt=""
+                class="footer__icon footer__icon--heart"
+              />
+              <span class="footer__paragraph-inline">and a lot of</span>
+              <img src="img/coffee.svg" alt="" class="footer__icon" />
+              <span class="footer__paragraph-inline">in</span>
+              <span class="swapping-text">
+                <span class="swapping-text__span1">New York</span>
+                <span class="swapping-text__span2">Düsseldorf</span>
+              </span>
+            </span>
+          </p>
+        </div>
+        <div class="footer-right-b">
+          <div class="site-info__logos">
+            <div class="widget_media_image">
+              <div class="wp-block-image size-large">
+                <img loading="lazy" src="img/paperless-1.svg" alt="" />
+              </div>
+            </div>
+            <div class="widget_media_image">
+              <div class="wp-block-image size-large">
+                <a
+                  href="https://denglischdocs.com/privacy-policy/"
+                  target="_blank"
+                  ><img loading="lazy" src="img/gdpr.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="widget_media_image">
+              <div class="wp-block-image size-full">
+                <img
+                  loading="lazy"
+                  src="img/hosted_de.jpg"
+                  alt=""
+                  class="colored"
+                />
+              </div>
+            </div>
+            <div class="widget_media_image">
+              <div class="wp-block-image size-large">
+                <a href="https://denglischdocs.com/independent/" target="_blank"
+                  ><img
+                    loading="lazy"
+                    src="img/bootstrapped_logo_grey.svg"
+                    width="168"
+                    height="31"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="form-popup" id="great-popup">
+      <div class="form-popup__background">
+        <div class="form-popup__wrapper">
+          <div class="form-popup__image">
+            <img src="img/great-popup.svg" alt="" />
+          </div>
+          <div class="form-popup__right-content">
+            <div class="form-popup__right-content__title">
+              <div class="h-mobile">Great!</div>
+              <img src="img/great-popup-icon.svg" alt="" />
+            </div>
+            <p class="form-popup__paragraph">
+              Thank you for taking the time<br />
+              to fill out the form!<br class="m-br" />
+              We’ll carefully<br />
+              review the information<br class="m-br" />
+              and<br />
+              get back to you within two days.<br /><br class="m-br" />
+              <span class="p-separat"></span>
+              Have a great day!<img src="img/popup-sun.svg" alt="" />
+            </p>
+            <a href="#" class="btn-border form-popup__btn-continue">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-popup" id="something-wrong-popup">
+      <div class="form-popup__background">
+        <div class="form-popup__wrapper">
+          <div class="form-popup__image">
+            <img src="img/error-popup.svg" alt="" />
+          </div>
+          <div class="form-popup__right-content">
+            <div class="form-popup__right-content__title">
+              <div class="h-mobile">Oops!</div>
+              <img src="img/alert.svg" alt="" class="form-popup__alert" />
+            </div>
+            <p class="form-popup__paragraph">
+              We need just a few more details.<br /><br class="m-br" />
+              Please make sure<br class="m-br" />
+              all required fields<br />
+              are filled out.
+            </p>
+            <a href="#" class="btn-border form-popup__btn-continue">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-menu-b">
+      <div class="burger-menu-b__wrap">
+        <div class="burger-menu-b__content">
+          <ul class="burger-menu-b__items">
+            <li class="burger-menu-b__item">
+              <a href="#mission" class="btn-nav-link">About us</a>
+            </li>
+            <li class="burger-menu-b__item">
+              <a
+                href="https://denglischdocs.com/legal-notice/"
+                class="btn-nav-link"
+                target="_blank"
+                >Legal notice</a
+              >
+            </li>
+            <li class="burger-menu-b__item">
+              <a href="#getInTouch" class="btn-nav-link">Get in touch</a>
+            </li>
+          </ul>
+
+          <a href="#work" class="btn-border">How it works</a>
+          <a href="#apply" class="btn-solid">Apply to participate</a>
+        </div>
+        <div class="social-links">
+          <a class="social-link" href="https://www.youtube.com/c/DenglischDocs">
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.5933 7.20301C21.4794 6.78041 21.2568 6.39501 20.9477 6.08518C20.6386 5.77534 20.2537 5.55187 19.8313 5.43701C18.2653 5.00701 12.0003 5.00001 12.0003 5.00001C12.0003 5.00001 5.73633 4.99301 4.16933 5.40401C3.74725 5.52415 3.36315 5.75078 3.0539 6.06214C2.74464 6.3735 2.52062 6.75913 2.40333 7.18201C1.99033 8.74801 1.98633 11.996 1.98633 11.996C1.98633 11.996 1.98233 15.26 2.39233 16.81C2.62233 17.667 3.29733 18.344 4.15533 18.575C5.73733 19.005 11.9853 19.012 11.9853 19.012C11.9853 19.012 18.2503 19.019 19.8163 18.609C20.2388 18.4943 20.6241 18.2714 20.934 17.9622C21.2439 17.653 21.4677 17.2682 21.5833 16.846C21.9973 15.281 22.0003 12.034 22.0003 12.034C22.0003 12.034 22.0203 8.76901 21.5933 7.20301V7.20301ZM9.99633 15.005L10.0013 9.00501L15.2083 12.01L9.99633 15.005V15.005Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/denglisch_docs/"
+          >
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.999 7.377C10.7726 7.377 9.59651 7.86417 8.72934 8.73134C7.86217 9.59851 7.375 10.7746 7.375 12.001C7.375 13.2274 7.86217 14.4035 8.72934 15.2707C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2707C16.1358 14.4035 16.623 13.2274 16.623 12.001C16.623 10.7746 16.1358 9.59851 15.2687 8.73134C14.4015 7.86417 13.2254 7.377 11.999 7.377ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5608 8.995 12.7967 8.995 12C8.995 11.2033 9.31149 10.4392 9.87485 9.87585C10.4382 9.31249 11.2023 8.996 11.999 8.996C12.7957 8.996 13.5598 9.31249 14.1231 9.87585C14.6865 10.4392 15.003 11.2033 15.003 12C15.003 12.7967 14.6865 13.5608 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
+                fill="black"
+              ></path>
+              <path
+                d="M16.8055 8.285C17.4009 8.285 17.8835 7.80236 17.8835 7.207C17.8835 6.61163 17.4009 6.129 16.8055 6.129C16.2102 6.129 15.7275 6.61163 15.7275 7.207C15.7275 7.80236 16.2102 8.285 16.8055 8.285Z"
+                fill="black"
+              ></path>
+              <path
+                d="M20.533 6.111C20.3015 5.51319 19.9477 4.97029 19.4943 4.51706C19.0409 4.06384 18.4979 3.71028 17.9 3.479C17.2003 3.21636 16.4611 3.07435 15.714 3.059C14.751 3.017 14.446 3.005 12.004 3.005C9.56195 3.005 9.24895 3.005 8.29395 3.059C7.54734 3.07356 6.80871 3.21561 6.10995 3.479C5.51189 3.71001 4.96872 4.06348 4.51529 4.51673C4.06186 4.96999 3.70818 5.51303 3.47695 6.111C3.21426 6.81062 3.07257 7.54984 3.05795 8.297C3.01495 9.259 3.00195 9.564 3.00195 12.007C3.00195 14.449 3.00195 14.76 3.05795 15.717C3.07295 16.465 3.21395 17.203 3.47695 17.904C3.70883 18.5018 4.06285 19.0446 4.51639 19.4978C4.96993 19.951 5.51302 20.3046 6.11095 20.536C6.80839 20.8092 7.54732 20.9614 8.29595 20.986C9.25895 21.028 9.56395 21.041 12.006 21.041C14.448 21.041 14.761 21.041 15.716 20.986C16.4631 20.9708 17.2022 20.8291 17.902 20.567C18.4997 20.3352 19.0426 19.9813 19.4959 19.528C19.9493 19.0746 20.3031 18.5318 20.535 17.934C20.798 17.234 20.939 16.496 20.954 15.748C20.997 14.786 21.01 14.481 21.01 12.038C21.01 9.59501 21.01 9.285 20.954 8.328C20.9423 7.57028 20.7999 6.82025 20.533 6.111ZM19.315 15.643C19.3085 16.2193 19.2033 16.7902 19.004 17.331C18.8538 17.7199 18.6239 18.073 18.329 18.3677C18.0342 18.6624 17.6809 18.8921 17.292 19.042C16.7572 19.2405 16.1923 19.3456 15.622 19.353C14.672 19.397 14.404 19.408 11.968 19.408C9.52995 19.408 9.28095 19.408 8.31295 19.353C7.74288 19.346 7.17828 19.2408 6.64395 19.042C6.25364 18.893 5.89895 18.6637 5.60284 18.369C5.30673 18.0742 5.07579 17.7206 4.92495 17.331C4.7284 16.7961 4.62326 16.2318 4.61395 15.662C4.57095 14.712 4.56095 14.444 4.56095 12.008C4.56095 9.571 4.56095 9.322 4.61395 8.353C4.62042 7.77703 4.72561 7.20642 4.92495 6.666C5.22995 5.877 5.85495 5.256 6.64395 4.954C7.17854 4.75614 7.74298 4.65097 8.31295 4.643C9.26395 4.6 9.53095 4.588 11.968 4.588C14.405 4.588 14.655 4.588 15.622 4.643C16.1924 4.64987 16.7573 4.75508 17.292 4.954C17.6809 5.10428 18.0341 5.33421 18.3289 5.62903C18.6238 5.92386 18.8537 6.27708 19.004 6.666C19.2005 7.20095 19.3056 7.76516 19.315 8.335C19.358 9.28601 19.369 9.553 19.369 11.99C19.369 14.426 19.369 14.688 19.326 15.644H19.315V15.643Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://m.facebook.com/Denglisch-Docs-109699444597323"
+          >
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.397 20.997V12.801H16.162L16.573 9.592H13.397V7.548C13.397 6.622 13.655 5.988 14.984 5.988H16.668V3.127C15.8487 3.03919 15.0251 2.99679 14.201 3C11.757 3 10.079 4.492 10.079 7.231V9.586H7.33203V12.795H10.085V20.997H13.397Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.pinterest.de/Denglisch_Docs/"
+          >
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.013 3C7.03509 3 3 7.02538 3 11.9913C3 15.8001 5.37617 19.052 8.72953 20.3615C8.65002 19.6494 8.57954 18.5598 8.75885 17.7835C8.9235 17.0804 9.81611 13.3154 9.81611 13.3154C9.81611 13.3154 9.54602 12.7732 9.54602 11.9795C9.54602 10.7312 10.2745 9.7969 11.1762 9.7969C11.9459 9.7969 12.3186 10.3712 12.3186 11.0626C12.3186 11.8332 11.828 12.9875 11.5726 14.0568C11.3583 14.9507 12.022 15.6797 12.9061 15.6797C14.507 15.6797 15.7402 13.995 15.7402 11.5632C15.7402 9.41833 14.1895 7.91247 11.9752 7.91247C9.41125 7.91247 7.9074 9.83459 7.9074 11.8118C7.9074 12.5853 8.204 13.4173 8.57728 13.8656C8.65059 13.9562 8.65961 14.0355 8.63874 14.1266C8.57108 14.4079 8.41827 15.0261 8.38895 15.1493C8.34779 15.3163 8.25982 15.3512 8.08671 15.2724C6.9646 14.7538 6.25694 13.1129 6.25694 11.7888C6.25694 8.95594 8.32467 6.3481 12.2131 6.3481C15.3381 6.3481 17.7696 8.57455 17.7696 11.5396C17.7696 14.6424 15.8107 17.1383 13.0855 17.1383C12.172 17.1383 11.3143 16.6664 11.0121 16.1038L10.4482 18.2397C10.2458 19.0222 9.69319 20.0032 9.32047 20.5984C10.1663 20.856 11.0561 21 11.9899 21C16.9593 21 21 16.9774 21 12.0087C21 7.04281 16.9587 3.02025 11.9899 3.02025L12.013 3Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/company/denglisch-docs"
+          >
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.98292 7.197C6.19132 7.197 7.17092 6.2174 7.17092 5.009C7.17092 3.8006 6.19132 2.821 4.98292 2.821C3.77452 2.821 2.79492 3.8006 2.79492 5.009C2.79492 6.2174 3.77452 7.197 4.98292 7.197Z"
+                fill="black"
+              ></path>
+              <path
+                d="M9.23673 8.85499V20.994H13.0057V14.991C13.0057 13.407 13.3037 11.873 15.2677 11.873C17.2047 11.873 17.2287 13.684 17.2287 15.091V20.995H20.9997V14.338C20.9997 11.068 20.2957 8.55499 16.4737 8.55499C14.6387 8.55499 13.4087 9.56199 12.9057 10.515H12.8547V8.85499H9.23673ZM3.09473 8.85499H6.86973V20.994H3.09473V8.85499Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+          <a class="social-link" href="https://medium.com/@Denglisch_Docs">
+            <svg
+              class="social-link__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.28513 9.072C4.29666 8.95722 4.28093 8.84133 4.23923 8.73377C4.19753 8.62621 4.13102 8.53001 4.04513 8.453L2.27513 6.32V6H7.77313L12.0231 15.32L15.7591 6H21.0001V6.319L19.4851 7.77C19.4217 7.81938 19.3727 7.88485 19.3432 7.95959C19.3136 8.03433 19.3046 8.11561 19.3171 8.195V18.861C19.3044 18.9404 19.3133 19.0218 19.3429 19.0965C19.3724 19.1713 19.4216 19.2368 19.4851 19.286L20.9641 20.737V21.056H13.5281V20.737L15.0571 19.25C15.2091 19.1 15.2091 19.055 15.2091 18.826V10.204L10.9501 21.021H10.3751L5.41713 10.204V17.453C5.37613 17.758 5.47713 18.065 5.69213 18.286L7.68413 20.703V21.022H2.03613V20.703L4.02813 18.286C4.13293 18.1768 4.21075 18.0446 4.25537 17.9C4.29999 17.7553 4.31018 17.6023 4.28513 17.453V9.072Z"
+                fill="black"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/gsap-latest-beta.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <script src=" https://consent.comply-app.com/js/app.js"></script>
+    <comply-consent-manager
+      apiKey="JQ6N6TM-8Y1M62P-PESJCKC-XMTXH79"
+    ></comply-consent-manager>
+  </body>
+</html>

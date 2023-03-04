@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="css/_login.sass">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+          <a href="index.html" class="header__logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="196"
+              viewBox="0 0 750 101"
+              fill="none"
+            >
+              <path
+                d="M144.571 91.2245C146.752 91.2245 148.521 89.438 148.521 87.2343C148.521 85.0306 146.752 83.2441 144.571 83.2441C142.389 83.2441 140.621 85.0306 140.621 87.2343C140.621 89.438 142.389 91.2245 144.571 91.2245Z"
+                fill="#FFCA18"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M53.8567 98.0046H7.44617C3.33541 98.0046 0 94.6361 0 90.4869V51.1562C3.37199 68.606 8.03133 79.8681 13.9853 84.957C19.9393 90.0459 33.2298 94.3903 53.8567 98.0046Z"
+                fill="black"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M102.564 3.72949H148.975C153.086 3.72949 156.421 7.09801 156.421 11.2472V50.5778C153.049 33.1281 148.39 21.866 142.436 16.7771C136.482 11.6954 123.191 7.34378 102.564 3.72949Z"
+                fill="black"
+              />
+              <path
+                d="M194.755 4.0332H233.024C243.279 4.0332 251.954 6.36803 259.035 11.0305C266.115 15.7001 269.655 23.1889 269.655 33.5041C269.655 41.3977 267.498 47.6142 263.189 52.1466C258.874 56.6789 253.271 59.751 246.366 61.363L276.875 98.2431H258.354L229.616 62.9822H210.415V98.2431H194.755V4.0332ZM233.705 49.3925C239.512 49.3925 244.325 48.1781 248.143 45.7565C251.954 43.3349 253.863 39.3448 253.863 33.7788C253.863 28.22 251.962 24.2009 248.143 21.736C244.333 19.271 239.512 18.0349 233.705 18.0349H210.415V49.3925H233.705Z"
+                fill="black"
+              />
+              <path
+                d="M300.852 96.1614C295.219 93.6025 290.75 89.7496 287.437 84.5884C284.123 79.4272 282.463 73.2179 282.463 65.946C282.463 58.5873 284.094 52.3346 287.364 47.1734C290.633 42.0122 294.81 38.181 299.893 35.6655C304.977 33.1572 310.199 31.8994 315.554 31.8994C322.546 31.8994 328.427 33.309 333.189 36.1426C337.958 38.969 341.498 42.6917 343.81 47.3107C346.128 51.9298 347.284 56.9825 347.284 62.4546C347.284 65.599 346.962 68.5555 346.333 71.3385H297.033C297.853 76.8105 300.617 80.9163 305.343 83.656C310.061 86.3956 315.693 87.7618 322.232 87.7618C329.678 87.7618 336.576 86.2366 342.932 83.1861V95.5686C339.933 97.0071 336.393 98.1059 332.311 98.8649C328.222 99.6239 323.958 100.007 319.511 100.007C312.694 99.9997 306.476 98.7203 300.852 96.1614ZM333.262 60.5679C333.35 60.2137 333.401 59.6716 333.401 58.9559C333.401 56.7151 332.831 54.4236 331.697 52.0888C330.563 49.754 328.698 47.8023 326.116 46.2337C323.527 44.6651 320.191 43.8772 316.102 43.8772C311.019 43.8772 306.637 45.359 302.958 48.3227C299.279 51.2864 297.304 55.3706 297.033 60.5679H333.262Z"
+                fill="black"
+              />
+              <path
+                d="M365.673 94.8169C361.226 91.3616 359.002 86.4968 359.002 80.2152C359.002 72.6758 361.862 67.1821 367.582 63.7268C373.302 60.2715 380.155 58.5439 388.15 58.5439C393.504 58.5439 399.137 59.1728 405.039 60.4306V58.1391C405.039 54.0116 403.54 50.6937 400.548 48.1781C397.549 45.6698 393.329 44.4121 387.88 44.4121C379.892 44.4121 372.08 46.0746 364.451 49.3925V36.2076C372.987 33.3379 381.34 31.8994 389.511 31.8994C399.042 31.8994 406.444 34.2342 411.71 38.8967C416.977 43.5591 419.61 50.6503 419.61 60.1631V83.3162C419.61 86.4606 421.241 88.0292 424.511 88.0292C425.601 88.0292 427.049 87.7618 428.87 87.2196V97.5854C426.149 98.6625 423.055 99.1974 419.61 99.1974C413.341 99.1974 409.033 96.8192 406.671 92.0628L406.532 91.658C399.722 97.224 391.5 99.9997 381.882 99.9997C375.525 99.9997 370.12 98.2721 365.673 94.8169ZM377.522 86.3378C379.885 88.0003 382.789 88.8244 386.241 88.8244C389.781 88.8244 393.19 88.1738 396.452 86.8727C399.722 85.5715 402.582 83.7066 405.032 81.285V70.2542C399.949 69.1771 395.267 68.6422 391.003 68.6422C386.19 68.6422 382.152 69.4952 378.883 71.2011C375.613 72.9071 373.982 75.5961 373.982 79.2754C373.982 82.3259 375.16 84.6824 377.522 86.3378Z"
+                fill="black"
+              />
+              <path d="M441.941 0H456.512V98.2507H441.941V0Z" fill="black" />
+              <path
+                d="M525.912 18.1723H494.452V4.0332H573.032V18.1651H541.572V98.2431H525.912V18.1723Z"
+                fill="black"
+              />
+              <path
+                d="M574.261 94.8169C569.813 91.3616 567.59 86.4968 567.59 80.2152C567.59 72.6758 570.45 67.1821 576.17 63.7268C581.89 60.2715 588.743 58.5439 596.731 58.5439C602.085 58.5439 607.717 59.1728 613.62 60.4306V58.1391C613.62 54.0116 612.121 50.6937 609.129 48.1781C606.13 45.6698 601.909 44.4121 596.46 44.4121C588.473 44.4121 580.661 46.0746 573.032 49.3925V36.2076C581.568 33.3379 589.921 31.8994 598.091 31.8994C607.622 31.8994 615.024 34.2342 620.291 38.8967C625.557 43.5591 628.19 50.6503 628.19 60.1631V83.3162C628.19 86.4606 629.822 88.0292 633.091 88.0292C634.181 88.0292 635.629 87.7618 637.451 87.2196V97.5854C634.722 98.6625 631.636 99.1974 628.19 99.1974C621.922 99.1974 617.614 96.8192 615.251 92.0628L615.112 91.658C608.302 97.224 600.088 99.9997 590.462 99.9997C584.113 99.9997 578.708 98.2721 574.261 94.8169ZM586.11 86.3378C588.473 88.0003 591.377 88.8244 594.829 88.8244C598.369 88.8244 601.778 88.1738 605.04 86.8727C608.31 85.5715 611.17 83.7066 613.62 81.285V70.2542C608.536 69.1771 603.862 68.6422 599.591 68.6422C594.778 68.6422 590.74 69.4952 587.471 71.2011C584.201 72.9071 582.57 75.5961 582.57 79.2754C582.57 82.3259 583.748 84.6824 586.11 86.3378Z"
+                fill="black"
+              />
+              <path d="M650.529 0H665.1V98.2507H650.529V0Z" fill="black" />
+              <path
+                d="M686.348 4.0332H700.918V59.4908H708.818L730.469 33.6486H747.087L721.077 65.2809L749.677 98.2576H732.926L708.547 71.3384H700.918V98.2576H686.348V4.0332Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <div class="header__nav">
+            <ul class="header-lang">
+              <li class="header-lang__item">
+                <a href="#" class="header-lang__link header-lang__link--active"
+                  >EN</a
+                >
+              </li>
+              <li class="header-lang__item">
+                <a href="/de" class="header-lang__link">DE</a>
+              </li>
+            </ul>
+            <div class="header-btn-wrap">
+              <a href="#work" class="btn-nav-link">How it works</a>
+              <a href="#mission" class="btn-nav-link">About us</a>
+              <a href="#apply" class="btn-nav-link">Apply to participate</a>
+              <a href="#login" class="btn-nav-link login">Login</a>
+              <a href="#create" class="btn-solid create_btn">Create school profile</a>
+            </div>
+  
+  
+            
+            <button id="burgerBtn" class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+    </header>
+
+    <!-- container-login -->
+        <div class="login-container">
+            <div class="login-col first">
+                <p class="login-text">
+                    Log in
+                </p>
+                <input type="text" class="login-input" placeholder="Email address">
+                <input type="text" class="login-input" placeholder="Password">
+                <div class="eye-icon">
+                    <img src="img/eye-icon.png" alt="">
+                </div>
+                <div class="login-row">
+                    <div class="login-remember icon">
+                        <div class="icon-remember">
+                            <div class="check-icon">
+                                <img src="img/check-icon.png" alt="">
+                            </div>
+                        </div>
+                        <p class="login-text_remember fm">
+                            Remember me
+                        </p>
+                    </div>
+                    <div class="login-remember forgot">
+                        <a class="login-forgot fm">
+                            Forgot password?
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="login-sign">
+                    <a href="" class="btn-solid">
+                        Sign in
+                    </a>
+                </div>
+                
+                    <span class="login-subtitle fm">
+                        By continuing you accept our Terms of Use
+                        and Privacy Policy.
+                    </span>
+                
+            </div>
+            <div class="login-col image">
+                <div class="login-image">
+                    <img src="img/login-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    <!-- container-login -->
+
+
+    <!-- modal -->
+    <div class="modal_overlay">
+      
+    </div>
+    <div class="modal">
+      <div class="modal-close">
+        
+      </div>
+      <div class="modal-container sd-1">
+        <div class="modal-col ">
+          <p class="modal-text">
+            School information
+          </p>
+          <input type="text" class="modal_input" placeholder="School name">
+          <input type="text" class="modal_input" placeholder="Number of students">
+          <input type="text" class="modal_input" placeholder="Students’ age">
+          <input type="text" class="modal_input" placeholder="Specialty">
+          <input type="text" class="modal_input" placeholder="Founded in">
+        </div>
+        <div class="modal-col ml">
+          <p class="modal-text">
+            School logo
+          </p>
+          <div class="modal-upload">
+
+          </div>
+          <a href="" class="btn-border btn_upload">Upload</a>
+        </div>
+      </div>
+      <!-- model-container-2 -->
+      <div class="modal-container adrress">
+        <div class="modal-col ">
+          <p class="modal-text">
+            Adrress
+          </p>
+          <input type="text" class="modal_input" placeholder="Address">
+          <input type="text" class="modal_input" placeholder="City">
+          <input type="text" class="modal_input" placeholder="Zipcode">
+          <input type="text" class="modal_input" placeholder="Country">
+        </div>
+        <div class="modal-col ml">
+          <p class="modal-text">
+            Contact details
+          </p>
+          <input type="text" class="modal_input" placeholder="Phone number">
+          <input type="text" class="modal_input" placeholder="Phone number 2 (optional)">
+          <input type="text" class="modal_input" placeholder="Email address">
+          <input type="text" class="modal_input" placeholder="Website">
+          
+        </div>
+      </div>
+      <!-- model-container-2 -->
+
+
+
+      <!-- model-container-3 -->
+
+      <div class="modal-container">
+        <div class="modal-col description">
+          <p class="modal-text">
+            School description
+          </p>
+          <textarea  class="description" name="" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+        </div>
+      </div>
+      <!-- model-container-3 -->
+
+
+
+      <!-- model-container-4 -->
+      <div class="modal-container school-images">
+        <div class="modal-col modal-col_images">
+          <p class="modal-text">
+            School images
+          </p>
+          <div class="modal-upload images">
+
+          </div>
+          <a href="" class="btn-border btn_upload images">Upload</a>
+        </div>
+        <div class="modal-col ml images">
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+
+          <div class="modal-row images">
+            <div class="modal-upload  images sd">
+
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+
+            <div class="modal-upload images sd">
+              
+            </div>
+          </div>
+          <span class="images">
+            Up to 10 images
+          </span>
+        </div>
+      </div>
+
+
+      <!-- model-container-4 -->
+
+
+      <!-- model-container-5 -->
+      <div class="modal-container video">
+        <div class="modal-col video">
+          <p class="modal-text">
+            Video introduction
+          </p>
+          <div class="modal-upload video">
+
+          </div>
+        </div>
+          <div class="modal-row video">
+            <span>
+              File size may not exceed 500 MB
+              For the best result, the video aspect
+              ratio should be 16:9.
+            </span>
+            <a href="" class="btn-border btn_upload video">Upload</a>
+          </div>
+        
+      </div>
+
+
+      <!-- model-container-5 -->
+
+
+
+      <!-- model-container-6 -->
+      <div class="modal-container admin">
+        <div class="modal-col admin">
+          <p class="modal-text">
+            School profile admin
+          </p>
+          <div class="modal-col_admin-input">
+            <input type="text" class="modal_input" placeholder="Name">
+            <input type="text" class="modal_input" placeholder="Email address">
+          </div>
+          <div class="modal-col_admin-input">
+            <input type="text" class="modal_input" placeholder="Password">
+            <input type="text" class="modal_input" placeholder="Confirm password">
+          </div>
+          <div class="wrapper-btn_admin">
+            <a href="" class="btn-solid btn_upload admin">Create our school profile</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- model-container-6 -->
+
+
+    </div>
+    <!-- modal -->
+
+
+    <script src="js/gsap-latest-beta.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>

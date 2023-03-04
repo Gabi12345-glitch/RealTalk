@@ -1,0 +1,943 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media all and (max-width: 1405px)
+	.btn-scroll-top
+		opacity: 0
+	/**/
+
+@media all and (max-width: 1300px)
+	.form-personal-fill
+		max-width: 400px
+	/**/
+
+@media all and (max-width: 1220px)
+	.real-talk-block
+		margin-left: 0
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	body
+		min-width: 100%
+	
+	.how-work-step__paragraph br
+		display: none
+
+	.form-personal__inner
+		padding: 0 15px
+	
+	.form-personal-fill
+		min-width: 100%
+		
+	.form-personal-fill-gif__left
+		display: none
+	
+	.form-personal-fill-gif__right
+		right: 50%
+		margin-right: -157px
+		top: 35px
+
+	.form-personal-fill__wrap
+		position: inherit
+	
+	.form-personal__wrap
+		position: relative
+
+	.form-personal-tabs
+		padding-top: 270px
+
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+	.plane-left:after,
+	.plane-right:after
+		display: none
+		
+	.media-information-image
+		max-width: 400px
+		
+	.media-information-image__img
+		border-radius: 6px
+		max-width: inherit
+		width: 30vw
+
+	.media-information-image__img img
+		width: 100%
+
+	.media-information-image__one:before,
+	.media-information-image__two:before
+		background: url(../img/layer-dotted-mobile-small.svg) repeat 0 0
+		width: 60%
+		height: 90%
+
+	.media-information-image__two:before
+		width: 75%
+
+	.mobile.eight-transform .media-information-image__one:before 
+		width: 45%
+
+	.mobile.eight-transform .media-information-image__two:before
+		width: 65%
+
+	.media-information-wrap-ti,
+	.media-information-wrap-it
+		justify-content: space-between
+
+	.media-information-image__alone
+		justify-content: flex-start
+	
+	.m-d .media-information-wrap-it .media-information-image__one .media-information-image__img
+		transform: translate(11px, 11px) !important
+
+	.m-d .media-information-wrap-it .media-information-image__two .media-information-image__img
+		transform: translate(-12px, -12px) !important
+
+	.m-d .media-information-wrap-ti .media-information-image__one .media-information-image__img
+		transform: translate(11px, -12px) !important
+
+	.m-d .media-information-wrap-ti .media-information-image__two .media-information-image__img
+		transform: translate(-12px, 12px) !important
+	
+	.m-d .animation-transform .media-information-image__alone .media-information-image__img
+		width: calc( 100% - 10px )
+		transform: translate(10px, 10px) !important
+
+	.m-d .media-information-wrap-ti .media-information-text
+		padding-right: 20px
+
+	.animation-transform .media-information-image__alone:before
+		background: url(../img/layer-dotted-mobile-small.svg) repeat 0 0
+		width: 85%
+		height: 93%
+		top: 0
+		left: 0
+
+	.form-personal-fill-gif__right:before
+		background: url(../img/layer-dotted-mobile-small.svg) repeat 0 0
+		width: 85%
+		height: 83%
+		top: 4px
+		left: 1px
+		transform: rotate(0deg) !important
+		
+	.form-personal-fill-gif
+		transform: translate(12px, 0px) !important
+		border-radius: 6px
+
+		
+	.media-information-wrap-it .media-information-text
+		padding-left: 40px
+
+	.media-information-text__paragraph br
+		display: none
+
+	.slider-full-one,
+	.slider-full-two,
+	.slider-full-three,
+	.slider-full-five,
+	.slider-full-four,
+	.slider-full-six
+		display: none
+
+	#mission .media-information-text__title
+		position: absolute
+		margin-top: -30px
+
+	#mission .media-information-text-b .media-information-wrap-ti
+		align-items: flex-start
+	
+	#mission .media-information-text__paragraph
+		padding-right: 50px
+
+	.questions-b-image__wrap
+		transform: translate(-17px,17px)
+	
+	.questions-b-image:before
+		opacity: 1
+	/**/
+		
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header-btn-wrap a
+		margin-right: 0
+
+	.header a[href="#work"],
+	.header a[href="#apply"],
+	.header a[href="#mission"]
+		display: none
+
+	.mouse-scroll
+		display: none
+
+	.form-popup
+		padding: 0 15px
+		width: calc(100% - 30px)
+
+	.questions-b-form
+		width: 100%
+
+	.questions-b-image
+		width: 50%
+		margin-left: 35px
+	
+	.questions-b-image__wrap img
+		width: 100%
+
+	.footer__inner
+		flex-direction: column
+
+	.footer-right-b
+		align-items: flex-start
+		flex-direction: column-reverse
+	
+	.social-links
+		margin-top: 100px
+		position: relative
+
+	.footer
+		padding-top: 80px
+
+	.footer-nav__items:first-child
+		left: inherit
+		
+	.footer-nav
+		margin-top: 70px
+
+	.footer__inner:last-child
+		flex-direction: column-reverse
+	
+	.footer__paragraph--s13
+		margin-top: 30px
+
+	.social-links__follow
+		display: block
+		position: absolute
+		top: -50px
+		font-size: 16px
+		font-weight: 500
+		color: #0c0c0c
+	/**/
+		
+/* Small Devices, Desktops */
+@media only screen and (max-width : 900px)
+	.media-information-image__one:before
+		width: 50%
+	.pt-add
+		padding-top: 70px !important
+	.modal
+		overflow-x: hidden
+		margin: 20px
+		width: auto
+	.modal-container.sd-1	
+		flex-direction: column
+		.modal-col.ml
+			width: 100%!important
+			margin-left: 0!important
+			
+		.modal-col
+			max-width: 100%!important
+			display: flex
+			flex-direction: column
+			align-items: center
+			// width: 100%
+			.modal_input
+				max-width: 500px
+			p
+				text-align: center
+		.modal-upload
+			width: 100%!important	
+		.btn_upload
+			max-width: 350px
+			width: 100%	
+	.modal-text
+				font-size: 19px!important
+				margin-top: 20px	
+	.modal-container.school-images
+		display: flex
+		flex-direction: column
+		align-items: center		
+		text-align: center	
+	.modal-col_images
+		width: 100%!important	
+		max-width: 100%!important
+	.modal-upload.images
+		width: 100%!important	
+	.btn_upload.images
+		width: 60%!important		
+		margin: auto
+	.modal-col.images
+		max-width: 100%!important
+		margin-left: 0!important	
+	.modal-upload.images.sd
+		width: 30%!important
+	span.images:before
+		display: none!important	
+		
+	.modal-col.admin
+		display: flex
+		flex-direction: column
+		align-items: center
+	.modal-col_admin-input
+		width: 100%
+		display: flex
+		flex-direction: column
+		input.modal_input
+			width: 100%!important
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.p-separat-m
+		display: block
+		height: 15px
+
+	.btn-border,
+	.btn-solid
+		height: 46px
+		padding: 0 30px
+
+	.main-screen-video
+		display: none
+		
+	.main-screen
+		display: none
+	
+	.mobile.eight-transform .media-information-image
+		display: flex
+		max-width: inherit
+		width: 100%
+
+	.mobile.eight-transform .media-information-image__img
+		width: auto
+	.create_btn
+		max-width: 200px
+		width: 100%
+		height: 30px
+		font-size: 14px
+		padding: 0 15px
+		margin-left: 10px
+	.real-talk-block
+		margin: 60px 0 0 0
+		padding: 0
+
+	.mobile.eight-transform .real-talk-block
+		display: flex
+		flex-direction: column
+		align-items: center
+	
+	.real-talk-block:last-child
+		margin-top: 0
+
+	.real-talk-block__title
+		font-size: 32px
+		line-height: 46px
+		text-align: center
+
+	.real-talk-block__paragraph
+		max-width: 524px
+		text-align: center
+		margin: 0 auto
+		
+	.real-talk-block__paragraph br
+		display: none
+	
+	.btn-participate
+		margin-top: 30px
+
+	.media-information__title-s33
+		font-size: 33px
+
+	.title-smyle
+		height: 32px
+		width: 32px
+
+	.title-smyle img
+		width: 47px
+		height: 47px
+
+	.media-information-image__img img
+		margin: -15px 0
+
+	.six-transform .media-information-image__img img
+		margin: 0 0 -30px
+	
+	.eight-transform .media-information-image__img img
+		margin: 0
+
+	.more-informations
+		padding-left: 14px
+		padding-right: 14px
+		padding-top: 120px
+
+	.media-information-text__title,
+	.more-informations-head__title,
+	.more-informations-body__title,
+	.how-work__title,
+	.form-personal__title,
+	.questions-b-form__title
+		font-size: 26px
+		text-align: center
+		line-height: 35px
+	
+	.more-informations-body
+		max-width: inherit
+		padding-left: 17px
+
+	.how-work-step
+		flex-direction: column
+	
+	.how-work-step__item
+		margin-right: 0
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+
+	.mobile.eight-transform .media-information-image__one .media-information-image__img 
+		transform: translate(10px,10px)
+
+	.mobile.eight-transform .media-information-image__two .media-information-image__img
+		transform: translate(-10px,-10px)
+
+	.media-information-image
+		display: none
+	
+	.media-information-text
+		width: 100%
+		text-align: center
+		&__btn
+			display: flex
+			justify-content: center
+
+	.pt-dis
+		padding-top: 70px !important
+	
+	.media-information-wrap-ti,
+	.media-information-wrap-it
+		padding-top: 50px
+	
+	.media-information-wrap-ti .media-information-image__one:before
+		transform: scaleY(1)
+		bottom: inherit
+		top: 0
+		
+	.media-information-wrap-ti .media-information-image__two:before
+		transform: rotate(180deg) scaleX(-1)
+		top: inherit
+		right: inherit
+		left: 0
+		bottom: 0
+
+	.media-information-wrap-it .media-information-image__two:before
+		transform: rotate(180deg) scaleX(-1)
+		top: inherit
+		right: inherit
+		left: 0
+		bottom: 0
+
+	.mobile.eight-transform .media-information-wrap-it .media-information-image__two:before
+		transform: rotate(180deg) scaleX(1)
+		top: inherit
+		right: 0
+		left: inherit
+		bottom: 0
+
+	.m-d .media-information-wrap-ti .media-information-image__one .media-information-image__img
+		transform: translate(12px, 12px) !important
+
+	.m-d .media-information-wrap-ti .media-information-image__two .media-information-image__img
+		transform: translate(12px, -11px) !important
+	
+	.m-d .media-information-wrap-it .media-information-image__two .media-information-image__img
+		transform: translate(12px, -11px) !important
+	
+	.m-d .mobile.eight-transform .media-information-wrap-it .media-information-image__two .media-information-image__img
+		transform: translate(-12px, -12px) !important
+
+	.media-information-wrap-it .media-information-text
+		padding-left: 0
+	
+	.m-d .media-information-wrap-ti .media-information-text
+		padding-right: 0
+		
+	.one-transform .media-information-text
+		margin-top: 0
+
+	.media-information-image__one.mobile
+		max-width: 400px
+		margin: 35px auto 0
+		justify-content: flex-start
+		&::before
+			width: 85%
+		& .media-information-image__img
+			width: calc( 100% - 10px )
+
+	.media-information-image__two.mobile
+		max-width: 400px
+		margin: 40px auto -20px
+		justify-content: flex-start
+		&::before
+			width: 85%
+		& .media-information-image__img
+			width: calc( 100% - 10px )
+
+	.media-information-image__alone.mobile
+		max-width: 400px
+		margin: 35px auto 0
+		justify-content: flex-start
+
+		& .media-information-image__img
+			width: calc( 100% - 10px ) !important
+
+	.media-information-text__paragraph
+		padding-top: 35px
+
+	#mission .media-information-text__paragraph
+		padding-top: 20px
+
+	.free-mobile
+		display: flex
+		flex-direction: column
+		padding-top: 30px
+		.free-block__title
+			line-height: 36px
+			font-size: 26px
+			color: #0C0C0C
+			padding-bottom: 15px
+	
+	.free-block
+		display: none
+
+	.decoration-line:before
+		height: 7px
+	.lang-de .decoration-line:before
+		height: 5px
+
+	.eight-transform,
+	.nine-transform
+		display: none
+
+	.eight-transform.mobile
+		display: block
+		padding-top: 40px
+
+	.more-informations-head__paragraph br
+		display: none
+		
+	.more-informations-head__paragraph.show-br .m-br
+		display: block !important
+
+	.media-information-wrap-it--long .media-information-text
+		padding-top: 0
+	
+	.text-drop-down
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.form-personal-tabs__item
+		margin-right: 8px
+		position: relative
+		display: flex
+		justify-content: center
+		text-align: center
+		line-height: 18px
+	
+	.form-personal-tabs__step
+		font-size: 12px
+
+	.lang-de .form-personal-tabs__step
+		font-size: 10px
+		line-height: 14px
+
+	.form-personal-tabs__step:before
+		width: 100%
+		height: 2px
+		border-radius: 0
+		position: absolute
+		bottom: -10px
+
+	.form-personal-fill
+		padding-top: 40px
+
+	#mission.media-information
+		padding-top: 120px
+	
+	#mission .media-information__inner
+		padding: 0
+
+	#mission .office-people-b
+		margin-top: 15px
+		display: block
+		
+	#mission .media-information-text__title
+		position: relative
+		margin: 0
+
+	#mission .media-information-wrap-ti .media-information-text__title
+		display: none
+
+	.office-people-b__wrap
+		height: 300px
+
+	.office-people-b__video
+		position: absolute
+		width: inherit
+
+	.media-information-text-b .media-information-wrap-ti
+		flex-direction: column
+		padding-top: 0
+	
+	.media-information-text-b .media-information-text:last-child
+		min-width: 100%
+
+	#mission .media-information-text__paragraph
+		padding-right: 0
+
+	#mission .media-information-image__one.mobile
+		margin-top: 25px
+
+	#mission .media-information-image__one.mobile img
+		margin: 0
+
+	#mission .media-information-text
+		padding: 0 15px
+
+	.office-people-b
+		display: none
+
+	.questions-b
+		padding-top: 120px
+		
+	.questions-b-image
+		display: none
+	
+	.questions-b-form
+		max-width: 438px
+		margin: 0 auto
+	
+	.questions-b-form__paragraph
+		text-align: center
+	
+	.questions-b-form__footer
+		justify-content: flex-end
+
+	.how-work
+		padding-top: 120px
+
+	.text-drop-down__paragraph
+		text-align: left
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	.burger-menu
+		display: block
+	
+	p
+		line-height: 24px
+
+	.header-lang__item:after
+		height: 12px
+		
+	.header__logo svg
+		width: 170px
+	
+	.header-lang
+		margin-right: 20px
+
+	.header-btn-wrap a
+		border-radius: 6px
+		height: 32px
+		font-size: 12px
+		padding: 0 20px
+	.modal-container.adrress
+		display: flex
+		flex-direction: column
+		align-items: center
+		.modal-col
+			text-align: center
+			max-width: 100%!important
+		.modal-col.ml
+			margin-left: 0!important
+	.real-talk-block__title
+		font-size: 26px
+		line-height: 36px
+	
+	.mobile.eight-transform
+		.media-information-wrap-it
+			padding-top: 30px
+			margin-bottom: -10px
+		
+	.mobile.eight-transform .media-information-image__img
+		width: 64vw
+		max-width: inherit
+		border-radius: 6px
+		
+	.media-information-image__two
+		margin-top: -20px
+		
+	.media-information__title-s33
+		font-size: 30px
+
+	.title-smyle-paragraph img
+		height: 30px
+		top: -3px
+		width: 30px
+
+	
+	.free-mobile
+		padding: 25px 0 10px
+		.free-block__title
+			padding-bottom: 0
+			br
+				display: block
+
+	.more-informations__item,
+	.how-work-step__paragraph
+		font-size: 19px
+		letter-spacing: 0
+
+	.more-informations__item:before
+		width: 8px
+		height: 8px
+		left: -16px
+		top: 10px
+
+	.content-icon-cornet
+		width: 42px
+		bottom: -14px
+		
+	.content-icon-mon
+		width: 25px
+
+	.text-drop-down__paragraph br
+		display: none
+
+	.form-personal-fill-step-1 .form-personal-fill__col-2,
+	.form-personal-fill-step-2 .form-personal-fill__col-2
+		flex-direction: column
+		margin-bottom: 0
+		
+	.form-personal-fill-step-1 .form-personal-fill__col-2 .form-personal-fill__item,
+	.form-personal-fill-step-2 .form-personal-fill__col-2 .form-personal-fill__item
+		margin-right: 0
+		margin-bottom: 15px
+	
+	.form-personal-fill__col-4 .form-personal-fill__item
+		width: calc(50% - 5px)
+	
+	.form-personal-fill__item-checkbox
+		margin-bottom: 15px
+	
+	.form-personal-fill-schedule__td
+		font-size: 11px
+	
+	.form-popup__background
+		height: auto
+
+	.form-popup__wrapper
+		padding: 40px 15px
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.form-popup__right-content__title
+		justify-content: center
+
+	.form-popup__paragraph
+		text-align: center
+
+	.form-popup__right-content
+		padding: 20px
+		width: 90%
+		align-items: center
+
+	.form-popup__right-content__title:after
+		background-color: #000 !important
+		width: 100%
+
+	
+	.form-popup__image img
+		width: 100px
+
+	.form-popup__paragraph
+		font-size: 19px
+
+	.form-popup__paragraph br
+		display: none
+	
+	.footer__paragraph--s13
+		flex-direction: column-reverse
+		align-items: flex-start
+	
+	.footer__paragraph-inline--first
+		margin-left: 0
+
+	.footer__paragraph--flex
+		margin-bottom: 15px
+
+	.footer__inner:last-child
+		padding-top: 30px
+		margin-top: 40px
+		padding-bottom: 0
+
+	.social-links
+		width: 100%
+		justify-content: space-between
+
+	.footer-nav__items
+		margin-left: 40px
+	
+	.header-btn-wrap
+		display: none
+		
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 550px)
+
+	.h-mobile
+		display: none
+
+	.form-popup__paragraph
+		font-size: 14px
+
+	.form-popup__right-content__title
+		max-width: 205px
+		margin: 0 auto
+	
+	.form-popup__right-content__title img
+		margin-left: 0
+		
+	.more-informations-body__lang
+		flex-direction: column
+		left: -10px
+		max-width: 292px
+		margin: 0 auto
+		display: none
+	
+	.more-informations-body__lang.mobile-lang
+		display: flex !important
+	
+	.mobile-lang--first
+		margin-bottom: -20px
+		position: relative
+		.btn_lang_en
+			position: relative
+			z-index: 9
+
+	.more-informations-body--lang_de
+		.more-informations-body__title
+			padding-top: 40px
+
+	.more-informations__item br
+		display: none
+
+	.widget_media_image:first-child
+		display: none
+
+	.site-info__logos .widget_media_image
+		margin: 0 20px 0 0
+
+	.mobile-dotted
+		display: inline
+
+	.lang-de .more-informations-head__paragraph .m-br
+		display: block !important
+
+	.more-informations-head__paragraph .m-br
+		display: none !important
+
+	.comply-MenuLauncherWrapper
+		right: 20px !important
+		bottom: 16px !important
+		left: inherit !important
+	.comply-Menu
+		bottom: 70px !important
+		left: inherit !important
+		right: 20px !important
+
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.m-br
+		display: block !important
+
+	.lang-de .seven-transform .media-information-text__title .m-br
+		display: block !important
+
+	.lang-de .media-information-text__title .m-br
+		display: none !important
+
+	.more-informations-head__title,
+	.more-informations-body__title
+		line-height: 35px
+
+	.questions-b-form__col-2
+		flex-direction: column
+		margin-bottom: 0
+	
+	.questions-b-form__col-2 .questions-b-form__item
+		margin-right: 0
+		margin-bottom: 15px
+
+	.footer-nav
+		flex-direction: column
+
+	.footer-nav__items
+		margin-left: 0
+		margin-top: 40px
+		&:first-child
+			margin-top: 0
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px)
+	body
+		zoom: 96%
+
+	.header-lang__link
+		font-size: 16px
+
+	.header-btn-wrap a
+		font-size: 14px
+		padding: 0 15px
+	/**/
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 365px)
+	.show-br
+		display: block !important
+	
+	.show-correct
+		zoom: 0.97 
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px)
+	.mobile
+		display: none
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

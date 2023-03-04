@@ -1,0 +1,2415 @@
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;500&display=swap"
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+
+/* reset style */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video
+	margin: 0
+	padding: 0
+	border: 0
+	outline: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+	display: block
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+input
+	line-height: normal
+
+ol,
+ul
+	list-style: none
+
+blockquote,
+q
+	quotes: none
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+	content: ""
+	content: none
+
+:focus
+	outline: 0
+
+ins
+	text-decoration: none
+
+del
+	text-decoration: line-through
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+/* typography */
+body
+	font-family: "Crimson Pro", serif
+	line-height: 1
+	color: #0c0c0c
+	overflow-x: hidden
+body.active
+	overflow: hidden
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight: normal
+
+nav ul
+	list-style: none
+
+a
+	color: #000
+	margin: 0
+	padding: 0
+	font-size: 100%
+	vertical-align: baseline
+	background: transparent
+	text-decoration: none
+
+p
+	letter-spacing: 0.01em
+	line-height: 27px
+	font-size: 21px
+	color: #404040
+	font-weight: 200
+
+p strong
+	color: #ffba0a
+	font-weight: 500
+
+img
+	border: none
+
+input,
+select,
+button,
+textarea
+	font-family: "Montserrat", sans-serif
+
+label,
+input[type="button"],
+input[type="submit"],
+button
+	cursor: pointer
+
+body
+	min-width: 1170px
+
+.pt-dis
+	padding-top: 0 !important
+
+.pt-add
+	padding-top: 120px !important
+
+.m-br
+	display: none
+
+.mobile-lang
+	display: none !important
+
+.social-links__follow
+	display: none
+
+.mobile-dotted
+	display: none
+
+.main-screen-video
+	position: absolute
+	width: 100%
+	height: calc(100% - 72px)
+	top: 72px
+	left: 0
+	-o-object-fit: cover
+	object-fit: cover
+	-o-object-position: top center
+	object-position: top center
+
+.content__link
+	color: #ffba0a
+	border-bottom: 1px solid #fff
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.content__link:hover
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	border-bottom: 1px solid #ffba0a
+
+/* header */
+
+
+
+.burger-menu-b
+	background-color: #fff
+	transform: translate(100%)
+	transition: all .3s
+	position: fixed
+	z-index: 8
+	top: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	padding: 100px 25px 25px
+	box-sizing: border-box
+	display: flex
+	justify-content: center
+	align-items: center
+	
+.burger-menu-b.active
+	transition: all .3s
+	transform: translate(0)
+	opacity: 1
+	
+.burger-menu-b__wrap
+	width: 100%
+
+.burger-menu-b.active .social-links
+	margin-top: 50px
+	
+.burger-menu-b.active .social-link__icon
+	max-width: inherit
+	
+
+.burger-menu-b__content
+	margin: 0 auto
+	max-width: 275px
+	.btn-solid
+		margin-top: 17px
+
+.burger-menu-b__items
+	padding-bottom: 20px
+	
+.burger-menu-b__item
+	margin-bottom: 30px
+	.btn-nav-link
+		font-family: Montserrat,sans-serif
+		font-size: 19px
+		font-weight: 400
+		line-height: 29px
+
+.burger-menu
+	background-color: #FFFBF1
+	width: 34px
+	height: 34px
+	position: relative
+	border: 0
+	display: none
+
+.burger-menu span
+	width: 16px
+	height: 2px
+	left: 50%
+	position: absolute
+	background-color: #FFBA0A
+
+.burger-menu span:nth-child(1)
+	top: 10px
+	transform: translate(-50%, 0)
+	transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s, transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87)
+
+.burger-menu span:nth-child(2)
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+.burger-menu span:nth-child(3)
+	transform: translate(-50%, 0)
+	bottom: 10px
+	transition: bottom 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s, transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87)
+
+.burger-menu.active span:nth-child(1)
+	top: 50%
+	transform: translateX(-50%) translateY(0) rotate(45deg)
+	transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s
+	width: 20px
+
+.burger-menu.active span:nth-child(2)
+	opacity: 0
+
+.burger-menu.active span:nth-child(3)
+	bottom: 15px
+	transform: translateX(-50%) translateY(0) rotate(-45deg)
+	transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s
+	width: 20px
+
+	
+
+.header
+	background: #ffffff
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03)
+	position: sticky
+	z-index: 9
+	top: 0
+	width: 100%
+	font-family: "Montserrat", sans-serif
+
+.header__inner
+	width: 100%
+	max-width: 1170px
+	padding: 16px 15px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-direction: row
+	box-sizing: border-box
+
+.header__logo img
+	display: block
+
+.header__nav
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+
+.header-lang
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	margin-right: 26px
+
+.header-lang__item
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	align-items: center
+
+.header-lang__item:after
+	background-color: #d5d8da
+	width: 2px
+	height: 10px
+	display: block
+	content: ""
+	margin: 0 8px
+
+.header-lang__item:last-child:after
+	display: none
+
+.header-lang__link
+	font-size: 14px
+	color: #000
+	font-weight: 500
+	-webkit-transition: 0.2s linear 0s
+	-o-transition: 0.2s linear 0s
+	transition: 0.2s linear 0s
+
+.header-lang__link--active,
+.header-lang__link:hover
+	color: #ffba0a
+	-webkit-transition: 0.2s linear 0s
+	-o-transition: 0.2s linear 0s
+	transition: 0.2s linear 0s
+
+.header-btn-wrap
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	align-items: center
+
+.header-btn-wrap a
+	margin-right: 26px
+
+.header-btn-wrap a:last-child
+	margin-right: 0
+
+.btn-border
+	background: #ffffff
+	border: 1px solid #ffba0a
+	border-radius: 12px
+	height: 40px
+	padding: 0 26px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-family: Montserrat,sans-serif
+	font-size: 16px
+	box-sizing: border-box
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.btn-border:hover
+	background-color: #ffba0a
+	-webkit-box-shadow: 0 3px 3px rgb(0 0 0 / 20%)
+	box-shadow: 0 3px 3px rgb(0 0 0 / 20%)
+	-webkit-transform: translateY(-2px)
+	-ms-transform: translateY(-2px)
+	transform: translateY(-2px)
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.btn-solid
+	border: 1px solid #ffba0a
+	border-radius: 12px
+	height: 40px
+	padding: 0 26px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #ffca18
+	font-family: Montserrat,sans-serif
+	font-size: 16px
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	box-sizing: border-box
+
+.btn-solid:hover
+	background-color: #ffba0a
+	-webkit-box-shadow: 0 3px 3px rgb(0 0 0 / 20%)
+	box-shadow: 0 3px 3px rgb(0 0 0 / 20%)
+	-webkit-transform: translateY(-2px)
+	-ms-transform: translateY(-2px)
+	transform: translateY(-2px)
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.btn-nav-link
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	font-size: 14px
+	border-bottom: 1px solid #fff
+	padding: 2px 0
+.btn-nav-link.login
+	margin-right: 15px
+.btn-nav-link:hover
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	border-bottom: 1px solid #ffba0a
+
+@-webkit-keyframes scroll
+	100%
+		opacity: 0
+		-webkit-transform: translateY(20px)
+		transform: translateY(20px)
+
+@keyframes scroll
+	100%
+		opacity: 0
+		-webkit-transform: translateY(20px)
+		transform: translateY(20px)
+
+
+	
+.mouse-scroll
+	border: 2px solid #ffffff
+	border-radius: 15px
+	display: block
+	height: 46px
+	position: relative
+	bottom: 14vh
+	z-index: 1
+	opacity: 1
+	-webkit-transform: translateX(-50%)
+	transform: translateX(-50%)
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	width: 30px
+
+.mouse-scroll__disc
+	-webkit-animation-duration: 1s
+	animation-duration: 1s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
+	-webkit-animation-iteration-count: infinite
+	animation-iteration-count: infinite
+	-webkit-animation-name: scroll
+	animation-name: scroll
+	background: none repeat scroll 0 0 #ffffff
+	border: 1px solid transparent
+	border-radius: 4px
+	display: block
+	height: 4px
+	margin: 6px auto
+	width: 4px
+
+
+	
+
+
+
+	
+		
+
+
+.main-screen
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: flex-start
+	align-items: flex-end
+	position: relative
+	padding-top: 72px
+	box-sizing: border-box
+
+.main-screen__inner
+	width: 100%
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	box-sizing: border-box
+
+.real-talk-block
+	opacity: 1
+	border-radius: 24px
+	background-color: #fff
+	padding: 25px 35px 30px 35px
+	margin: 0 0 14vh -35px
+
+.real-talk-block__title
+	font-family: "Montserrat", sans-serif
+	font-size: 38px
+	font-weight: 500
+	line-height: 1.3
+
+.real-talk-block__title strong
+	font-weight: 600
+	color: #ffba0a
+
+.real-talk-block__paragraph
+	padding-top: 22px
+
+.one-transform.media-information
+	padding-top: 120px
+
+.de-align-end .media-information-wrap-it
+	align-items: flex-end
+
+.de-align-end .media-information-text
+	padding-bottom: 15px
+
+.media-information
+	box-sizing: border-box
+	padding-top: 72px
+
+.media-information__inner
+	width: 100%
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	box-sizing: border-box
+
+.media-information__title-s33
+	font-family: "Montserrat", sans-serif
+	font-size: 38px
+	text-align: center
+	display: flex
+	font-weight: 500
+	justify-content: center
+
+.title-smyle
+	border-radius: 50%
+	width: 36px
+	height: 36px
+	position: relative
+	overflow: hidden
+	margin-left: 6px
+
+.title-smyle img
+	width: 52px
+	height: 52px
+	display: block
+	top: -8px
+	left: -8px
+	position: absolute
+
+.title-smyle-paragraph
+	border-radius: 50%
+	width: 28px
+	height: 28px
+	position: relative
+	overflow: hidden
+	margin-left: 6px
+
+.title-smyle-paragraph img
+	width: 40px
+	height: 40px
+	display: block
+	top: -6px
+	left: -6px
+	position: absolute
+
+.media-information-wrap-it,
+.media-information-wrap-ti
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
+	padding-top: 70px
+
+.media-information-wrap-ti
+	padding-top: 120px
+
+.media-information-image
+	width: 50%
+	box-sizing: border-box
+	display: flex
+	flex-direction: column
+	position: relative
+
+.nine-transform
+	padding-bottom: 40px
+
+.nine-transform .media-information-image
+	align-items: flex-end
+
+.nine-transform .media-information-text
+	position: relative
+	top: -50px
+
+.media-information-wrap-ti .media-information-image
+	flex-direction: column-reverse
+
+.media-information-image__animation
+	position: absolute
+	z-index: 2
+	top: -152px
+	right: -5px
+
+.media-information-image__animation .media-information-image__img
+	width: 256px
+	height: 162px
+
+.media-information-wrap-ti .media-information-image__two
+	margin-top: 0
+	margin-bottom: -50px
+
+.plane-left:after
+	background: url(../img/plane-left.svg) no-repeat center
+	display: block
+	content: ""
+	width: 630px
+	height: 668px
+	position: absolute
+	z-index: -1
+	top: 271px
+	left: -10px
+
+.four-transform .plane-left:after,
+.six-transform .plane-left:after,
+.eight-transform .plane-left:after,
+.ten-transform.plane-left:after
+	background: url(../img/plane-left-long.svg) no-repeat center
+	width: 689px
+	height: 711px
+	top: 245px
+
+.eight-transform .plane-left:after
+	left: -27px
+	top: 252px
+
+.ten-transform.plane-left:after
+	left: -28px
+	top: 252px
+
+.ten-transform.plane-left--toggle:after
+	background: url(../img/plane-left-long2.svg) no-repeat center
+	width: 781px
+	height: 923px
+	top: 340px
+	left: -70px
+
+.lang-de .ten-transform.plane-left--toggle:after
+	background: url(../img/plane-left-long3.svg) no-repeat center
+	width: 843px
+	height: 1030px
+	left: -98px
+	top: 341px
+
+.plane-right:after
+	background: url(../img/plane-right.svg) no-repeat center
+	display: block
+	content: ""
+	width: 736px
+	height: 755px
+	position: absolute
+	z-index: -1
+	top: 230px
+	right: -25px
+
+.lang-de .plane-right:after
+	top: 195px
+	
+.five-transform .plane-right:after
+	top: 195px
+
+.media-information-image__one
+	position: relative
+	display: flex
+	z-index: 1
+
+.four-transform .media-information-image__one,
+.six-transform .media-information-image__one,
+.eight-transform .media-information-image__one
+	z-index: 0
+
+.media-information-image__one:before
+	background: url(../img/layer-dotted.svg) no-repeat top left
+	display: block
+	width: 100%
+	height: 100%
+	content: ""
+	position: absolute
+	left: 0
+	top: 0
+	opacity: 0
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.media-information-wrap-ti .media-information-image__one:before
+	background-position: top left
+	top: inherit
+	bottom: 0
+	transform: scale(1, -1)
+
+.media-information-image__two
+	text-align: right
+	margin-top: -50px
+	display: flex
+	margin-left: auto
+	position: relative
+
+.media-information-image__two:before
+	background: url(../img/layer-dotted.svg) no-repeat top left
+	display: block
+	width: 100%
+	height: 100%
+	content: ""
+	position: absolute
+	right: 0
+	bottom: 0
+	opacity: 0
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+	transform: rotate(180deg)
+
+.media-information-wrap-ti .media-information-image__two:before
+	background-position: top left
+	bottom: inherit
+	top: 0
+	transform: scale(-1, 1)
+
+.media-information-image__alone
+	position: relative
+	z-index: 1
+	display: flex
+	justify-content: flex-end
+
+.media-information-image__alone:before
+	background: url(../img/layer-dotted-big.svg) no-repeat bottom right
+	display: block
+	width: 100%
+	height: 100%
+	content: ""
+	position: absolute
+	right: 0
+	bottom: 0
+	opacity: 0
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.animation-transform.active .media-information-image__one .media-information-image__img,
+.animation-transform.mobile .media-information-image__one .media-information-image__img
+	transform: translate(15px, 15px)
+
+.animation-transform.active .media-information-image__two .media-information-image__img,
+.animation-transform.mobile .media-information-image__two .media-information-image__img
+	transform: translate(-15px, -15px)
+
+.animation-transform.active .media-information-wrap-ti .media-information-image__one .media-information-image__img,
+.animation-transform.mobile .media-information-wrap-ti .media-information-image__one .media-information-image__img
+	transform: translate(15px, -15px)
+
+.animation-transform.active .media-information-wrap-ti .media-information-image__two .media-information-image__img,
+.animation-transform.mobile .media-information-wrap-ti .media-information-image__two .media-information-image__img
+	transform: translate(-15px, 15px)
+
+.animation-transform.active .media-information-image__alone .media-information-image__img
+	transform: translate(-20px, -20px)
+
+.animation-transform.nine-transform.active .media-information-image__alone .media-information-image__img,
+.animation-transform.nine-transform.mobile .media-information-image__alone .media-information-image__img
+	transform: translate(17px, -17px)
+
+.nine-transform .media-information-image__alone
+	margin-right: 20px
+	max-width: 480px
+
+.animation-transform.active .media-information-image__one:before,
+.animation-transform.active .media-information-image__two:before,
+.animation-transform.active .media-information-image__alone:before,
+.animation-transform.mobile .media-information-image__one:before,
+.animation-transform.mobile .media-information-image__two:before,
+.animation-transform.mobile .media-information-image__alone:before,
+.m-d .media-information-image__one:before,
+.m-d .media-information-image__two:before,
+.m-d .media-information-image__alone:before
+	opacity: 1
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.nine-transform.animation-transform .media-information-image__alone:before
+	background: url(../img/layer-dotted-gim.svg) no-repeat bottom left
+	top: inherit
+	bottom: 0
+	left: 0
+	transform: scale(1, 1)
+
+.media-information-image__img
+	display: flex
+	justify-content: flex-end
+	border-radius: 14px
+	position: relative
+	overflow: hidden
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+	max-width: 400px
+
+.media-information-image__alone .media-information-image__img
+	max-width: inherit
+
+.media-information-image__img img
+	display: block
+
+.media-information-image__img--gif
+	height: 184px
+
+.media-information-text
+	width: 50%
+	box-sizing: border-box
+
+.one-transform .media-information-text
+	margin-top: -45px
+
+.media-information-wrap-it .media-information-text
+	padding-left: 96px
+
+.media-information-text-b .media-information-wrap-ti
+	align-items: flex-end
+	justify-content: space-between
+	padding-top: 60px
+
+.lang-de .media-information-text-b .media-information-wrap-ti
+	align-items: center
+
+.media-information-text-b .media-information-text:last-child
+	max-width: 450px
+
+.media-information-text__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	font-weight: 500
+
+.media-information-text__paragraph
+	padding-top: 25px
+
+.p-separat
+	display: block
+	height: 15px
+
+.footer-separat
+	display: block
+	height: 12px
+
+.decoration-line
+	position: relative
+
+.decoration-line:before
+	background: url(../img/line-highlight.png) no-repeat
+	background-size: 100% 100%
+	height: 12px
+	width: 0%
+	content: ""
+	display: block
+	position: absolute
+	margin-top: 4px
+	top: 100%
+	left: -5px
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+.lang-de .decoration-line:before
+	margin-top: 0px 
+	height: 6px
+
+.animation-transform.active .decoration-line:before,
+.m-d .animation-transform.mobile-a.active .decoration-line:before
+	width: calc(100% + 5px)
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.free-block
+	padding-top: 180px
+	padding-bottom: 40px
+
+.free-block,
+.free-block__inner
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: relative
+
+.free-block__logo
+	position: absolute
+	z-index: -1
+	left: -30px
+	top: -120px
+
+.free-block__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	padding-bottom: 35px
+	font-weight: 500
+
+.free-block__title:last-child
+	padding-bottom: 0
+
+.free-block__title strong
+	color: #ffba0a
+	font-weight: 500
+
+.pin-spacer
+	width: 100% !important
+	overflow: hidden !important
+
+.slider-full-one
+	position: relative
+	overflow: hidden
+
+.slider-full-one__wrap
+	width: 500vw
+	height: 100vh
+	display: flex
+	flex-wrap: nowrap
+	box-sizing: border-box
+	align-items: center
+	justify-content: center
+
+.slider-full-one__img,
+.slider-full-one__img-wrap
+	height: 100vh
+
+.slider-full-one__img-wrap--img
+	width: 100vw
+	height: 100vh
+	background-size: cover !important
+
+
+.slider-full-two,
+.slider-full-three,
+.slider-full-four,
+.slider-full-five,
+.slider-full-six
+	position: relative
+	overflow: hidden
+
+.slider-full-two__wrap,
+.slider-full-three__wrap,
+.slider-full-four__wrap,
+.slider-full-five__wrap,
+.slider-full-six__wrap
+	width: 500vw
+	height: 100vh
+	display: flex
+	flex-wrap: nowrap
+	box-sizing: border-box
+	align-items: center
+	justify-content: center
+
+.slider-full-two__img,
+.slider-full-two__img-wrap,
+.slider-full-three__img,
+.slider-full-three__img-wrap,
+.slider-full-four__img,
+.slider-full-four__img-wrap,
+.slider-full-five__img,
+.slider-full-five__img-wrap,
+.slider-full-six__img,
+.slider-full-six__img-wrap
+	height: 100vh
+
+.slider-full-two__img-wrap--img,
+.slider-full-three__img-wrap--img,
+.slider-full-four__img-wrap--img,
+.slider-full-five__img-wrap--img,
+.slider-full-six__img-wrap--img
+	width: 100vw
+	height: 100vh
+	background-size: cover !important
+
+
+.more-informations
+	padding-top: 140px
+
+.more-informations-head
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+
+.more-informations-head__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	font-weight: 500
+
+.more-informations-head__paragraph
+	padding-top: 20px
+
+.btn-border--content
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	height: 46px
+	padding: 0 35px
+	margin-top: 22px
+	min-width: 220px
+
+.btn-solid--content
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	height: 46px
+	padding: 0 35px
+	margin-top: 22px
+	min-width: 220px
+
+.more-informations-body
+	max-width: 560px
+	margin: 0 auto
+	padding: 0 0 15px 130px
+	position: relative
+	overflow: hidden
+
+.lang-de .more-informations-body
+	max-width: 581px
+
+.more-informations-body--lang_en,
+.more-informations-body--lang_de
+	position: relative
+
+.more-informations-body--lang_en.active,
+.more-informations-body--lang_de.active
+	opacity: 1
+
+.more-informations-body__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	padding-top: 60px
+	font-weight: 500
+
+.more-informations__item
+	font-size: 21px
+	color: #303030
+	font-weight: 200
+	letter-spacing: 0.01em
+	line-height: 27px
+	margin-top: 20px
+	position: relative
+
+.more-informations__item strong
+	font-weight: 500
+
+.more-informations__item:before
+	border-radius: 50%
+	background: #ffba0a
+	width: 12px
+	height: 12px
+	content: ""
+	display: block
+	position: absolute
+	left: -20px
+	top: 8px
+
+.more-informations-body__lang
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	left: -20px
+	position: relative
+	padding-top: 30px
+
+.form-personal
+	padding-top: 140px
+
+.form-personal__inner
+	display: flex
+	align-items: center
+	flex-direction: column
+	overflow: hidden
+
+.form-personal__title
+	font-family: "Montserrat", sans-serif
+	font-size: 36px
+	font-weight: 500
+
+.form-personal-tabs__items
+	display: flex
+	flex-direction: row
+	padding-top: 48px
+
+.form-personal-tabs__item
+	margin-right: 45px
+
+.form-personal-tabs__item:last-child
+	margin-right: 0
+
+.form-personal-tabs__step
+	font-family: "Montserrat", sans-serif
+	font-size: 13px
+	color: #727272
+	cursor: pointer
+	display: flex
+	align-items: center
+
+.form-personal-tabs__step--active
+	color: #000
+	cursor: default
+
+.form-personal-tabs__step:before
+	background-color: #d5d8da
+	border-radius: 50%
+	width: 8px
+	height: 8px
+	content: ""
+	display: block
+	margin: 0px 6px 0 0
+
+.form-personal-tabs__step--active:before
+	background-color: #ffba0a
+
+.form-personal-fill
+	max-width: 458px
+	padding-top: 50px
+	margin: 0 auto
+
+.form-personal-fill__wrap
+	position: relative
+	min-height: 392px
+
+.form-personal-fill-gif__left
+	padding: 0 0 15px 15px
+	position: absolute
+	width: auto
+	left: -100%
+	bottom: 42px
+	margin-left: 50px
+
+.form-personal-fill-gif__right
+	padding: 15px 15px 0 0
+	position: absolute
+	right: -100%
+	top: -17px
+	margin-right: 50px
+
+.form-personal-fill-gif__left:before,
+.form-personal-fill-gif__right:before
+	background: url(../img/layer-dotted-gif.svg) no-repeat
+	width: 100%
+	height: 100%
+	display: block
+	content: ""
+	position: absolute
+
+.form-personal-fill-gif__left:before
+	background-position: bottom left
+	bottom: 0
+	left: 0
+
+.form-personal-fill-gif__right:before
+	background-position: bottom left
+	top: 0
+	right: 0
+	transform: rotate(180deg)
+
+.form-personal-fill-gif
+	width: 300px
+	height: 230px
+	position: relative
+	overflow: hidden
+	border-radius: 12px
+
+.form-personal-fill-gif__left img
+	height: 100%
+	width: 137%
+	display: block
+	position: relative
+	left: -28%
+
+.form-personal-fill-gif__right img
+	height: 100%
+	width: 100%
+	display: block
+
+.form-personal-fill__title
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	padding-bottom: 12px
+	font-weight: 500
+
+.form-personal-fill__title--pt
+	padding-top: 15px
+
+.form-personal-fill__col-1
+	margin-bottom: 15px
+
+.form-personal-fill-step-2 .form-personal-fill__col-1 .form-personal-fill__item
+	margin-top: 15px
+	display: block
+
+.form-personal-fill__col-2
+	margin-bottom: 15px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.form-personal-fill__col-2 .form-personal-fill__item
+	margin-right: 15px
+
+.form-personal-fill__col-2 .form-personal-fill__item:last-child
+	margin-right: 0
+
+.form-personal-fill__item
+	width: 100%
+	position: relative
+
+.form-personal-fill__input-text
+	border-radius: 11px
+	width: 100%
+	height: 43px
+	border: 1px solid #ccc
+	padding: 0 14px
+	box-sizing: border-box
+	padding-bottom: 2px
+
+.form-personal-fill__item.error span
+	color: #ff5327
+	font-family: "Montserrat", sans-serif
+	font-size: 11px
+
+.form-personal-fill__item.error .form-personal-fill__input-text
+	border: 1px solid #fe6d48
+
+.form-personal-fill__col-4
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 15px
+
+.form-personal-fill__col-4 .form-personal-fill__item
+	width: calc(25% - 5px)
+
+.form-personal-fill__item-checkbox
+	position: relative
+	border-radius: 11px
+	border: 1px solid #ccc
+	height: 36px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	color: #727272
+	margin-bottom: 6px
+
+.form-personal-fill__item-checkbox--checked
+	border: 1px solid #ffba0a
+	color: #000
+
+.form-personal-fill__col-2 .form-personal-fill__item-checkbox
+	margin: 0
+	font-size: 13px
+
+.form-personal-fill__col-1 .form-personal-fill__item-checkbox
+	font-size: 13px
+
+.form-personal-fill__checkbox-level
+	color: #ffba0a
+	display: inline-block
+	margin-right: 4px
+
+.form-personal-fill__input-checkbox
+	position: absolute
+	width: 100%
+	height: 100%
+	opacity: 0
+	cursor: pointer
+	margin: 0
+	padding: 0
+
+.form-personal-fill__add-btn
+	font-family: "Montserrat", sans-serif
+	font-size: 13px
+	color: #ffba0a
+	margin: 8px 0 0 14px
+	display: inline-block
+
+.form-personal-fill-schedule
+	border-radius: 8px
+	border: 1px solid #e5e8ed
+	position: relative
+	overflow: hidden
+	margin-bottom: 15px
+
+.form-personal-fill-schedule__table
+	width: 100%
+
+.form-personal-fill-schedule__th
+	background-color: #fffbf1
+	border-right: 1px solid #e5e8ed
+	border-bottom: 1px solid #e5e8ed
+	height: 38px
+	box-sizing: border-box
+	vertical-align: middle
+	font-family: "Montserrat", sans-serif
+	font-size: 14px
+	font-weight: 400
+	width: 8%
+
+.form-personal-fill-schedule__th:first-child
+	width: 12%
+
+.form-personal-fill-schedule__th:last-child
+	border-right: 0
+
+.form-personal-fill-schedule__td
+	border-right: 1px solid #e5e8ed
+	border-bottom: 1px solid #e5e8ed
+	height: 28px
+	box-sizing: border-box
+	vertical-align: middle
+	font-family: "Montserrat", sans-serif
+	font-size: 14px
+	font-weight: 400
+
+.form-personal-fill-schedule__td:first-child
+	background-color: #fffbf1
+	width: 115px
+	text-align: center
+
+.form-personal-fill-schedule__td:last-child
+	border-right: 0
+
+.form-personal-fill-schedule__tr:last-child .form-personal-fill-schedule__td
+	border-bottom: 0
+
+.form-personal-fill-schedule-checkbox
+	position: relative
+	display: block
+	width: 100%
+	height: 100%
+
+.form-personal-fill-schedule-checkbox--checked
+	background-color: #ffca18
+
+.form-personal-fill-schedule__input-checkbox
+	width: 100%
+	height: 100%
+	position: absolute
+	display: block
+	cursor: pointer
+	opacity: 0
+
+.form-personal-fill__item-textarea
+	border-radius: 11px
+	width: 100%
+	min-height: 108px
+	border: 1px solid #ccc
+	padding: 10px 14px
+	box-sizing: border-box
+	padding-bottom: 2px
+	resize: none
+
+.form-personal-fill__footer
+	display: flex
+	justify-content: flex-end
+
+.form-personal-fill__btn-next,
+.form-personal-fill__btn-send
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	height: 44px
+	margin: 0
+	padding: 0 35px
+
+.form-personal-fill-step-1,
+.form-personal-fill-step-2,
+.form-personal-fill-step-3,
+.form-personal-fill-step-4
+	display: none
+
+.form-personal-fill__form--active
+	display: block
+
+.questions-b-form__icon
+	position: absolute
+	margin-left: 10px
+
+.questions-b
+	padding-top: 180px
+
+.questions-b__inner
+	width: 100%
+	max-width: 1170px
+	padding: 14px 15px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-direction: row
+	box-sizing: border-box
+
+.questions-b-form
+	max-width: 426px
+
+.questions-b-form__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	font-weight: 500
+
+.questions-b-form__paragraph
+	color: #000
+	padding-top: 20px
+
+.questions-b-form__wrap
+	padding-top: 20px
+
+.questions-b-form__col-2
+	margin-bottom: 15px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.questions-b-form__col-2 .questions-b-form__item
+	margin-right: 15px
+
+.questions-b-form__col-2 .questions-b-form__item:last-child
+	margin-right: 0
+
+.questions-b-form__col-1
+	margin-bottom: 15px
+
+.questions-b-form__item
+	width: 100%
+
+.questions-b-form__item.error span
+	color: #ff5327
+	font-family: "Montserrat", sans-serif
+	font-size: 11px
+
+.questions-b-form__item.error .questions-b-form__input-text
+	border: 1px solid #fe6d48
+
+.questions-b-form__item.error .questions-b-form__item-textarea
+	border: 1px solid #fe6d48
+
+.questions-b-form__item-textarea
+	border-radius: 11px
+	width: 100%
+	min-height: 140px
+	border: 1px solid #ccc
+	padding: 10px 14px
+	box-sizing: border-box
+	padding-bottom: 2px
+	resize: none
+
+.questions-b-form__input-text
+	border-radius: 11px
+	width: 100%
+	height: 43px
+	border: 1px solid #ccc
+	padding: 0 14px
+	box-sizing: border-box
+	padding-bottom: 2px
+
+.questions-b-form__footer
+	display: flex
+	justify-content: flex-start
+
+.questions-b-form__btn-submit
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	height: 44px
+	margin: 0
+	padding: 0 35px
+
+.questions-b-image
+	position: relative
+	z-index: 1
+	margin-top: 45px
+
+.questions-b-image:before
+	background: url(../img/layer-dotted-big-top.svg) no-repeat top right
+	display: block
+	width: 100%
+	height: 100%
+	content: ""
+	position: absolute
+	right: 0
+	top: 0
+	opacity: 0
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.questions-b-image__wrap
+	display: flex
+	justify-content: flex-end
+	border-radius: 14px
+	position: relative
+	overflow: hidden
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.questions-b-image__wrap img
+	display: block
+
+.animation-transform.active .questions-b-image__wrap,
+.animation-transform.mobile .questions-b-image__wrap
+	transform: translate(-17px, 17px)
+
+.animation-transform.active .questions-b-image:before,
+.animation-transform.mobile .questions-b-image:before
+	opacity: 1
+	-webkit-transition: 1s
+	-o-transition: 1s
+	transition: 1s
+
+.office-people-b
+	width: 100%
+	margin-top: 50px
+
+.office-people-b__wrap
+	position: relative
+	overflow: hidden
+
+.office-people-b__wrap:before
+	background-color: #fff
+	width: 100%
+	height: 2px
+	position: absolute
+	z-index: 1
+	content: ""
+	top: 0
+	left: 0
+
+.office-people-b__wrap:after
+	background-color: #fff
+	width: 100%
+	height: 5px
+	position: absolute
+	z-index: 1
+	content: ""
+	bottom: 0
+	left: 0
+
+.office-people-b__video
+	width: 101%
+	height: 100%
+	margin-left: -1px
+
+.content-icon-cornet
+	width: 57px
+	position: relative
+	bottom: -20px
+	z-index: -1
+
+.content-icon-mon
+	width: 31px
+	position: absolute
+	margin-left: 10px
+	bottom: 0
+
+.how-work
+	padding-top: 140px
+
+.how-work__inner
+	width: 100%
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	box-sizing: border-box
+	align-items: center
+
+.how-work__title
+	font-family: "Montserrat", sans-serif
+	font-size: 33px
+	font-weight: 500
+
+.how-work-step
+	display: flex
+	flex-direction: row
+	padding-top: 40px
+
+.how-work-step__item
+	border-radius: 12px
+	background-color: #fffbf1
+	display: flex
+	flex-direction: column
+	margin-right: 32px
+	padding: 26px
+	box-sizing: border-box
+
+.lang-de .how-work-step__item
+	width: 33%
+.lang-de.m-d .how-work-step__item
+	width: 100%
+
+.how-work-step__item:last-child
+	margin-right: 0
+
+.how-work-step__head
+	border-radius: 50%
+	border: 1px dashed #ffba0a
+	width: 45px
+	height: 45px
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	font-family: "Montserrat", sans-serif
+	font-size: 30px
+	color: #4e342e
+	box-sizing: border-box
+
+.how-work-step__paragraph
+	padding-top: 20px
+
+.how-work-step__icon
+	padding-top: 40px
+	display: flex
+	justify-content: flex-end
+
+.how-work .more-informations-head__paragraph
+	text-align: center
+	position: relative
+	padding-top: 0
+
+.media-information-wrap-it--long
+	align-items: flex-start
+
+.media-information-wrap-it--long .media-information-text
+	padding-top: 125px
+
+.text-drop-down__btn
+	font-size: 21px
+	color: #ffba0a
+	display: flex
+	align-items: center
+	margin-top: 30px
+
+.text-drop-down__btn:after
+	background: url(../img/arrow-toggle-block.png) no-repeat
+	width: 12px
+	height: 7px
+	content: ""
+	display: block
+	margin-left: 10px
+	margin-top: 2px
+	transform: rotate(180deg)
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.text-drop-down__btn--active:after
+	transform: rotate(0deg)
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.text-drop-down__content
+	margin-top: 30px
+
+.text-drop-down__paragraph
+	font-size: 19px
+	line-height: 24px
+	margin-bottom: 20px
+
+.text-drop-down__paragraph:last-child
+	margin-bottom: 0
+
+.text-drop-down__paragraph strong
+	color: #ffba0a
+	font-weight: 500
+
+.footer
+	padding-top: 180px
+	position: relative
+
+.footer__inner
+	width: 100%
+	max-width: 1170px
+	padding: 15px 15px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: stretch
+	flex-direction: row
+	box-sizing: border-box
+	position: relative
+
+.footer__inner:last-child:before
+	border-top: 1px solid #d5d8da
+	width: calc(100% - 30px)
+	height: 1px
+	content: ""
+	display: block
+	position: absolute
+	top: 1px
+
+.footer__inner:last-child
+	padding: 20px 15px 48px
+	margin-top: 8px
+
+.footer-left-b
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.footer__paragraph
+	font-family: "Montserrat", sans-serif
+	font-size: 14px
+	color: #4b4c4b
+	line-height: 26px
+	font-weight: normal
+
+.footer__paragraph--s13
+	color: #000
+	font-size: 13px
+	letter-spacing: -0px
+
+.footer__paragraph--flex
+	display: flex
+	align-items: center
+
+.footer__paragraph--last
+	padding-top: 40px
+
+.footer__link
+	color: #ffba0a
+	border-bottom: 1px solid #fff
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+
+.footer__link:hover
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	border-bottom: 1px solid #ffba0a
+
+.footer__link--dark
+	color: #000
+	border-bottom: 1px solid #ffba0a
+
+.footer-nav
+	display: flex
+	margin-top: -32px
+
+.footer-nav__items
+	margin-left: 91px
+
+.footer-nav__items:first-child
+	margin-left: 0
+	position: relative
+	left: -15px
+
+.footer-nav__item
+	margin-bottom: 20px
+
+.footer-nav__item:last-child
+	margin-bottom: 0
+
+.footer-nav__name
+	font-family: "Montserrat", sans-serif
+	font-size: 16px
+	font-weight: 500
+
+.footer-nav__link
+	font-family: "Montserrat", sans-serif
+	font-size: 14px
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	border-bottom: 1px solid #fff
+	color: #4b4c4b
+	padding: 2px 0
+
+.footer-nav__link:hover
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	border-bottom: 1px solid #ffba0a
+
+.footer-right-b
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	justify-content: space-between
+
+.social-links
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	padding-bottom: 2px
+	margin-right: -2px
+
+a.social-link
+	width: 24px
+	margin: 0 20px 0 0
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	-webkit-transition: -webkit-transform 0.2s linear 0s
+	transition: -webkit-transform 0.2s linear 0s
+	-o-transition: transform 0.2s linear 0s
+	transition: transform 0.2s linear 0s
+	transition: transform 0.2s linear 0s, -webkit-transform 0.2s linear 0s
+
+a.social-link svg
+	width: 100%
+	height: auto
+
+a.social-link:hover
+	-webkit-transform: scale(1.2)
+	-ms-transform: scale(1.2)
+	transform: scale(1.2)
+
+a.social-link:last-child
+	margin: 0 0 0 0
+
+a.social-link
+	margin: 0 15px 0 0
+
+.footer .social-links a.social-link:after
+	width: 30px
+	height: 30px
+	margin: -15px 0 0 -15px
+
+.footer .social-links a.social-link
+	width: 28px
+	position: relative
+
+.footer .social-links a.social-link:after
+	border-radius: 50px
+	width: 35px
+	height: 35px
+	background-color: #fffbf1
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -17px 0 0 -17px
+	content: ""
+	z-index: -9
+
+.social-link__icon
+	max-width: 20px
+
+.btn-scroll-top
+	background-image: url(../img/btn-scroll-top.svg)
+	background-repeat: no-repeat
+	width: 34px
+	height: 34px
+	position: absolute
+	bottom: 119px
+	right: 50px
+	cursor: pointer
+	-webkit-transition: 0.3s ease
+	-o-transition: 0.3s ease
+	transition: 0.3s ease
+
+.btn-scroll-top span
+	width: 110px
+	position: absolute
+	left: 50%
+	bottom: -24px
+	margin-left: -55px
+	text-align: center
+	font-family: "Montserrat", sans-serif
+	font-size: 14px
+	opacity: 0
+	-webkit-transition: 0.3s ease
+	-o-transition: 0.3s ease
+	transition: 0.3s ease
+
+.btn-scroll-top:hover span
+	opacity: 1
+#comply-consent-manager svg
+	zoom: .7
+.comply-Menu
+	font-family: "Montserrat", sans-serif
+	left: inherit !important
+	right: 52px !important
+	bottom: 100px !important
+
+.comply-Aside
+	left: inherit !important
+	right: 52px !important
+	bottom: inherit !important
+
+.comply-MenuLauncherWrapper
+	right: 52px !important
+	bottom: 50px !important
+	left: inherit !important
+
+.comply-MenuLauncher
+	background: rgb(247, 191, 104) !important
+	width: 30px !important
+	height: 30px !important
+	box-shadow: none !important
+
+.comply-MenuLauncherWrapper .comply-MenuLauncher .comply-FlexCenter
+	background: url(../img/cookie-icon.svg) no-repeat center/cover
+
+.comply-MenuLauncherWrapper .comply-MenuLauncher .comply-FlexCenter img
+	width: 30px !important
+	height: 30px !important
+
+[aria-checked="true"] .comply-ToggleBackground
+	background-color: rgb(247, 191, 104) !important
+
+.comply-ButtonWrapper .comply-SaveSettingsButton,
+.comply-ButtonWrapper .comply-AcceptAllButton
+	font-family: "Montserrat", sans-serif !important
+
+.comply-Description
+	font-weight: 300
+	line-height: 1.33
+	letter-spacing: 0.01em
+	font-size: 16px !important
+
+.comply-HeaderTitle
+	font-size: 16px !important
+	color: #000 !important
+	font-weight: 600 !important
+	
+
+.cookie
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 44px
+	font-size: 16px
+	line-height: 150%
+	color: #303030
+	text-align: center
+	background-color: #fff
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	font-family: "Montserrat", sans-serif
+	-webkit-box-shadow: 0 0 10px -6px rgba(0, 0, 0, 0.5)
+	box-shadow: 0 0 10px -6px rgba(0, 0, 0, 0.5)
+	letter-spacing: 0.02em
+	z-index: 10
+
+.cookie-icon
+	display: inline-block
+	width: 30px
+	height: 30px
+	background: url("../img/cookie-icon.svg") no-repeat center/cover
+	margin-right: 10px
+	-webkit-transform: translateY(-2px)
+	-ms-transform: translateY(-2px)
+	transform: translateY(-2px)
+
+.cookie a
+	color: #ffba0a
+	text-decoration: none
+	margin-left: 6px
+
+.cookie a:hover
+	color: #ffba0a
+	text-decoration: underline
+
+.cookie-close
+	position: absolute
+	top: 50%
+	right: 11px
+	width: 16px
+	height: 16px
+	/*background: url("../img/cookie-close.svg") no-repeat center/cover*/
+	-webkit-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	transform: translateY(-50%)
+	cursor: pointer
+
+.cookie-close:before,
+.cookie-close:after
+	content: ""
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 16px
+	height: 1px
+	background-color: #000
+
+.cookie-close:before
+	-webkit-transform: translate(-50%, -50%) rotate(45deg)
+	-ms-transform: translate(-50%, -50%) rotate(45deg)
+	transform: translate(-50%, -50%) rotate(45deg)
+
+.cookie-close:after
+	-webkit-transform: translate(-50%, -50%) rotate(-45deg)
+	-ms-transform: translate(-50%, -50%) rotate(-45deg)
+	transform: translate(-50%, -50%) rotate(-45deg)
+
+.cookie-content
+	padding-right: 28px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+
+@-webkit-keyframes beat
+	to
+		-webkit-transform: scale(1.2)
+		transform: scale(1.2)
+
+@keyframes beat
+	to
+		-webkit-transform: scale(1.2)
+		transform: scale(1.2)
+
+@-webkit-keyframes New-swap
+	0%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	30%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	50%
+		-webkit-transform: translateY(100%)
+		transform: translateY(100%)
+
+	50.000001%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	80%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	100%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+@keyframes New-swap
+	0%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	30%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	50%
+		-webkit-transform: translateY(100%)
+		transform: translateY(100%)
+
+	50.000001%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	80%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	100%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+@-webkit-keyframes New-swap2
+	0%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	30%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	50%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	80%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	99.9999999%
+		-webkit-transform: translateY(100%)
+		transform: translateY(100%)
+
+	100%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+@keyframes New-swap2
+	0%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	30%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+	50%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	80%
+		-webkit-transform: translateY(0%)
+		transform: translateY(0%)
+
+	99.9999999%
+		-webkit-transform: translateY(100%)
+		transform: translateY(100%)
+
+	100%
+		-webkit-transform: translateY(-100%)
+		transform: translateY(-100%)
+
+.footer__icon
+	width: 20px
+	margin: 0 2px
+
+.footer__icon--heart
+	-webkit-animation: beat 1s infinite alternate
+	animation: beat 1s infinite alternate
+	-webkit-transform-origin: center
+	-ms-transform-origin: center
+	transform-origin: center
+
+.footer__paragraph-inline--first
+	margin-left: 26px
+
+.swapping-text
+	overflow: hidden
+	width: 100px
+	height: 26px
+	position: relative
+	margin-left: 4px
+
+.swapping-text .swapping-text__span1,
+.swapping-text .swapping-text__span2
+	position: absolute
+	top: 0
+	left: 0
+
+.swapping-text .swapping-text__span1
+	-webkit-animation: New-swap 8s ease-in-out infinite
+	animation: New-swap 8s ease-in-out infinite
+
+.swapping-text .swapping-text__span2
+	-webkit-transform: translateY(-100%)
+	-ms-transform: translateY(-100%)
+	transform: translateY(-100%)
+	-webkit-animation: New-swap2 8s ease-in-out infinite
+	animation: New-swap2 8s ease-in-out infinite
+
+.site-info__logos
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+
+	-webkit-box-align: stretch
+
+	-ms-flex-align: stretch
+
+	align-items: stretch
+
+.site-info__logos .widget_media_image
+	margin: 0px -0 0px 27px
+
+.site-info__logos .widget_media_image:nth-child(3)
+	width: 100px
+
+.site-info__logos .widget_media_image:first-child
+	margin: 0
+	width: 43px
+
+.site-info__logos .widget_media_image:nth-child(2)
+	width: 89px
+
+.site-info__logos .widget_media_image:nth-child(3)
+	width: 84px
+
+.site-info__logos .widget_media_image:nth-child(4)
+	width: 133px
+
+.site-info__logos .wp-block-image
+	margin: 0
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	position: relative
+	height: 100%
+
+.site-info__logos .wp-block-image img
+	width: 100%
+	-webkit-filter: grayscale(100%)
+	filter: grayscale(100%)
+	-webkit-transition: -webkit-filter 0.2s linear 0s
+	transition: -webkit-filter 0.2s linear 0s
+	-o-transition: filter 0.2s linear 0s
+	transition: filter 0.2s linear 0s
+	transition: filter 0.2s linear 0s, -webkit-filter 0.2s linear 0s
+
+.site-info__logos a
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-transition: -webkit-box-shadow 0.2s linear 0s
+	transition: -webkit-box-shadow 0.2s linear 0s
+	-o-transition: box-shadow 0.2s linear 0s
+	transition: box-shadow 0.2s linear 0s
+	transition: box-shadow 0.2s linear 0s, -webkit-box-shadow 0.2s linear 0s
+	height: 100%
+
+.site-info__logos a:hover
+	-webkit-box-shadow: 0 2px 0 0 #ffba0a
+	box-shadow: 0 2px 0 0 #ffba0a
+
+.site-info__logos .wp-block-image img.colored,
+.site-info__logos .wp-block-image:hover img
+	-webkit-filter: none
+	filter: none
+
+.copy-icon
+	height: 12px
+	margin-right: 3px
+
+.form-popup
+	width: 100%
+	min-height: 100%
+	background-color: rgba(0, 0, 0, 0.5)
+	overflow: hidden
+	position: fixed
+	top: 0px
+	z-index: 1000
+	display: none
+	justify-content: center
+	align-items: center
+
+#great-popup.show
+	display: flex
+
+#something-wrong-popup.show
+	display: flex
+
+.form-popup__background
+	width: 767px
+	height: 452px
+	background: #ffffff
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.04)
+	border-radius: 24px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+
+.form-popup__wrapper
+	display: flex
+	flex-direction: row
+	justify-content: center
+	padding: 88px 32px
+	width: 100%
+
+.form-popup__image
+	margin: 0 auto
+
+.form-popup__right-content
+	width: 50%
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+.form-popup__right-content__title
+	font-family: "Montserrat", sans-serif
+	font-size: 32px
+	font-weight: 400
+	position: relative
+	display: flex
+	align-items: center
+	padding-bottom: 15px
+	width: 100%
+
+.form-popup__right-content__title img
+	margin-left: 12px
+
+.form-popup__right-content__title::after
+	content: ""
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	height: 1px
+	width: 330px
+	max-width: 100%
+	background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%)
+	opacity: 0.15
+
+.form-popup__paragraph
+	margin-top: 20px
+
+.form-popup__alert
+	width: 31px
+
+@keyframes spin2
+	100%
+		transform: rotate(360deg)
+
+.form-popup__paragraph img
+	position: absolute
+	margin: 2px 0 0 6px
+	animation-name: spin2
+	animation-direction: normal
+	animation-iteration-count: infinite
+	animation-duration: 4.25s
+	animation-timing-function: linear
+
+.form-popup__btn-continue
+	height: 46px
+	font-family: "Montserrat", sans-serif
+	font-size: 19px
+	margin-top: 25px
+
+@import "school_modal"	
+@import "media"	
+@import "login"
+@import "login_media"
