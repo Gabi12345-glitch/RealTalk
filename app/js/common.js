@@ -898,20 +898,20 @@ $("#back-to-the-top").on("click", () =>
 );
 
 
-$('.create_btn').click(function(){
+$('#create-school-btn').click(function(){
   $('.modal_overlay').addClass('active')
-  $('.modal').addClass('active')
+  $('.modal-wrapper').addClass('active')
   $('body').addClass('active')
 })
 
 $('.modal_overlay').click(function(){
   $('.modal_overlay').removeClass('active')
-  $('.modal').removeClass('active')
+  $('.modal-wrapper').removeClass('active')
   $('body').removeClass('active')
 })
 $('.modal-close').click(function(){
   $('.modal_overlay').removeClass('active')
-  $('.modal').removeClass('active')
+  $('.modal-wrapper').removeClass('active')
   $('body').removeClass('active')
 })
 

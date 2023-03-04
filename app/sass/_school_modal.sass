@@ -8,31 +8,41 @@
 	margin: auto
 	background-color: grey
 	opacity: 0
-	z-index: 2
+	z-index: 10
+
+.modal-wrapper
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+	overflow-y: auto
+	display: none
+	pointer-events: none
+	z-index: 11
+
+.modal-wrapper.active
+	display: block
+	pointer-events: auto
+
 .modal_overlay.active
 	opacity: 0.5
 	pointer-events: auto
 	cursor: pointer
+
 .modal
-	pointer-events: none
-	z-index: 2
+	font-family: 'Montserrat'
 	border-radius: 11px
 	padding: 30px 60px 60px 60px
-	position: fixed
+	position: relative
 	max-width: 700px
 	width: 100%
 	background: white
-	margin: auto
-	top: 100px
+	margin: 100px auto
 	left: 0
 	right: 0
-	min-height: 100%
-	height: 100%
-	overflow: scroll
-	display: none
-.modal.active
-	display: block
-	pointer-events: auto
+
 	.modal-close
 		cursor: pointer
 		width: 40px
@@ -42,6 +52,7 @@
 		position: absolute
 		right: 20px
 		top: 20px
+
 	.modal-close:after
 		content: ''
 		position: absolute	
@@ -55,6 +66,7 @@
 		top: 0
 		bottom: 0
 		transform: rotate(130deg)
+
 	.modal-close:before
 		content: ''
 		position: absolute	
@@ -68,9 +80,10 @@
 		top: 0
 		bottom: 0
 		transform: rotate(-130deg)
+
 	.modal-container
 		max-width: 660px
-		margin-top: 30px
+		margin-top: 60px
 		display: flex
 		// justify-content: space-between	
 		.modal-col
@@ -83,6 +96,7 @@
 				font-family: 'Montserrat'
 		.modal-col.ml
 			margin-left: 60px	
+
 		.modal-upload
 			margin-top: 20px
 			width: 	190px
@@ -93,37 +107,52 @@
 			margin-bottom: 20px
 		.modal-upload.images
 			width: 110%	
+
+	.modal-container.sd-1
+		margin-top: 30px
+
 	.modal-container.video
 		display: flex
 		flex-direction: column	
+
 	.modal-upload.video
 		width: 100%	
 		height: 365px	
+
 	.modal-col_images
 
 		width: 110%	
+
 	.modal-col.admin
 		max-width: 100%	
 		width: 100%
+
 	.modal-col_admin-input
 		display: flex
 		justify-content: space-between	
 		input
 			width: 45%
+
 	.btn_upload.images	
 		width: 110%	
+
 	.wrapper-btn_admin
 		display: flex
 		justify-content: right	
+
 	.btn_upload.admin
 		max-width: 	315px
 		width: 100%
 		margin-top: 20px
+
 	.modal-row
 		display: flex	
+	.modal-container.school-images
+		align-items: center
 	.modal-row.video
 		display: flex
 		justify-content: space-between
+
 		span
 			color: #727272
 			font-size: 13px
@@ -131,27 +160,34 @@
 			font-family: 'Montserrat'
 			letter-spacing: 0.02em	
 			line-height: 20px
+
 	.btn_upload.video
 		max-width: 	240px	
 		width: 100%	
+
 	.modal-row.images
 		margin-top: -10px
 		display: flex	
 		justify-content: space-between
+
 	.modal-col.video
 		width: 100%	
 		max-width: 100%
+
 	.modal-row.images:nth-child(1)
-		margin-top: 20px	
+		margin-top: 20px
+
 	.modal-col.images
 		width: 100%	
 		// margin-left: 20px!important
+
 		span.images
 			margin-left: 20px
 			position: relative
 			display: block
 			margin-top: 20px
 			font-family: 'Montserrat'
+
 		span.images:before
 			border-radius: 100%
 			top: 5px
@@ -162,19 +198,24 @@
 			height: 5px
 			display: block
 			background-color: #FFBA0A
+
 		.modal-upload
 			width: 70px
 			height: 40px
+
 	.modal_input
+		font-size: 16px
 		padding-left: 15px
 		margin-top: 20px
 		width: 100%
 		height: 40px
 		border-radius: 11px
 		border: 1px solid #CCCCCC
+
 	.modal-col.description	
 		width: 100%
 		max-width: 100%
+
 	textarea.description
 			padding: 10px
 			border-radius: 11px
@@ -182,7 +223,4 @@
 			margin-top: 20px
 			width: 100%
 			height: 190px
-
-.modal.active
-	position: fixed
 

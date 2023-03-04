@@ -2567,7 +2567,25 @@ a.social-link {
   margin: auto;
   background-color: grey;
   opacity: 0;
-  z-index: 2;
+  z-index: 10;
+}
+
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  pointer-events: none;
+  z-index: 11;
+}
+
+.modal-wrapper.active {
+  display: block;
+  pointer-events: auto;
 }
 
 .modal_overlay.active {
@@ -2577,29 +2595,18 @@ a.social-link {
 }
 
 .modal {
-  pointer-events: none;
-  z-index: 2;
+  font-family: "Montserrat";
   border-radius: 11px;
   padding: 30px 60px 60px 60px;
-  position: fixed;
+  position: relative;
   max-width: 700px;
   width: 100%;
   background: white;
-  margin: auto;
-  top: 100px;
+  margin: 100px auto;
   left: 0;
   right: 0;
-  min-height: 100%;
-  height: 100%;
-  overflow: scroll;
-  display: none;
 }
-
-.modal.active {
-  display: block;
-  pointer-events: auto;
-}
-.modal.active .modal-close {
+.modal .modal-close {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -2609,7 +2616,7 @@ a.social-link {
   right: 20px;
   top: 20px;
 }
-.modal.active .modal-close:after {
+.modal .modal-close:after {
   content: "";
   position: absolute;
   display: block;
@@ -2623,7 +2630,7 @@ a.social-link {
   bottom: 0;
   transform: rotate(130deg);
 }
-.modal.active .modal-close:before {
+.modal .modal-close:before {
   content: "";
   position: absolute;
   display: block;
@@ -2637,24 +2644,24 @@ a.social-link {
   bottom: 0;
   transform: rotate(-130deg);
 }
-.modal.active .modal-container {
+.modal .modal-container {
   max-width: 660px;
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
 }
-.modal.active .modal-container .modal-col {
+.modal .modal-container .modal-col {
   max-width: 300px;
 }
-.modal.active .modal-container .modal-col .modal-text {
+.modal .modal-container .modal-col .modal-text {
   color: #060606;
   font-weight: 600;
   font-size: 24px;
   font-family: "Montserrat";
 }
-.modal.active .modal-container .modal-col.ml {
+.modal .modal-container .modal-col.ml {
   margin-left: 60px;
 }
-.modal.active .modal-container .modal-upload {
+.modal .modal-container .modal-upload {
   margin-top: 20px;
   width: 190px;
   height: 190px;
@@ -2663,51 +2670,57 @@ a.social-link {
   background-color: #FFFBF1;
   margin-bottom: 20px;
 }
-.modal.active .modal-container .modal-upload.images {
+.modal .modal-container .modal-upload.images {
   width: 110%;
 }
-.modal.active .modal-container.video {
+.modal .modal-container.sd-1 {
+  margin-top: 30px;
+}
+.modal .modal-container.video {
   display: flex;
   flex-direction: column;
 }
-.modal.active .modal-upload.video {
+.modal .modal-upload.video {
   width: 100%;
   height: 365px;
 }
-.modal.active .modal-col_images {
+.modal .modal-col_images {
   width: 110%;
 }
-.modal.active .modal-col.admin {
+.modal .modal-col.admin {
   max-width: 100%;
   width: 100%;
 }
-.modal.active .modal-col_admin-input {
+.modal .modal-col_admin-input {
   display: flex;
   justify-content: space-between;
 }
-.modal.active .modal-col_admin-input input {
+.modal .modal-col_admin-input input {
   width: 45%;
 }
-.modal.active .btn_upload.images {
+.modal .btn_upload.images {
   width: 110%;
 }
-.modal.active .wrapper-btn_admin {
+.modal .wrapper-btn_admin {
   display: flex;
   justify-content: right;
 }
-.modal.active .btn_upload.admin {
+.modal .btn_upload.admin {
   max-width: 315px;
   width: 100%;
   margin-top: 20px;
 }
-.modal.active .modal-row {
+.modal .modal-row {
   display: flex;
 }
-.modal.active .modal-row.video {
+.modal .modal-container.school-images {
+  align-items: center;
+}
+.modal .modal-row.video {
   display: flex;
   justify-content: space-between;
 }
-.modal.active .modal-row.video span {
+.modal .modal-row.video span {
   color: #727272;
   font-size: 13px;
   max-width: 240px;
@@ -2715,33 +2728,33 @@ a.social-link {
   letter-spacing: 0.02em;
   line-height: 20px;
 }
-.modal.active .btn_upload.video {
+.modal .btn_upload.video {
   max-width: 240px;
   width: 100%;
 }
-.modal.active .modal-row.images {
+.modal .modal-row.images {
   margin-top: -10px;
   display: flex;
   justify-content: space-between;
 }
-.modal.active .modal-col.video {
+.modal .modal-col.video {
   width: 100%;
   max-width: 100%;
 }
-.modal.active .modal-row.images:nth-child(1) {
+.modal .modal-row.images:nth-child(1) {
   margin-top: 20px;
 }
-.modal.active .modal-col.images {
+.modal .modal-col.images {
   width: 100%;
 }
-.modal.active .modal-col.images span.images {
+.modal .modal-col.images span.images {
   margin-left: 20px;
   position: relative;
   display: block;
   margin-top: 20px;
   font-family: "Montserrat";
 }
-.modal.active .modal-col.images span.images:before {
+.modal .modal-col.images span.images:before {
   border-radius: 100%;
   top: 5px;
   left: -15px;
@@ -2752,11 +2765,12 @@ a.social-link {
   display: block;
   background-color: #FFBA0A;
 }
-.modal.active .modal-col.images .modal-upload {
+.modal .modal-col.images .modal-upload {
   width: 70px;
   height: 40px;
 }
-.modal.active .modal_input {
+.modal .modal_input {
+  font-size: 16px;
   padding-left: 15px;
   margin-top: 20px;
   width: 100%;
@@ -2764,21 +2778,17 @@ a.social-link {
   border-radius: 11px;
   border: 1px solid #CCCCCC;
 }
-.modal.active .modal-col.description {
+.modal .modal-col.description {
   width: 100%;
   max-width: 100%;
 }
-.modal.active textarea.description {
+.modal textarea.description {
   padding: 10px;
   border-radius: 11px;
   border: 1px solid #CCCCCC;
   margin-top: 20px;
   width: 100%;
   height: 190px;
-}
-
-.modal.active {
-  position: fixed;
 }
 
 /*==========  Desktop First  ==========*/
