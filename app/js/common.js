@@ -897,24 +897,29 @@ $("#back-to-the-top").on("click", () =>
   window.scrollTo({ top: 0, behavior: "smooth" }),
 );
 
-
-$('#create-school-btn').click(function(){
+window.openModal = function () {
   $('.modal_overlay').addClass('active')
   $('.modal-wrapper').addClass('active')
   $('body').addClass('active')
-})
+}
 
-$('.modal_overlay').click(function(){
+window.closeModal = function () {
   $('.modal_overlay').removeClass('active')
   $('.modal-wrapper').removeClass('active')
   $('body').removeClass('active')
+}
+
+$('#create-school-btn').click(function(){
+  openModal()
 })
+
+$('.modal_overlay').click(function() {
+  closeModal()
+})
+
 $('.modal-close').click(function(){
-  $('.modal_overlay').removeClass('active')
-  $('.modal-wrapper').removeClass('active')
-  $('body').removeClass('active')
+  closeModal()
 })
-
 
 
 // login
