@@ -8,31 +8,38 @@
 	margin: auto
 	background-color: grey
 	opacity: 0
-	z-index: 2
+	z-index: 10
+
+.modal-wrapper
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+	overflow-y: auto
+	display: none
+	pointer-events: none
+	z-index: 11
+
+.modal-wrapper.active
+	display: block
+	pointer-events: auto
+
 .modal_overlay.active
 	opacity: 0.5
 	pointer-events: auto
 	cursor: pointer
 .modal
-	pointer-events: none
-	z-index: 2
 	border-radius: 11px
 	padding: 30px 60px 60px 60px
-	position: fixed
+	position: relative
 	max-width: 700px
 	width: 100%
 	background: white
-	margin: auto
-	top: 100px
+	margin: 100px auto
 	left: 0
 	right: 0
-	min-height: 100%
-	height: 100%
-	overflow: scroll
-	display: none
-.modal.active
-	display: block
-	pointer-events: auto
 	.modal-close
 		cursor: pointer
 		width: 40px
@@ -182,7 +189,4 @@
 			margin-top: 20px
 			width: 100%
 			height: 190px
-
-.modal.active
-	position: fixed
 
