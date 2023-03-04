@@ -2607,6 +2607,9 @@ a.social-link {
   right: 0;
 }
 .modal .modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -2616,33 +2619,9 @@ a.social-link {
   right: 20px;
   top: 20px;
 }
-.modal .modal-close:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 10px;
-  height: 1px;
-  background-color: grey;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: rotate(130deg);
-}
-.modal .modal-close:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 10px;
-  height: 1px;
-  background-color: grey;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: rotate(-130deg);
+.modal .modal-close img {
+  width: 15px;
+  height: 15px;
 }
 .modal .modal-container {
   max-width: 660px;
@@ -3957,5 +3936,43 @@ a.social-link {
   }
   .eye-icon {
     top: 42%;
+  }
+}
+.login-container.forgot {
+  justify-content: center;
+  align-items: center;
+}
+
+a.forgot {
+  margin-top: 20px;
+}
+
+.info-forgot {
+  max-width: 452px;
+  font-family: "Montserrat";
+  line-height: 24px;
+}
+
+.info-forgot:nth-child(2) {
+  margin-top: 15px;
+  display: block;
+}
+
+.login-sign.forgot {
+  max-width: 130px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  .login-container.forgot {
+    text-align: center;
+  }
+  .info-forgot:nth-child(2) {
+    margin-top: 15px;
+    display: inline-flex;
+  }
+  .login-sign.forgot {
+    margin: auto;
+    max-width: 250px;
   }
 }/*# sourceMappingURL=main.css.map */
