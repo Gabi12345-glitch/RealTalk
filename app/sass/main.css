@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;500&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap";
 /* reset style */
 html,
 body,
@@ -120,7 +118,7 @@ q:after {
   content: none;
 }
 
-:focus {
+*:focus {
   outline: 0;
 }
 
@@ -2561,7 +2559,7 @@ a.social-link {
   pointer-events: none;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   margin: auto;
@@ -2624,18 +2622,11 @@ a.social-link {
   height: 15px;
 }
 .modal .modal-container {
-  max-width: 660px;
   margin-top: 60px;
   display: flex;
 }
 .modal .modal-container .modal-col {
   max-width: 300px;
-}
-.modal .modal-container .modal-col .modal-text {
-  color: #060606;
-  font-weight: 600;
-  font-size: 24px;
-  font-family: "Montserrat";
 }
 .modal .modal-container .modal-col.ml {
   margin-left: 60px;
@@ -2650,7 +2641,9 @@ a.social-link {
   margin-bottom: 20px;
 }
 .modal .modal-container .modal-upload.images {
-  width: 110%;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .modal .modal-container.sd-1 {
   margin-top: 30px;
@@ -2664,7 +2657,7 @@ a.social-link {
   height: 365px;
 }
 .modal .modal-col_images {
-  width: 110%;
+  max-width: 100% !important;
 }
 .modal .modal-col.admin {
   max-width: 100%;
@@ -2678,7 +2671,7 @@ a.social-link {
   width: 45%;
 }
 .modal .btn_upload.images {
-  width: 110%;
+  width: 100%;
 }
 .modal .wrapper-btn_admin {
   display: flex;
@@ -2693,6 +2686,7 @@ a.social-link {
   display: flex;
 }
 .modal .modal-container.school-images {
+  display: block;
   align-items: center;
 }
 .modal .modal-row.video {
@@ -2723,17 +2717,30 @@ a.social-link {
 .modal .modal-row.images:nth-child(1) {
   margin-top: 20px;
 }
-.modal .modal-col.images {
-  width: 100%;
+.modal .modal-images-wrapper {
+  display: grid;
+  grid-template-columns: 340px auto;
+  gap: 40px;
 }
-.modal .modal-col.images span.images {
+.modal .modal-col.thumbs {
+  margin-left: 0px !important;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+.modal .modal-col.thumbs .modal-upload {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.modal .modal-col.thumbs span.images {
   margin-left: 20px;
   position: relative;
   display: block;
   margin-top: 20px;
   font-family: "Montserrat";
 }
-.modal .modal-col.images span.images:before {
+.modal .modal-col.thumbs span.images:before {
   border-radius: 100%;
   top: 5px;
   left: -15px;
@@ -2744,11 +2751,12 @@ a.social-link {
   display: block;
   background-color: #FFBA0A;
 }
-.modal .modal-col.images .modal-upload {
+.modal .modal-col.thumbs .modal-upload {
   width: 70px;
   height: 40px;
 }
 .modal .modal_input {
+  box-sizing: border-box;
   font-size: 16px;
   padding-left: 15px;
   margin-top: 20px;
@@ -2766,8 +2774,35 @@ a.social-link {
   border-radius: 11px;
   border: 1px solid #CCCCCC;
   margin-top: 20px;
-  width: 100%;
+  width: 94%;
   height: 190px;
+}
+
+.modal-text {
+  color: #060606;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Montserrat";
+}
+
+.modal-text.images {
+  margin-bottom: 24px;
+}
+
+.images-wrapper_subtitle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.images-wrapper_subtitle a {
+  max-width: 340px;
+  width: 100%;
+}
+
+.images-upto_subtitle {
+  margin-left: 42px;
+  color: #060606;
+  font-size: 16px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -3043,11 +3078,19 @@ a.social-link {
     align-items: center;
     text-align: center;
   }
+  .modal .modal-images-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-col.thumbs {
+    max-width: 100% !important;
+  }
   .modal-col_images {
     width: 100% !important;
     max-width: 100% !important;
   }
   .modal-upload.images {
+    height: 400px !important;
     width: 100% !important;
   }
   .btn_upload.images {
@@ -3059,7 +3102,8 @@ a.social-link {
     margin-left: 0 !important;
   }
   .modal-upload.images.sd {
-    width: 30% !important;
+    width: 100%;
+    height: 100px !important;
   }
   span.images:before {
     display: none !important;
@@ -3429,6 +3473,16 @@ a.social-link {
   }
   .text-drop-down__paragraph {
     text-align: left;
+  }
+  .images-wrapper_subtitle {
+    flex-direction: column;
+  }
+  .images-wrapper_subtitle a {
+    max-width: 100%;
+  }
+  .images-upto_subtitle {
+    margin-top: 20px;
+    margin-left: 0;
   }
   /**/
 }
