@@ -165,8 +165,8 @@
 		margin-right: 0
 
 	.header a[href="#work"],
-	.header a[href="#apply"],
-	.header a[href="#mission"]
+	.header a[href="edit-profile.html"],
+	.header a[href="searchcountry.html"]
 		display: none
 
 	.mouse-scroll
@@ -223,11 +223,27 @@
 		
 /* Small Devices, Desktops */
 @media only screen and (max-width : 900px)
+	.form-section .form-col:nth-child(2)
+		margin-top: 20px
+
+	.form-adrress-section, 
+	.form-admin-section, 
+	.form-images-wrapper,
+	.form-school-info-section 
+		grid-template-columns: auto
+		gap:0
+	.form-upload-area
+		width: 100%	
+	.form-main-image
+		height: 400px	
+	.form-thumb
+		height: 100px		
 	.media-information-image__one:before
 		width: 50%
 	.pt-add
 		padding-top: 70px !important
 	.modal
+		max-width: 90%
 		overflow-x: hidden
 		margin: 20px
 		width: auto
