@@ -3933,14 +3933,20 @@ a.social-link {
 
 @media only screen and (max-width: 1100px) {
   .login-image {
+    margin: 20px;
     display: flex;
     justify-content: center;
   }
   .login-container {
+    margin: 20px auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 0 20px;
+  }
+  .login-col.image {
+    max-width: 620px;
+    margin: 0 20px;
   }
   .login-col.first {
     margin-left: 0;
@@ -3954,7 +3960,8 @@ a.social-link {
     margin: auto;
   }
   .image-login {
-    height: 350px;
+    max-width: 100%;
+    width: 100%;
   }
   .login-text {
     font-size: 30px;
@@ -3963,16 +3970,36 @@ a.social-link {
     top: 42%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .login-container {
+    margin: 70px auto;
+  }
+  .login-text_remember {
+    font-size: 18px;
+  }
+  .login-text {
+    font-size: 26px;
+  }
+  .wrapper-info_forgot {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .login-image {
+    margin: 20px;
     display: flex;
     justify-content: center;
   }
   .login-container {
+    margin: 20px auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 0 20px;
+  }
+  .login-col.image {
+    max-width: 620px;
+    margin: 0 20px;
   }
   .login-col.first {
     margin-left: 0;
@@ -3986,13 +4013,28 @@ a.social-link {
     margin: auto;
   }
   .image-login {
-    height: 350px;
+    max-width: 100%;
+    width: 100%;
   }
   .login-text {
     font-size: 30px;
   }
   .eye-icon {
     top: 42%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login-container {
+    margin: 70px auto;
+  }
+  .login-text_remember {
+    font-size: 18px;
+  }
+  .login-text {
+    font-size: 26px;
+  }
+  .wrapper-info_forgot {
+    font-size: 14px;
   }
 }
 .login-container.forgot {
