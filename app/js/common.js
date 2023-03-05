@@ -194,7 +194,7 @@ for (let anchor of anchors) {
 if (window.matchMedia("(max-width: 1100px)").matches) {
   $("body").addClass("m-d");
 }
-if (window.matchMedia("(min-width: 1100px)").matches) {
+if (window.matchMedia("(min-width: 1100px)").matches && $('#home-page').length) {
   gsap.registerPlugin(ScrollTrigger);
 
   let sectionsOne = gsap.utils.toArray(".slider-full-one__item.panel");
