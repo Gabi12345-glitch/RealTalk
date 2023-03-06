@@ -3094,13 +3094,15 @@ a.forgot {
   left: 540px;
 }
 
-.school-details .wrapper-card-details_main {
+.wrapper-card-details_main {
+  font-family: "Montserrat";
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dashed #727272;
 }
-.school-details .default-card-details_main {
+
+.default-card-details_main {
   margin-bottom: 10px;
 }
 
@@ -3111,17 +3113,116 @@ a.forgot {
   height: 50px;
 }
 
+.section-school {
+  font-family: "Montserrat";
+  margin-top: 213px;
+}
+
+.container-school {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-col {
+  color: #060606;
+  max-width: 520px;
+  width: 100%;
+}
+
+.school-col {
+  max-width: 560px;
+  width: 1000%;
+}
+.school-col img.img-name {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-section-title.school {
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+.school-description {
+  max-width: 521px;
+  width: 100%;
+  margin-top: 20px;
+}
+.school-description p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #060606;
+}
+.school-description .text-yellow {
+  color: #FFBA0A;
+}
+.school-description p.mt {
+  margin-top: 20px;
+}
+
+.wrapper-school-details {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.details-info {
+  margin-left: 20px;
+  max-width: 240px;
+  width: 100%;
+  display: block;
+  line-height: 24px;
+}
+
+.wrapper-form-details {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-form-details .questions {
+  max-width: 260px;
+  width: 100%;
+}
+
+.form-input.details-message input {
+  height: 130px;
+}
+
+.form-textarea textarea {
+  box-sizing: border-box;
+}
+
 @media only screen and (max-width: 992px) {
+  .btn-searchcountry {
+    margin-top: 20px;
+  }
+  .container-school {
+    flex-direction: column;
+    align-items: center;
+  }
   .wrapper-input_search {
     max-width: 620px;
     flex-direction: column;
     align-items: center;
     margin: 104px auto 0 auto;
   }
-  .wrapper-input_search .btn-searchcountry {
+  .school-col img.img-name {
+    margin-left: 0px;
+  }
+  .school-col .btn-searchcountry {
     margin-top: 20px;
     max-width: 400px;
     width: 100%;
+  }
+  .img-school img {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .school-col:nth-child(2) {
+    margin-top: 30px;
+  }
+  .wrapper-form-details {
+    gap: 40px;
   }
 }
 .form-section {

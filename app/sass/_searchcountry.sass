@@ -67,30 +67,102 @@
     top: 90px
     left: 540px 
 
-.school-details
-    .wrapper-card-details_main
-        margin-top: 16px
-        display: flex
-        justify-content: space-between 
-        border-bottom: 1px dashed #727272
 
-    .default-card-details_main
-        margin-bottom:   10px
+.wrapper-card-details_main
+    font-family: "Montserrat"
+    margin-top: 16px
+    display: flex
+    justify-content: space-between 
+    border-bottom: 1px dashed #727272
+
+.default-card-details_main
+    margin-bottom:   10px
 
 .btn-searchcountry.mt
     margin-top:   32px  
     a
-        height: 50px   
+        height: 50px  
+
+
+// school
+.section-school
+    font-family: "Montserrat"
+    margin-top: 213px
+.container-school
+    display: flex
+    justify-content: space-between
+.school-col
+    color: #060606
+    max-width: 520px
+    width: 100%
+.school-col
+    max-width: 560px
+    width: 1000%
+    img.img-name
+        width: 100%
+        margin-left: 20px
+        margin-right: 20px
+.form-section-title.school
+    font-size: 33px    
+    margin-bottom: 20px   
+
+.school-description 
+    max-width: 521px
+    width: 100%
+    margin-top: 20px
+    p
+        font-size: 18px
+        line-height: 24px
+        color: #060606
+    .text-yellow
+        color: #FFBA0A    
+    p.mt    
+        margin-top: 20px
+.wrapper-school-details
+    margin-top: 22px
+    display: flex
+    // justify-content: space-between
+    align-items: center
+.details-info
+    margin-left: 20px
+    max-width: 240px
+    width: 100%
+    display: block
+    line-height: 24px
+.wrapper-form-details
+    display: flex
+    justify-content: space-between
+    .questions
+        max-width: 260px
+        width: 100%
+.form-input.details-message input
+    height: 130px
+.form-textarea textarea
+    box-sizing: border-box    
 //*Media 
 @media only screen and (max-width : 992px)
-
+    .btn-searchcountry
+        margin-top: 20px
+    .container-school
+        flex-direction: column 
+        align-items: center
     .wrapper-input_search
         max-width: 620px
         flex-direction: column
         align-items: center
         margin: 104px auto 0 auto
-
+    .school-col 
+        img.img-name
+            margin-left: 0px
         .btn-searchcountry
             margin-top: 20px
             max-width: 400px
             width: 100%
+    .img-school
+        img
+            margin-top: 30px
+            margin-left: 0       
+    .school-col:nth-child(2)
+        margin-top: 30px
+    .wrapper-form-details
+        gap: 40px             
