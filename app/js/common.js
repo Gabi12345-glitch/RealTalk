@@ -929,3 +929,12 @@ $('.login-remember.icon').click(function(){
 
 
 // login
+
+
+// slider
+$(document).ready(function(){
+  $('.school-card_slider').slick({
+    dots: true
+  });
+});
+

@@ -3051,6 +3051,79 @@ a.forgot {
   height: 60px;
 }
 
+.container-image_searchcountry img {
+  margin-top: 120px;
+  width: 100%;
+}
+
+.school-card_slider {
+  width: 100%;
+  margin-top: 225px;
+}
+
+.school-card-inner {
+  position: relative;
+  display: flex !important;
+  justify-content: end;
+}
+
+.school-card_slider .slick-dots button {
+  margin-top: 20px;
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  background-color: rgba(196, 196, 196, 0.6);
+}
+.school-card_slider .slick-dots button:before {
+  font-size: 0;
+}
+.school-card_slider .slick-dots li.slick-active button {
+  background-color: #FFBA0A;
+}
+
+.school-card-details {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 11px;
+  padding: 20px 60px;
+  font-family: "Montserrat";
+  position: absolute;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  top: 90px;
+  left: 540px;
+}
+
+.school-details .wrapper-card-details_main {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #727272;
+}
+.school-details .default-card-details_main {
+  margin-bottom: 10px;
+}
+
+.btn-searchcountry.mt {
+  margin-top: 32px;
+}
+.btn-searchcountry.mt a {
+  height: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .wrapper-input_search {
+    max-width: 620px;
+    flex-direction: column;
+    align-items: center;
+    margin: 104px auto 0 auto;
+  }
+  .wrapper-input_search .btn-searchcountry {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+}
 .form-section {
   margin-top: 30px;
 }
