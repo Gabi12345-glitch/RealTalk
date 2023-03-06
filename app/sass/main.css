@@ -1954,6 +1954,13 @@ body {
   position: relative;
 }
 
+.footer-main_image {
+  max-width: 270px;
+}
+.footer-main_image img {
+  width: 100%;
+}
+
 .footer__inner {
   width: 100%;
   max-width: 1170px;
@@ -3050,6 +3057,7 @@ a.forgot {
 }
 
 .form-section-title.main {
+  margin-top: 90px;
   padding-bottom: 20px;
   font-size: 40px;
   border-bottom: 3px solid #FFBA0A;
@@ -3079,7 +3087,6 @@ a.forgot {
 }
 
 .form-section-title {
-  margin-top: 20px;
   color: #060606;
   font-weight: 600;
   font-size: 24px;
@@ -3149,7 +3156,7 @@ a.forgot {
 }
 
 .form-main-image.school {
-  height: 300px;
+  height: 360px;
 }
 
 .form-thumbs {
@@ -3160,8 +3167,8 @@ a.forgot {
   gap: 30px;
 }
 
-.form-thumbs.form .form-thumb {
-  height: 80px;
+.form-thumbs.school .form-thumb {
+  height: 100px;
 }
 
 .form-thumb {
@@ -3196,13 +3203,13 @@ a.forgot {
 
 .wrapper-form-btn_create {
   display: flex;
-  justify-content: right;
+  justify-content: left;
   max-width: 100%;
   margin-top: 20px;
 }
 
 .form-btn_create {
-  width: 48%;
+  width: 20%;
 }
 
 /*==========  Desktop First  ==========*/
