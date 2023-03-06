@@ -166,7 +166,8 @@
 
 	.header a[href="#work"],
 	.header a[href="edit-profile.html"],
-	.header a[href="searchcountry.html"]
+	.header a[href="searchcountry.html"],
+	.header a[href="reset.html"]
 		display: none
 
 	.mouse-scroll
@@ -232,12 +233,19 @@
 	.form-school-info-section 
 		grid-template-columns: auto
 		gap:0
+
 	.form-upload-area
 		width: 100%	
+
 	.form-main-image
 		height: 400px	
+
 	.form-thumb
-		height: 100px		
+		height: 100px
+
+	.form-subtitle
+		margin-top: 15px
+		
 	.media-information-image__one:before
 		width: 50%
 	.pt-add
@@ -321,7 +329,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-
+	.form-subtitle
+		margin-left: 0
 	.p-separat-m
 		display: block
 		height: 15px
@@ -703,6 +712,17 @@
 			max-width: 100%!important
 		.modal-col.ml
 			margin-left: 0!important
+
+	.form-section-title
+		font-size: 20px
+	.form-row-video		
+		align-items: center
+		flex-direction: column
+	.form-row-video	span
+		text-align: center
+		margin-bottom: 15px
+		max-width: 350px	
+
 	.real-talk-block__title
 		font-size: 26px
 		line-height: 36px

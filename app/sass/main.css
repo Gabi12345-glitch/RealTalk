@@ -3049,6 +3049,19 @@ a.forgot {
   margin-top: 30px;
 }
 
+.form-section-title.main {
+  padding-bottom: 20px;
+  font-size: 40px;
+  border-bottom: 3px solid #FFBA0A;
+}
+
+.form-subtitle {
+  color: #060606;
+  font-size: 16px;
+  font-family: "Montserrat";
+  margin-left: 50px;
+}
+
 .form-input input {
   box-sizing: border-box;
   font-size: 16px;
@@ -3116,7 +3129,7 @@ a.forgot {
   border-radius: 11px;
   border: 1px solid #CCCCCC;
   margin-top: 20px;
-  width: 94%;
+  width: 98%;
   height: 190px;
 }
 
@@ -3135,12 +3148,20 @@ a.forgot {
   background: #FFFBF1;
 }
 
+.form-main-image.school {
+  height: 300px;
+}
+
 .form-thumbs {
   margin-left: 0px !important;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px;
+}
+
+.form-thumbs.form .form-thumb {
+  height: 80px;
 }
 
 .form-thumb {
@@ -3171,6 +3192,17 @@ a.forgot {
   font-family: "Montserrat";
   letter-spacing: 0.02em;
   line-height: 20px;
+}
+
+.wrapper-form-btn_create {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.form-btn_create {
+  width: 48%;
 }
 
 /*==========  Desktop First  ==========*/
@@ -3341,7 +3373,8 @@ a.forgot {
   }
   .header a[href="#work"],
   .header a[href="edit-profile.html"],
-  .header a[href="searchcountry.html"] {
+  .header a[href="searchcountry.html"],
+  .header a[href="reset.html"] {
     display: none;
   }
   .mouse-scroll {
@@ -3417,6 +3450,9 @@ a.forgot {
   }
   .form-thumb {
     height: 100px;
+  }
+  .form-subtitle {
+    margin-top: 15px;
   }
   .media-information-image__one:before {
     width: 50%;
@@ -3512,6 +3548,9 @@ a.forgot {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .form-subtitle {
+    margin-left: 0;
+  }
   .p-separat-m {
     display: block;
     height: 15px;
@@ -3908,6 +3947,18 @@ a.forgot {
   }
   .modal-container.adrress .modal-col.ml {
     margin-left: 0 !important;
+  }
+  .form-section-title {
+    font-size: 20px;
+  }
+  .form-row-video {
+    align-items: center;
+    flex-direction: column;
+  }
+  .form-row-video span {
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 350px;
   }
   .real-talk-block__title {
     font-size: 26px;
