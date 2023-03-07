@@ -933,8 +933,12 @@ $('.login-remember.icon').click(function(){
 
 // slider
 $(document).ready(function(){
-  $('.school-card_slider').slick({
-    dots: true
+  $('.school-card-slider').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    adaptiveHeight: true
   });
 });
 
