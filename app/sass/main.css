@@ -3011,13 +3011,10 @@ a.forgot {
   .login-text {
     font-size: 30px;
   }
-  .eye-icon {
-    top: 42%;
-  }
 }
 @media only screen and (max-width: 600px) {
   .login-container {
-    margin: 70px auto;
+    margin: 100px auto;
   }
   .login-text_remember {
     font-size: 18px;
@@ -3177,6 +3174,10 @@ a.forgot {
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.form-section-title {
+  margin-top: 20px;
 }
 
 .form-section-title.school {
