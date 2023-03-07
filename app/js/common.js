@@ -923,9 +923,9 @@ $('.modal-close').click(function(){
 
 
 // login
-$('.login-remember.icon').click(function(){
-  $('.check-icon').toggleClass('active')
-})
+// $('.login-remember.icon').click(function(){
+//   $('.check-icon').toggleClass('active')
+// })
 
 
 // login

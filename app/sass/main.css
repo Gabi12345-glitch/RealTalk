@@ -2895,6 +2895,8 @@ a.forgot {
 }
 
 .login-row {
+  margin-top: 20px;
+  align-items: center;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -2957,12 +2959,11 @@ a.forgot {
   color: #727272;
 }
 
-.check-icon {
-  display: none;
+.form-input.password {
+  position: relative;
 }
-
-.check-icon.active {
-  display: block;
+.form-input.password input {
+  height: 50px;
 }
 
 .fm {
@@ -3001,6 +3002,11 @@ a.forgot {
   .image-login {
     max-width: 100%;
     width: 100%;
+  }
+  .login-sign {
+    max-width: 200px;
+    width: 100%;
+    margin: 20px auto;
   }
   .login-text {
     font-size: 30px;
@@ -3060,28 +3066,37 @@ a.forgot {
   width: 100%;
 }
 
-.school-card_slider {
+.school-card {
   width: 100%;
   margin-top: 225px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .school-card-inner {
   position: relative;
-  display: flex !important;
-  justify-content: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 75%;
 }
 
-.school-card_slider .slick-dots button {
+.school-card-slider {
+  width: 100%;
+  height: 653px;
+  overflow: hidden;
+}
+.school-card-slider .slick-dots button {
   margin-top: 20px;
   height: 13px;
   width: 13px;
   border-radius: 100%;
   background-color: rgba(196, 196, 196, 0.6);
 }
-.school-card_slider .slick-dots button:before {
+.school-card-slider .slick-dots button:before {
   font-size: 0;
 }
-.school-card_slider .slick-dots li.slick-active button {
+.school-card-slider .slick-dots li.slick-active button {
   background-color: #FFBA0A;
 }
 
@@ -3094,8 +3109,7 @@ a.forgot {
   max-width: 400px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8980392157);
-  top: 90px;
-  left: 540px;
+  left: -150px;
 }
 
 .wrapper-card-details_main {
