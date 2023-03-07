@@ -941,5 +941,10 @@ $(document).ready(function(){
     adaptiveHeight: true
   });
 });
-
+$(document).ready(function(){
+  $('.school-card_profile').slick({
+    arrows: true,
+    dots: true
+  });
+});
 
