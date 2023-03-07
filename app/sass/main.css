@@ -2821,6 +2821,10 @@ a.forgot {
   width: 100%;
 }
 
+.reset-btn {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1120px) {
   .login-container.forgot {
     text-align: center;
@@ -4425,4 +4429,37 @@ a.forgot {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   /**/
+}
+.default-container.reset-password {
+  max-width: 1600px;
+}
+
+.login-col.reset-paswword {
+  max-width: 470px;
+}
+
+.login-subtitle.reset-password {
+  margin-top: 20px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.wrapper-input-resert-password {
+  position: relative;
+}
+.wrapper-input-resert-password input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.eye-icon-password {
+  position: absolute;
+  right: 20px;
+  top: 36px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .login-sign.reset-btn {
+    margin: 30px auto;
+  }
 }/*# sourceMappingURL=main.css.map */
