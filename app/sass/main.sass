@@ -2413,9 +2413,54 @@ a.social-link
 	font-size: 19px
 	margin-top: 25px
 
+.profile-icon-btn
+	border: none
+	outline: none
+	background: transparent
+	position: relative
+
+.profile-dropdown
+	position: absolute
+	display: none
+	right: 0
+	top: 64px
+	padding: 10px 25px
+	background: #FFFFFF
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07)
+	border-radius: 0px 0px 11px 11px
+	min-width: 220px
+	box-sizing: border-box
+	text-align: left
+
+.profile-dropdown.show
+	display: block
+
+.profile-dropdown ul li a
+	font-size: 14px
+	color: #171717
+	letter-spacing: 0.02em
+	position: relative
+	display: flex
+	align-items: center
+	white-space: nowrap
+
+.profile-dropdown ul li a img
+	height: 27px
+	margin-right: 15px
+
+.profile-dropdown ul li a:hover
+	color: #ffca18
+
+.profile-dropdown ul li
+	padding: 12px 0
+
+
 @import "school_modal"	
 @import "auth"
 @import "auth_media"
 @import "searchcountry"
 @import "form_default"
 @import "media"	
+@import "reset"
+@import "school_details"
+@import "slider_school_main"

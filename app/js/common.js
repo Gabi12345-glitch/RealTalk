@@ -921,18 +921,18 @@ $('.modal-close').click(function(){
   closeModal()
 })
 
-
-// login
-$('.login-remember.icon').click(function(){
-  $('.check-icon').toggleClass('active')
-})
-
-
-// login
-
-
-// slider
 $(document).ready(function(){
+
+  $('.profile-icon-btn img').on('click', function () {
+    $(this).next('.profile-dropdown').toggleClass('show')
+  })
+
+  $(document).on('click', function (e) {
+    if ($('.profile-dropdown').hasClass('show') && $(e.target).closest('.profile-icon-btn').length === 0) {
+      $('.profile-dropdown').removeClass('show')
+    }
+  })
+
   $('.school-card-slider').slick({
     dots: true,
     slidesToShow: 1,
@@ -940,6 +940,46 @@ $(document).ready(function(){
     arrows: false,
     adaptiveHeight: true
   });
-});
+
+  $('.school-card_profile').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 4,
+        }
+      }
+    ]
+  });
+})
 
 

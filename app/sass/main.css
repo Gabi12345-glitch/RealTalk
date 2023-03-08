@@ -2821,6 +2821,10 @@ a.forgot {
   width: 100%;
 }
 
+.reset-btn {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1120px) {
   .login-container.forgot {
     text-align: center;
@@ -2891,6 +2895,8 @@ a.forgot {
 }
 
 .login-row {
+  margin-top: 20px;
+  align-items: center;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -2953,12 +2959,11 @@ a.forgot {
   color: #727272;
 }
 
-.check-icon {
-  display: none;
+.form-input.password {
+  position: relative;
 }
-
-.check-icon.active {
-  display: block;
+.form-input.password input {
+  height: 50px;
 }
 
 .fm {
@@ -2998,16 +3003,18 @@ a.forgot {
     max-width: 100%;
     width: 100%;
   }
+  .login-sign {
+    max-width: 200px;
+    width: 100%;
+    margin: 20px auto;
+  }
   .login-text {
     font-size: 30px;
-  }
-  .eye-icon {
-    top: 42%;
   }
 }
 @media only screen and (max-width: 600px) {
   .login-container {
-    margin: 70px auto;
+    margin: 100px auto;
   }
   .login-text_remember {
     font-size: 18px;
@@ -3056,29 +3063,60 @@ a.forgot {
   width: 100%;
 }
 
-.school-card_slider {
+.school-card {
+  max-height: 653px;
+  height: 100%;
   width: 100%;
   margin-top: 225px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.school-card.second {
+  margin-bottom: 225px;
 }
 
 .school-card-inner {
   position: relative;
-  display: flex !important;
-  justify-content: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 75%;
 }
 
-.school-card_slider .slick-dots button {
-  margin-top: 20px;
+.school-card-slider {
+  width: 100%;
+  height: 100%;
+}
+.school-card-slider .slick-dots {
+  bottom: -35px;
+  z-index: 1;
+}
+.school-card-slider .slick-dots button {
   height: 13px;
   width: 13px;
   border-radius: 100%;
   background-color: rgba(196, 196, 196, 0.6);
 }
-.school-card_slider .slick-dots button:before {
+.school-card-slider .slick-dots button:before {
   font-size: 0;
 }
-.school-card_slider .slick-dots li.slick-active button {
+.school-card-slider .slick-dots li {
+  margin-left: 30px;
+}
+.school-card-slider .slick-dots li:nth-child(1) {
+  margin-left: 0;
+}
+.school-card-slider .slick-dots li.slick-active button {
   background-color: #FFBA0A;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-list {
+  height: 100% !important;
 }
 
 .school-card-details {
@@ -3090,8 +3128,7 @@ a.forgot {
   max-width: 400px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8980392157);
-  top: 90px;
-  left: 540px;
+  left: -150px;
 }
 
 .wrapper-card-details_main {
@@ -3131,12 +3168,16 @@ a.forgot {
 
 .school-col {
   max-width: 560px;
-  width: 1000%;
+  width: 100%;
 }
 .school-col img.img-name {
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.form-section-title {
+  margin-top: 20px;
 }
 
 .form-section-title.school {
@@ -3193,36 +3234,17 @@ a.forgot {
 }
 
 @media only screen and (max-width: 992px) {
-  .btn-searchcountry {
-    margin-top: 20px;
+  .school-card {
+    margin-top: 350px;
+    justify-content: center;
   }
-  .container-school {
-    flex-direction: column;
-    align-items: center;
-  }
-  .wrapper-input_search {
-    max-width: 620px;
-    flex-direction: column;
-    align-items: center;
-    margin: 104px auto 0 auto;
-  }
-  .school-col img.img-name {
-    margin-left: 0px;
-  }
-  .school-col .btn-searchcountry {
-    margin-top: 20px;
-    max-width: 400px;
+  .school-card-inner {
     width: 100%;
   }
-  .img-school img {
-    margin-top: 30px;
-    margin-left: 0;
-  }
-  .school-col:nth-child(2) {
-    margin-top: 30px;
-  }
-  .wrapper-form-details {
-    gap: 40px;
+  .school-card-details {
+    max-width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .form-section {
@@ -3554,7 +3576,8 @@ a.forgot {
   .header a[href="#work"],
   .header a[href="edit-profile.html"],
   .header a[href="searchcountry.html"],
-  .header a[href="reset.html"] {
+  .header a[href="reset.html"],
+  .header a[href="school.html"] {
     display: none;
   }
   .mouse-scroll {
@@ -4425,4 +4448,146 @@ a.forgot {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   /**/
+}
+.default-container.reset-password {
+  max-width: 1600px;
+}
+
+.login-col.reset-paswword {
+  max-width: 470px;
+}
+
+.login-subtitle.reset-password {
+  margin-top: 20px;
+  max-width: 430px;
+  width: 100%;
+}
+
+.wrapper-input-resert-password {
+  position: relative;
+}
+.wrapper-input-resert-password input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.eye-icon-password {
+  position: absolute;
+  right: 20px;
+  top: 36px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .login-sign.reset-btn {
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .section-school.description {
+    margin-top: 50px;
+  }
+  .form-upload-area.school {
+    width: 100%;
+    height: 300px;
+  }
+  .btn-searchcountry {
+    margin-top: 20px;
+  }
+  .container-school {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper-input_search {
+    max-width: 620px;
+    flex-direction: column;
+    align-items: center;
+    margin: 104px auto 0 auto;
+  }
+  .school-col {
+    max-width: 100%;
+  }
+  .school-col img.img-name {
+    margin-left: 0px;
+  }
+  .school-col .btn-searchcountry {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .img-school img {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .school-col:nth-child(2) {
+    margin-top: 30px;
+  }
+  .wrapper-form-details {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form-section-title.school {
+    font-size: 6vw;
+  }
+}
+.school-card_profile {
+  margin-top: 109px;
+}
+
+.school-card-profile_slider img {
+  width: 100%;
+}
+
+.school-card_profile .slick-prev {
+  z-index: 4;
+  left: 20px;
+}
+.school-card_profile .slick-prev:before,
+.school-card_profile .slick-next:before {
+  color: black;
+}
+.school-card_profile .slick-prev:before {
+  content: url("../img/arrow-left-slider.png");
+}
+.school-card_profile .slick-next:before {
+  content: url("../img/arrow-right-slider.png");
+}
+.school-card_profile .slick-next {
+  right: 20px;
+}
+.school-card_profile .slick-dots {
+  bottom: -120px;
+  height: 100px;
+}
+.school-card_profile .slick-dots li {
+  margin-right: 35px;
+  max-width: 190px;
+  max-height: 109px;
+  width: 100%;
+  height: 100%;
+}
+.school-card_profile .slick-dots li.slick-active button:before {
+  border: 1px solid yellow;
+  opacity: 1;
+}
+.school-card_profile .slick-dots li:last-child {
+  margin-right: 0;
+}
+.school-card_profile .slick-dots li button:before {
+  opacity: 1;
+  content: url(../img/school-card-profile_img-mini2.png);
+}
+.school-card_profile .slick-dots li:nth-child(2) button:before {
+  content: url(../img/school-card-profile_img-mini3.png);
+}
+.school-card_profile .slick-dots li:nth-child(3) button:before {
+  content: url(../img/school-card-profile_img-mini4.png);
+}
+.school-card_profile .slick-dots li:nth-child(5) button:before {
+  content: url(../img/school-card-profile_img-mini5.png);
+}
+
+.form-section-title.card-profile {
+  margin-bottom: 34px;
+  font-size: 40px;
 }/*# sourceMappingURL=main.css.map */

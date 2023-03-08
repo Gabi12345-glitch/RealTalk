@@ -8,6 +8,7 @@
     max-width: 620px
     width: 100%
     position: relative
+
     input
         box-sizing: border-box
         background-color: #FFFFFF
@@ -17,11 +18,13 @@
         width: 100%
         border: 1px solid #CCCCCC
         border-radius: 11px
+
     .close_searchcountry
         cursor: pointer
         position: absolute
         right: 15px    
         top: 20px
+
 .searchcountry
     height:     60px
 
@@ -30,10 +33,15 @@
     width: 100%    
 
 .school-card
+    max-height: 653px
+    height: 100%
     width: 100%
     margin-top: 225px
     display: flex
     justify-content: flex-end
+
+.school-card.second
+    margin-bottom: 225px
 
 .school-card-inner
     position: relative
@@ -44,25 +52,38 @@
 
 .school-card-slider
     width: 100%
-    height: 653px
-    overflow: hidden
+    height: 100%
 
     .slick-dots
-        
+        bottom: -35px
+        z-index: 1
+
         button
-            margin-top: 20px
+            // margin-top: 20px
             height: 13px
             width: 13px
             border-radius: 100%
             background-color: #C4C4C499
 
         button:before
-            font-size: 0  
+            font-size: 0
+
+        li
+            margin-left: 30px
+
+        li:nth-child(1)
+            margin-left: 0
 
         li.slick-active
             button
-                background-color: #FFBA0A  
+                background-color: #FFBA0A
 
+.slick-dotted.slick-slider
+    margin-bottom: 0!important
+
+.slick-list
+    height: 100%!important
+    
 .school-card-details
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07)
     border-radius: 11px
@@ -94,21 +115,28 @@
 .section-school
     font-family: "Montserrat"
     margin-top: 213px
+
 .container-school
     display: flex
     justify-content: space-between
+
 .school-col
     color: #060606
     max-width: 520px
     width: 100%
+
 .school-col
     max-width: 560px
-    width: 1000%
+    width: 100%
+
     img.img-name
         width: 100%
         margin-left: 20px
         margin-right: 20px
+.form-section-title
+    margin-top: 20px
 .form-section-title.school
+    
     font-size: 33px    
     margin-bottom: 20px   
 
@@ -120,55 +148,51 @@
         font-size: 18px
         line-height: 24px
         color: #060606
+
     .text-yellow
-        color: #FFBA0A    
+        color: #FFBA0A
+
     p.mt    
         margin-top: 20px
+
 .wrapper-school-details
     margin-top: 22px
     display: flex
     // justify-content: space-between
     align-items: center
+
 .details-info
     margin-left: 20px
     max-width: 240px
     width: 100%
     display: block
     line-height: 24px
+
 .wrapper-form-details
     display: flex
     justify-content: space-between
+
     .questions
         max-width: 260px
         width: 100%
+
 .form-input.details-message input
     height: 130px
+
 .form-textarea textarea
-    box-sizing: border-box    
+    box-sizing: border-box
+
 //*Media 
+
 @media only screen and (max-width : 992px)
-    .btn-searchcountry
-        margin-top: 20px
-    .container-school
-        flex-direction: column 
-        align-items: center
-    .wrapper-input_search
-        max-width: 620px
-        flex-direction: column
-        align-items: center
-        margin: 104px auto 0 auto
-    .school-col 
-        img.img-name
-            margin-left: 0px
-        .btn-searchcountry
-            margin-top: 20px
-            max-width: 400px
-            width: 100%
-    .img-school
-        img
-            margin-top: 30px
-            margin-left: 0       
-    .school-col:nth-child(2)
-        margin-top: 30px
-    .wrapper-form-details
-        gap: 40px             
+    .school-card
+        margin-top: 350px
+        justify-content: center
+
+    .school-card-inner
+        width: 100%
+
+    .school-card-details
+        max-width: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
