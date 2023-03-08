@@ -2887,9 +2887,6 @@ a.forgot {
   }
 }
 /*Login* */
-.header__inner {
-  max-width: 2000px;
-}
 
 .login-container {
   justify-content: space-between;
